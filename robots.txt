@@ -1,0 +1,22 @@
+# Robots.txt for GREN Propertykost Jatinangor
+User-agent: *
+Allow: /
+
+# Allow AI Search Crawlers for AEO (Answer Engine Optimization)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap Location
+Sitemap: https://grenpropertykost.com/sitemap.xml

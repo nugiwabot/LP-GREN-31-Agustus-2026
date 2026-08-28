@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://grenpropertykost.com/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://grenpropertykost.com/assets/images/rumah-asli.jpg</image:loc>
+      <image:title>GREN Propertykost Jatinangor — Investasi Rukost Eksklusif</image:title>
+      <image:caption>Gedung rukost modern multi-lantai di kawasan Ring-1 kampus UNPAD dan ITB Jatinangor</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://grenpropertykost.com/assets/images/gallery-2.webp</image:loc>
+      <image:title>Interior Kamar Tidur Full Furnished GREN Propertykost</image:title>
+    </image:image>
+  </url>
+</urlset>
