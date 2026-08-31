@@ -2,21 +2,32 @@
 User-agent: *
 Allow: /
 
-# Allow AI Search Crawlers for AEO (Answer Engine Optimization)
+# Allow Major Search Engines
 User-agent: Googlebot
 Allow: /
 
+User-agent: Bingbot
+Allow: /
+
+# Allow AI Search & Generative Crawlers for AEO / GEO
 User-agent: Google-Extended
 Allow: /
 
 User-agent: GPTBot
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: Bingbot
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
 Allow: /
 
 # Sitemap Location
+Sitemap: https://grenpropertykost.vercel.app/sitemap.xml
 Sitemap: https://grenpropertykost.com/sitemap.xml
