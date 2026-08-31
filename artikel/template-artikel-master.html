@@ -5,36 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <!-- ========================================================================= -->
-  <!-- 📝 PANDUAN DUPLIKASI TEMPLATE INI UNTUK ARTIKEL BARU:
-       1. Buat folder baru di dalam /artikel/ dengan nama slug (contoh: artikel/tips-memilih-kost-mahasiswa/)
+  <!-- 📝 PANDUAN STANDAR ALGORITMA 2026 UNTUK ARTIKEL BARU:
+       1. Buat folder baru di dalam /artikel/ dengan nama slug bersih (3-5 kata, contoh: artikel/bisnis-rumah-kost-autopilot/)
        2. Simpan file ini sebagai `index.html` di dalam folder tersebut.
-       3. Ubah bagian [JUDUL_ARTIKEL], [DESKRIPSI_RINGKAS], [KATEGORI], dan [ISI_KONTEN] di bawah.
-       4. Tambahkan kartu artikel baru ke artikel/index.html & sitemap.xml. Selesai!
+       3. Batasan Karakter Wajib:
+          - <title> Tag: WAJIB 50 - 60 KARAKTER (agar tidak terpotong di Google).
+          - Meta Description: WAJIB 140 - 155 KARAKTER.
+       4. Siapkan gambar cover 16:9 (simpan di /assets/images/nama-gambar.jpg).
+       5. Isi kotak "Key Takeaways" (Intisari 100 kata pertama untuk dikutip AI Gemini & ChatGPT).
+       6. Tambahkan kartu artikel baru ke artikel/index.html & sitemap.xml.
   ========================================================================= -->
 
-  <!-- Primary SEO Meta Tags -->
-  <title>[JUDUL_ARTIKEL] — GREN Propertykost Jatinangor</title>
-  <meta name="title" content="[JUDUL_ARTIKEL] — GREN Propertykost Jatinangor" />
-  <meta name="description" content="[DESKRIPSI_RINGKAS_150_KARAKTER]" />
-  <meta name="keywords" content="investasi properti, rumah kost jatinangor, gren propertykost, [KATA_KUNCI_TAMBAHAN]" />
+  <!-- Primary SEO Meta Tags (2026 Algorithmic Compliance: Title 50-60 chars, Meta 140-155 chars) -->
+  <title>[JUDUL_SEO_50_SAMPAI_60_KARAKTER] — GREN Property</title>
+  <meta name="title" content="[JUDUL_SEO_50_SAMPAI_60_KARAKTER] — GREN Property" />
+  <meta name="description" content="[DESKRIPSI_RINGKAS_PADAT_DAN_MENARIK_TEPAT_140_HINGGA_155_KARAKTER_MEMUAT_KATA_KUNCI_DAN_AJAKAN]" />
+  <meta name="keywords" content="investasi properti jatinangor, rumah kost unpad, pasif income properti, gren propertykost, [KATA_KUNCI_TAMBAHAN]" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <meta name="author" content="Tim Riset & Konsultan GREN Property" />
+  <meta name="author" content="Tim Riset & Analis GREN Property" />
   <meta name="language" content="Indonesian" />
   <meta name="theme-color" content="#15803d" />
 
-  <!-- Canonical URL (Sesuaikan slug) -->
+  <!-- Canonical URL (Sesuaikan dengan nama folder slug) -->
   <link rel="canonical" href="https://grenpropertykost.vercel.app/artikel/[SLUG-NAMA-FOLDER-ARTIKEL]" />
 
-  <!-- Open Graph -->
+  <!-- Geo & Local SEO Tags (Jatinangor, Jawa Barat) -->
+  <meta name="geo.region" content="ID-JB" />
+  <meta name="geo.placename" content="Jatinangor, Kabupaten Sumedang, Jawa Barat" />
+  <meta name="geo.position" content="-6.9328;107.7735" />
+  <meta name="ICBM" content="-6.9328, 107.7735" />
+
+  <!-- Open Graph / WhatsApp / Facebook Preview -->
   <meta property="og:type" content="article" />
   <meta property="og:locale" content="id_ID" />
   <meta property="og:site_name" content="GREN Propertykost Jatinangor" />
-  <meta property="og:title" content="[JUDUL_ARTIKEL]" />
-  <meta property="og:description" content="[DESKRIPSI_RINGKAS_150_KARAKTER]" />
+  <meta property="og:title" content="[JUDUL_SEO_50_SAMPAI_60_KARAKTER] — GREN Property" />
+  <meta property="og:description" content="[DESKRIPSI_RINGKAS_PADAT_DAN_MENARIK_TEPAT_140_HINGGA_155_KARAKTER]" />
   <meta property="og:url" content="https://grenpropertykost.vercel.app/artikel/[SLUG-NAMA-FOLDER-ARTIKEL]" />
-  <meta property="og:image" content="../../assets/images/rumah-asli.jpg" />
+  <meta property="og:image" content="../../assets/images/[NAMA-GAMBAR-COVER].jpg" />
+  <meta property="article:published_time" content="2026-08-31T09:00:00+07:00" />
+  <meta property="article:modified_time" content="2026-08-31T09:00:00+07:00" />
+  <meta property="article:author" content="Tim Riset & Analis GREN Property" />
+  <meta property="article:section" content="[NAMA_KATEGORI_ARTIKEL]" />
 
-  <!-- Schema.org JSON-LD -->
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="[JUDUL_SEO_50_SAMPAI_60_KARAKTER] — GREN Property" />
+  <meta name="twitter:description" content="[DESKRIPSI_RINGKAS_PADAT_DAN_MENARIK_TEPAT_140_HINGGA_155_KARAKTER]" />
+  <meta name="twitter:image" content="../../assets/images/[NAMA-GAMBAR-COVER].jpg" />
+
+  <!-- Schema.org Multi-Graph JSON-LD (AEO & Rich Snippets 2026) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -42,17 +62,26 @@
       {
         "@type": "Article",
         "@id": "https://grenpropertykost.vercel.app/artikel/[SLUG-NAMA-FOLDER-ARTIKEL]#article",
-        "headline": "[JUDUL_ARTIKEL]",
-        "description": "[DESKRIPSI_RINGKAS_150_KARAKTER]",
-        "image": "https://grenpropertykost.vercel.app/assets/images/rumah-asli.jpg",
-        "datePublished": "2026-08-31T08:00:00+07:00",
+        "headline": "[JUDUL_H1_EDITORIAL_LENGKAP]",
+        "description": "[DESKRIPSI_RINGKAS_PADAT_DAN_MENARIK_TEPAT_140_HINGGA_155_KARAKTER]",
+        "image": "https://grenpropertykost.vercel.app/assets/images/[NAMA-GAMBAR-COVER].jpg",
+        "datePublished": "2026-08-31T09:00:00+07:00",
+        "dateModified": "2026-08-31T09:00:00+07:00",
         "author": {
           "@type": "Organization",
-          "name": "Tim Riset & Konsultan GREN Property"
+          "name": "Tim Riset & Analis GREN Property"
         },
         "publisher": {
           "@type": "Organization",
-          "name": "GREN Property"
+          "name": "GREN Property",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://grenpropertykost.vercel.app/assets/images/logo.png"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://grenpropertykost.vercel.app/artikel/[SLUG-NAMA-FOLDER-ARTIKEL]"
         }
       },
       {
@@ -74,8 +103,30 @@
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "[JUDUL_ARTIKEL]",
+            "name": "[JUDUL_SINGKAT_UNTUK_BREADCRUMB]",
             "item": "https://grenpropertykost.vercel.app/artikel/[SLUG-NAMA-FOLDER-ARTIKEL]"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://grenpropertykost.vercel.app/artikel/[SLUG-NAMA-FOLDER-ARTIKEL]#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "[PERTANYAAN_FAQ_1_YANG_SERING_DICARI_USER]?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "[JAWABAN_LANGSUNG_1_KALIMAT_TEGAS_DILANJUTKAN_PENJELASAN_RINGKAS]."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "[PERTANYAAN_FAQ_2_YANG_SERING_DICARI_USER]?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "[JAWABAN_LANGSUNG_1_KALIMAT_TEGAS_DILANJUTKAN_PENJELASAN_RINGKAS]."
+            }
           }
         ]
       }
@@ -83,7 +134,7 @@
   }
   </script>
 
-  <!-- ⚙️ CONFIG -->
+  <!-- ⚙️ LOAD CONFIG -->
   <script src="../../config.js"></script>
 
   <!-- Fonts & Tailwind -->
@@ -135,13 +186,13 @@
       color: #1e293b;
     }
     .article-content p {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.35rem;
       line-height: 1.85;
       font-size: 1.0625rem;
       color: #334155;
     }
     .article-content h2 {
-      font-size: 1.65rem;
+      font-size: 1.6rem;
       font-weight: 800;
       color: #0f172a;
       margin-top: 2.5rem;
@@ -151,7 +202,7 @@
       padding-bottom: 0.5rem;
     }
     .article-content h3 {
-      font-size: 1.3rem;
+      font-size: 1.25rem;
       font-weight: 700;
       color: #15803d;
       margin-top: 1.75rem;
@@ -196,44 +247,49 @@
     </div>
   </header>
 
-  <!-- ARTICLE CONTENT CONTAINER -->
+  <!-- ARTICLE MAIN CONTENT CONTAINER -->
   <article class="flex-grow">
     
-    <header class="bg-white border-b border-slate-200 py-12 lg:py-16">
+    <header class="bg-white border-b border-slate-200 py-10 lg:py-14">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <nav class="flex items-center gap-2 text-xs font-semibold text-slate-500 mb-6 flex-wrap" aria-label="Breadcrumb">
+        <!-- Breadcrumb Navigation -->
+        <nav class="flex items-center gap-2 text-xs font-semibold text-slate-500 mb-5 flex-wrap" aria-label="Breadcrumb">
           <a href="../../" class="hover:text-slate-900 transition-colors">Beranda</a>
           <span>/</span>
           <a href="../" class="hover:text-slate-900 transition-colors">Artikel</a>
           <span>/</span>
-          <span class="text-brand-700 font-bold">[KATEGORI]</span>
+          <span class="text-brand-700 font-bold">[KATEGORI_ARTIKEL]</span>
         </nav>
 
+        <!-- Category Badge & Read Time -->
         <div class="flex items-center gap-3 flex-wrap mb-4">
           <span class="bg-brand-800 text-white text-[11px] font-extrabold uppercase px-2.5 py-1 rounded shadow-sm">
-            [KATEGORI]
+            [KATEGORI_ARTIKEL]
           </span>
           <span class="text-xs text-slate-500 font-semibold">⏱️ [X] Menit Waktu Baca</span>
-          <span class="text-xs text-slate-500 font-semibold">• [TANGGAL_PUBLIKASI]</span>
+          <span class="text-xs text-slate-500 font-semibold">• [TANGGAL_PUBLIKASI_CONTOH_31_AGUSTUS_2026]</span>
         </div>
 
+        <!-- H1 Editorial Title (60-85 Chars, Engaging & Clear) -->
         <h1 class="text-2xl sm:text-4xl lg:text-5xl font-black text-slate-950 tracking-tight leading-tight">
-          [JUDUL_ARTIKEL]
+          [JUDUL_H1_EDITORIAL_LENGKAP_YANG_MENARIK_DAN_LENGKAP]
         </h1>
 
+        <!-- Lead Paragraph -->
         <p class="mt-5 text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
-          [DESKRIPSI_RINGKAS_PARAGRAF_PEMBUKA]
+          [PARAGRAF_PEMBUKA_MENARIK_YANG_MENJELASKAN_MASALAH_ATAU_PELUANG_BAGI_PEMBACA]
         </p>
 
+        <!-- E-E-A-T Author Credential Box -->
         <div class="mt-8 pt-6 border-t border-slate-100 flex items-center justify-between flex-wrap gap-4">
           <div class="flex items-center gap-3">
             <div class="w-10 h-10 rounded-full bg-brand-800 text-white font-bold flex items-center justify-center text-sm shadow">
               GP
             </div>
             <div>
-              <div class="text-xs sm:text-sm font-bold text-slate-900">Tim Riset & Konsultan GREN Property</div>
-              <div class="text-[11px] text-slate-500">Spesialis Properti Kost Jatinangor</div>
+              <div class="text-xs sm:text-sm font-bold text-slate-900">[NAMA_TIM_PENULIS_CONTOH_TIM_RISET_GREN]</div>
+              <div class="text-[11px] text-slate-500">[KEAHLIAN_CONTOH_SPESIALIS_PROPERTI_KOMERSIAL_JATINANGOR]</div>
             </div>
           </div>
         </div>
@@ -241,52 +297,124 @@
       </div>
     </header>
 
-    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
       
-      <!-- Key Takeaways Box -->
-      <div class="bg-brand-50 border-l-4 border-brand-700 p-6 rounded-r-2xl mb-10 shadow-sm">
-        <div class="text-xs font-black uppercase text-brand-900 tracking-wider mb-2">
-          ⚡ Ringkasan Poin Penting:
+      <!-- HERO IMAGE (16:9 Aspect Ratio) -->
+      <div class="mb-10 rounded-3xl overflow-hidden shadow-lg border border-slate-200 bg-slate-100">
+        <img 
+          src="../../assets/images/[NAMA-GAMBAR-COVER].jpg" 
+          alt="[DESKRIPSI_GAMBAR_DESKRIPTIF_LENGKAP_DENGAN_KATA_KUNCI]"
+          class="w-full h-auto max-h-[480px] object-cover"
+          loading="eager"
+        />
+        <div class="p-3 bg-slate-900/90 text-slate-300 text-xs text-center">
+          [KETERANGAN_CAPTION_FOTO_RINGKAS]
         </div>
-        <ul class="text-xs sm:text-sm text-slate-800 space-y-1.5 font-medium">
-          <li>• [POIN_PENTING_1]</li>
-          <li>• [POIN_PENTING_2]</li>
-          <li>• [POIN_PENTING_3]</li>
+      </div>
+
+      <!-- AEO THE 100-WORD DIRECT ANSWER / KEY TAKEAWAYS BOX -->
+      <div class="bg-brand-50 border-l-4 border-brand-700 p-6 rounded-r-2xl mb-10 shadow-sm">
+        <div class="text-xs font-black uppercase text-brand-900 tracking-wider mb-2 flex items-center gap-1.5">
+          <span>⚡</span>
+          <span>Intisari Jawaban (Key Takeaways):</span>
+        </div>
+        <ul class="text-xs sm:text-sm text-slate-800 space-y-2 font-medium">
+          <li>• <strong>[POIN_KUNCI_1]:</strong> [PENJELASAN_RINGKAS_LANGSUNG_MENJAWAB_JUDUL].</li>
+          <li>• <strong>[POIN_KUNCI_2]:</strong> [DATA_ANGKA_ATAU_FAKTA_RIIL_YANG_MEYAKINKAN].</li>
+          <li>• <strong>[POIN_KUNCI_3]:</strong> [SOLUSI_PRAKTIS_ATAU_DAMPAK_BAGI_PEMILIK_MODAL].</li>
         </ul>
       </div>
 
-      <!-- Main Text Body -->
+      <!-- MAIN TEXT BODY -->
       <div class="article-content bg-white p-6 sm:p-10 rounded-3xl border border-slate-200 shadow-sm">
         
-        <h2>1. Sub Judul Pembahasan Pertama</h2>
+        <h2>1. [Sub Judul Pembahasan Bagian Pertama]</h2>
         <p>
-          Tuliskan isi paragraf penjelasan artikel di sini secara mendalam dan terstruktur...
+          Tuliskan pembahasan pertama di sini dengan gaya bahasa yang mengalir, santai, dan tidak kaku. Gunakan perumpamaan atau analogi yang mudah dicerna...
+        </p>
+        <p>
+          Hindari istilah asing yang rumit tanpa penjelasan. Setiap kali ada istilah teknis seperti <em>Rental Yield</em>, selalu sertakan artinya: <em>(keuntungan sewa tahunan)</em>.
         </p>
 
-        <h2>2. Sub Judul Pembahasan Kedua</h2>
+        <h2>2. [Sub Judul Pembahasan Bagian Kedua & Data Konkret]</h2>
         <p>
-          Tuliskan isi paragraf penjelasan bagian kedua di sini...
+          Sajikan hitungan angka nyata yang mudah dipahami oleh pembaca...
         </p>
 
-        <!-- In-Article CTA -->
-        <div class="mt-10 p-8 rounded-3xl bg-slate-900 text-white text-center space-y-4">
-          <h3 class="text-xl font-extrabold text-white !mt-0">Tertarik Mempelajari Unit GREN Propertykost?</h3>
-          <p class="text-slate-300 text-xs sm:text-sm max-w-lg mx-auto">
-            Dapatkan pricelist resmi dan jadwal kunjungan survey langsung bersama tim konsultan kami.
+        <!-- SEMANTIC DATA TABLE TEMPLATE -->
+        <div class="overflow-x-auto my-6">
+          <table class="w-full text-left text-xs sm:text-sm border-collapse border border-slate-200 font-sans">
+            <thead>
+              <tr class="bg-slate-900 text-white">
+                <th class="border border-slate-700 p-3 font-bold">Parameter</th>
+                <th class="border border-slate-700 p-3 font-bold">Opsi Biasa / Alternatif</th>
+                <th class="border border-slate-700 p-3 font-bold text-accent-400">Solusi GREN Propertykost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-slate-200 p-3 font-bold">[Baris 1 - Kriteria]</td>
+                <td class="border border-slate-200 p-3 text-slate-600">[Penjelasan Opsi Biasa]</td>
+                <td class="border border-slate-200 p-3 font-bold text-brand-800 bg-brand-50">[Keunggulan GREN]</td>
+              </tr>
+              <tr class="bg-slate-50">
+                <td class="border border-slate-200 p-3 font-bold">[Baris 2 - Kriteria]</td>
+                <td class="border border-slate-200 p-3 text-slate-600">[Penjelasan Opsi Biasa]</td>
+                <td class="border border-slate-200 p-3 font-bold text-brand-800 bg-brand-50">[Keunggulan GREN]</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>3. [Sub Judul Kesimpulan & Langkah Strategis]</h2>
+        <p>
+          Rangkum poin penting dan berikan pandangan masa depan yang positif...
+        </p>
+
+        <!-- IN-ARTICLE SOFT CTA CONVERSION BOX (10% AT THE END) -->
+        <div class="mt-10 p-8 rounded-3xl bg-slate-900 text-white text-center space-y-4 shadow-xl">
+          <span class="bg-brand-700 text-white text-[11px] font-extrabold uppercase px-3 py-1 rounded-full">
+            [LABEL_BADGE_CTA_CONTOH_KONSULTASI_PROPERTI]
+          </span>
+          <h3 class="text-xl sm:text-2xl font-extrabold text-white !mt-2">
+            [JUDUL_AJAKAN_KONSULTASI_YANG_ELEGAN]
+          </h3>
+          <p class="text-slate-300 text-xs sm:text-sm max-w-lg mx-auto leading-relaxed">
+            [DESKRIPSI_SINGKAT_MENGENAI_UNIT_READY_SURVEY_DAN_SIMULASI_YIELD_BERSAMA_TIM_KONSULTAN].
           </p>
-          <a 
-            href="javascript:void(0)" 
-            onclick="openDirectWA('Halo Tim GREN Property, saya baru saja membaca artikel di website dan ingin konsultasi lebih lanjut.')"
-            class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm px-6 py-3.5 rounded-xl transition-all shadow-lg"
-          >
-            <span>Konsultasi via WhatsApp</span>
-          </a>
+          <div class="pt-2">
+            <a 
+              href="javascript:void(0)" 
+              onclick="openDirectWA('Halo Tim GREN Property, saya baru membaca artikel [JUDUL_ARTIKEL] dan ingin konsultasi lebih lanjut.')"
+              class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm px-6 py-3.5 rounded-xl transition-all shadow-lg hover:scale-105"
+            >
+              <span>Konsultasikan via WhatsApp</span>
+            </a>
+          </div>
         </div>
 
       </div>
 
-    </main>
+      <!-- READ NEXT ARTICLES -->
+      <div class="mt-12">
+        <h3 class="text-lg font-bold text-slate-900 mb-4">Artikel Pilihan Lainnya:</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a href="../dampak-tol-cisumdawu-properti-jatinangor" class="p-5 rounded-2xl bg-white border border-slate-200 hover:border-brand-700 shadow-sm transition-all block group">
+            <span class="text-xs font-bold text-emerald-700 block mb-1">Infrastruktur & Kawasan</span>
+            <span class="text-sm font-bold text-slate-900 group-hover:text-brand-700 transition-colors block">
+              Dampak Tol Cisumdawu & Kereta Cepat pada Lonjakan Nilai Properti Jatinangor &rarr;
+            </span>
+          </a>
+          <a href="../pasif-income-pensiun-properti-sewa" class="p-5 rounded-2xl bg-white border border-slate-200 hover:border-brand-700 shadow-sm transition-all block group">
+            <span class="text-xs font-bold text-amber-700 block mb-1">Wealth Strategy & Pensiun</span>
+            <span class="text-sm font-bold text-slate-900 group-hover:text-brand-700 transition-colors block">
+              Strategi Membangun 'Pabrik Gaji Bulanan' Rp 15–25 Juta untuk Masa Pensiun &rarr;
+            </span>
+          </a>
+        </div>
+      </div>
 
+    </main>
   </article>
 
   <!-- FOOTER -->
@@ -325,7 +453,7 @@
     }
     function openDirectWA(customMsg) {
       const cfg = window.LANDING_CONFIG || {};
-      const msg = customMsg || cfg.pesanDefault || "Halo Tim GREN Property, saya ingin menanyakan informasi unit properti.";
+      const msg = customMsg || cfg.pesanDefault || "Halo Tim GREN Property, saya ingin menanyakan informasi properti kost.";
       const phone = getCleanPhone();
       const url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(msg);
       window.open(url, '_blank');
