@@ -27,7 +27,31 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- 3. Artikel Pillar 1: Panduan Investasi Rumah Kost Jatinangor -->
+  <!-- 3. Artikel Makro 1: Dampak Tol Cisumdawu -->
+  <url>
+    <loc>https://grenpropertykost.vercel.app/artikel/dampak-tol-cisumdawu-properti-jatinangor</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://grenpropertykost.vercel.app/assets/images/tol-cisumdawu-jatinangor.jpg</image:loc>
+      <image:title>Dampak Tol Cisumdawu pada Properti Jatinangor — GREN Property</image:title>
+    </image:image>
+  </url>
+
+  <!-- 4. Artikel Pensiun & Wealth: Pasif Income Pensiun -->
+  <url>
+    <loc>https://grenpropertykost.vercel.app/artikel/pasif-income-pensiun-properti-sewa</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://grenpropertykost.vercel.app/assets/images/pensiun-passive-income.jpg</image:loc>
+      <image:title>Pasif Income Rp 20 Juta/Bulan untuk Pensiun — GREN Property</image:title>
+    </image:image>
+  </url>
+
+  <!-- 5. Artikel Pilar 1: Panduan Investasi Rumah Kost Jatinangor -->
   <url>
     <loc>https://grenpropertykost.vercel.app/artikel/panduan-investasi-rumah-kost-jatinangor-unpad</loc>
     <lastmod>2026-08-31</lastmod>
@@ -39,7 +63,7 @@
     </image:image>
   </url>
 
-  <!-- 4. Artikel Pillar 2: Analisis Rental Yield & Okupansi Kost -->
+  <!-- 6. Artikel Pilar 2: Analisis Rental Yield & Okupansi Kost -->
   <url>
     <loc>https://grenpropertykost.vercel.app/artikel/analisis-rental-yield-dan-okupansi-kost-jatinangor</loc>
     <lastmod>2026-08-31</lastmod>
@@ -51,7 +75,7 @@
     </image:image>
   </url>
 
-  <!-- 5. Artikel Pillar 3: Perbandingan Apartemen vs Rumah Kost Tapak SHM -->
+  <!-- 7. Artikel Pilar 3: Perbandingan Apartemen vs Rumah Kost Tapak SHM -->
   <url>
     <loc>https://grenpropertykost.vercel.app/artikel/perbandingan-apartemen-vs-rumah-kost-tapak-jatinangor</loc>
     <lastmod>2026-08-31</lastmod>

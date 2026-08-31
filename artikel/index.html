@@ -294,8 +294,9 @@
         <!-- Filter Pills -->
         <div class="flex items-center justify-center gap-2 flex-wrap text-xs font-bold pt-1" id="category-filter-container">
           <button class="cat-pill active px-3.5 py-1.5 rounded-full bg-accent-500 text-slate-950 font-black shadow-sm transition-all" data-category="all">Semua Artikel</button>
-          <button class="cat-pill px-3.5 py-1.5 rounded-full bg-white/10 text-slate-300 hover:bg-white/20 border border-white/10 transition-all" data-category="panduan">Panduan Investasi</button>
+          <button class="cat-pill px-3.5 py-1.5 rounded-full bg-white/10 text-slate-300 hover:bg-white/20 border border-white/10 transition-all" data-category="panduan">Makro & Kawasan</button>
           <button class="cat-pill px-3.5 py-1.5 rounded-full bg-white/10 text-slate-300 hover:bg-white/20 border border-white/10 transition-all" data-category="finansial">Finansial & Yield</button>
+          <button class="cat-pill px-3.5 py-1.5 rounded-full bg-white/10 text-slate-300 hover:bg-white/20 border border-white/10 transition-all" data-category="pensiun">Pensiun & Wealth</button>
           <button class="cat-pill px-3.5 py-1.5 rounded-full bg-white/10 text-slate-300 hover:bg-white/20 border border-white/10 transition-all" data-category="komparasi">Legalitas & Komparasi</button>
         </div>
       </div>
@@ -373,7 +374,7 @@
           <p class="text-slate-600 text-sm mt-1">Informasi terpercaya yang diperbarui berkala oleh konsultan properti GREN.</p>
         </div>
         <span id="article-count" class="text-xs font-bold bg-slate-200 text-slate-700 px-3 py-1 rounded-full">
-          3 Artikel Tersedia
+          5 Artikel Tersedia
         </span>
       </div>
 
@@ -420,7 +421,87 @@
           </div>
         </article>
 
-        <!-- CARD 2: Analisis Yield -->
+        <!-- CARD 2: Dampak Tol Cisumdawu -->
+        <article class="article-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="panduan">
+          <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+            <img 
+              src="../assets/images/tol-cisumdawu-jatinangor.jpg" 
+              alt="Dampak Tol Cisumdawu pada Properti Jatinangor" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div class="absolute top-3 left-3">
+              <span class="bg-emerald-700 text-white text-[11px] font-extrabold px-2.5 py-1 rounded-md shadow">
+                Infrastruktur & Makro
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3 bg-slate-900/80 backdrop-blur text-white text-[11px] font-bold px-2 py-0.5 rounded">
+              ⏱️ 5 Menit
+            </div>
+          </div>
+
+          <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+            <div>
+              <div class="text-xs text-slate-500 font-semibold mb-2">31 Agustus 2026 • Oleh Tim Riset Kawasan</div>
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-brand-700 transition-colors line-clamp-2 leading-snug">
+                <a href="./dampak-tol-cisumdawu-properti-jatinangor">
+                  Dampak Tol Cisumdawu & Kereta Cepat pada Lonjakan Nilai Properti Jatinangor
+                </a>
+              </h3>
+              <p class="text-slate-600 text-xs sm:text-sm mt-2.5 line-clamp-3 leading-relaxed">
+                Analisis dampak pemangkasan waktu tempuh Bandung–Jakarta terhadap lonjakan nilai tanah dan potensi bisnis properti sewa komersial di kawasan kampus UNPAD.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs font-bold text-brand-700 group-hover:underline flex items-center gap-1">
+                <span>Baca Selengkapnya</span> &rarr;
+              </span>
+              <span class="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">Makro Trend</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 3: Pasif Income Dana Pensiun -->
+        <article class="article-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="pensiun">
+          <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+            <img 
+              src="../assets/images/pensiun-passive-income.jpg" 
+              alt="Pasif Income Rp 20 Juta per Bulan untuk Pensiun" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div class="absolute top-3 left-3">
+              <span class="bg-amber-700 text-white text-[11px] font-extrabold px-2.5 py-1 rounded-md shadow">
+                Pensiun & Wealth
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3 bg-slate-900/80 backdrop-blur text-white text-[11px] font-bold px-2 py-0.5 rounded">
+              ⏱️ 6 Menit
+            </div>
+          </div>
+
+          <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+            <div>
+              <div class="text-xs text-slate-500 font-semibold mb-2">31 Agustus 2026 • Oleh Tim Finansial GREN</div>
+              <h3 class="text-lg font-bold text-slate-900 group-hover:text-brand-700 transition-colors line-clamp-2 leading-snug">
+                <a href="./pasif-income-pensiun-properti-sewa">
+                  Strategi Membangun 'Pabrik Gaji Bulanan' Rp 15–25 Juta untuk Masa Pensiun
+                </a>
+              </h3>
+              <p class="text-slate-600 text-xs sm:text-sm mt-2.5 line-clamp-3 leading-relaxed">
+                Panduan cerdas dokter spesialis dan profesional senior mengamankan tabungan hari tua menjadi penghasilan bulanan rutin puluhan juta bebas gerusan inflasi.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-xs font-bold text-brand-700 group-hover:underline flex items-center gap-1">
+                <span>Baca Selengkapnya</span> &rarr;
+              </span>
+              <span class="text-[11px] font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded">Hari Tua Aman</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 4: Analisis Yield -->
         <article class="article-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="finansial">
           <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
             <img 
@@ -461,7 +542,7 @@
           </div>
         </article>
 
-        <!-- CARD 3: Komparasi Apartemen vs Rukost -->
+        <!-- CARD 5: Komparasi Apartemen vs Rukost -->
         <article class="article-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="komparasi">
           <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
             <img 
