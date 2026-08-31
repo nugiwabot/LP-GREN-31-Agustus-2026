@@ -1,0 +1,44 @@
+name: Scheduled Article Publisher (2x Daily)
+
+on:
+  schedule:
+    # 01:00 UTC = 08:00 WIB (Morning Slot)
+    - cron: '0 1 * * *'
+    # 09:00 UTC = 16:00 WIB (Afternoon Slot)
+    - cron: '0 9 * * *'
+  workflow_dispatch: # Allows manual trigger anytime from GitHub Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Run Scheduled Publishing Engine
+        run: |
+          python scripts/publish_scheduler.py
+
+      - name: Commit and Push if Changes Detected
+        run: |
+          if [[ -n $(git status --porcelain) ]]; then
+            git config --global user.name "GREN Publishing Bot"
+            git config --global user.email "bot@grenproperty.com"
+            git add .
+            git commit -m "chore(publish): auto-publish scheduled high-ticket articles [skip ci]"
+            git push origin main
+            echo "Successfully committed and pushed newly published articles to main branch!"
+          else
+            echo "No changes detected. All articles are up to date."
+          fi
