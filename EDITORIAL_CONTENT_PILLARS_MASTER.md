@@ -3,13 +3,36 @@
 
 Dokumen ini adalah **panduan utama (Evergreen Master Reference)** untuk produksi artikel blog, konten edukasi, SEO/AEO, dan Search AI di website GREN Propertykost selama 6 hingga 12 bulan ke depan.
 
-Tujuan utama sistem konten ini adalah **menjaring dan mengedukasi profil pembeli berdaya beli miliaran rupiah (*High-Ticket Buyers*)** — seperti Pengusaha Daerah, Eksekutif Senior, Calon Pensiunan Mapan, dan Investor Serial — yang siap membeli 1 gedung properti komersial seharga Rp 2 Miliar – Rp 3,7 Miliar di Jatinangor.
-
-Konten ini secara sadar **menghindari topik receh mahasiswa / pencari sewa kamar**, sehingga traffic organik yang datang ke website dan Search AI adalah calon pembeli aset berkelas kakap.
+Tujuan utama sistem konten ini adalah **menjaring dan mengedukasi profil pembeli berdaya beli miliaran rupiah (*High-Ticket Buyers*)** — seperti Pengusaha Daerah, Eksekutif Senior, Calon Pensiunan Mapan, Dokter Spesialis, dan Investor Serial — yang siap membeli 1 gedung properti komersial seharga Rp 2 Miliar – Rp 3,7 Miliar di Jatinangor.
 
 ---
 
-## 🎯 1. Pemetaan 4 Profil Pembeli Properti Gedung Miliaran di Jatinangor
+## 🗣️ 1. Standar Gaya Bahasa & Penyampaian Artikel (Tone of Voice)
+
+Untuk memastikan artikel disukai dan nyaman dibaca oleh semua kalangan pembeli (baik juragan toko daerah, pensiunan, dokter, maupun keluarga mapan), seluruh artikel wajib mematuhi pedoman penulisan berikut:
+
+```
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                        STANDAR COPYWRITING: "CLEAR, CONVERSATIONAL & PRACTICAL"                        │
+├────────────────────────────┬───────────────────────────┬───────────────────────────┬───────────────────┤
+│    1. Bebas Jargon Rumit   │   2. Analogi Sehari-hari  │    3. Matematika Konkret  │  4. Terasa Ngobrol│
+│ Hindari istilah ekonomi    │ Gunakan perumpamaan nyata │ Hitungan angka langsung   │ Seperti berbincang│
+│ yang bikin dahi mengernyit │ seperti "pabrik gaji      │ jelas (kamar x tarif sewa │ dengan konsultan  │
+│ dan membosankan pembaca    │ bulanan otomatis"         │ = uang masuk per bulan)   │ properti bijak    │
+└────────────────────────────┴───────────────────────────┴───────────────────────────┴───────────────────┘
+```
+
+### Pedoman Praktis Penulisan:
+1. **Prinsip *"Clear is Better than Clever"*:* Gunakan kalimat yang ringkas, mengalir, dan langsung menjawab rasa ingin tahu pembeli (*"Berapa modalnya? Berapa keuntungan bulanannya? Seberapa aman lokasinya?"*).
+2. **Kamus Penjelas Istilah Teknis:** Jika menggunakan istilah properti/finansial, selalu sertakan arti bahasa Indonesianya di dalam tanda kurung:
+   * *Rental Yield* ➔ *(keuntungan sewa per tahun)*
+   * *Capital Gain / Appreciation* ➔ *(kenaikan harga tanah dari tahun ke tahun)*
+   * *BEP / Payback Period* ➔ *(waktu balik modal)*
+3. **Format Enak Dibaca di Layar HP (*Mobile-Friendly Scannable*):** Paragraf pendek (2–3 baris per paragraf), poin-poin tebal (*bullet points*), dan tabel perbandingan ringkas agar tidak membuat mata lelah.
+
+---
+
+## 🎯 2. Pemetaan 4 Profil Pembeli Properti Gedung Miliaran di Jatinangor
 
 ```
                                     ┌──────────────────────────────────────────────┐
@@ -20,8 +43,8 @@ Konten ini secara sadar **menghindari topik receh mahasiswa / pencari sewa kamar
          ▼                     ▼                                                       ▼                     ▼
 ┌──────────────────┐  ┌──────────────────┐                                   ┌──────────────────┐  ┌──────────────────┐
 │     SEGMEN 1     │  │     SEGMEN 2     │                                   │     SEGMEN 3     │  │     SEGMEN 4     │
-│ Pengusaha Daerah │  │  Eksekutif Senior│                                   │ Investor Serial  │  │ Keluarga Mapan   │
-│ & Juragan Bisnis │  │  & Calon Pensiun │                                   │  Properti Sewa   │  │  Ultra Affluent  │
+│ Pengusaha Daerah │  │ Profesional Senior│                                   │ Investor Serial  │  │ Keluarga Mapan   │
+│ & Juragan Bisnis │  │ Dokter & Pensiun │                                   │  Properti Sewa   │  │  Ultra Affluent  │
 └──────────────────┘  └──────────────────┘                                   └──────────────────┘  └──────────────────┘
 ```
 
@@ -34,7 +57,7 @@ Konten ini secara sadar **menghindari topik receh mahasiswa / pencari sewa kamar
 
 ---
 
-## 🏛️ 2. Empat Pilar Konten High-Ticket (High-Net-Worth Content Pillars)
+## 🏛️ 3. Empat Pilar Konten High-Ticket (High-Net-Worth Content Pillars)
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
@@ -64,7 +87,7 @@ Konten ini secara sadar **menghindari topik receh mahasiswa / pencari sewa kamar
 * **Bank Topik 6–12 Bulan:**
   1. *Strategi Membangun 'Pabrik Gaji Bulanan' Rp 15–25 Juta per Bulan dari Aset Properti Produktif untuk Masa Pensiun.*
   2. *Perbandingan Imbal Hasil Bersih: Deposito Bank (Bunga 3-4%) vs Kepemilikan Gedung Properti Sewa Mahasiswa (Yield 8-12%).*
-  3. *Cara Mengamankan Likuiditas Tabungan dari Gerusan Inflasi Melalui Kepemilikan Aset Nyata (Tangible Asset).*
+  3. *Cara Mengamankan Likuiditas Tabungan dari Gerusan Inflasi Melalui Kepemilikan Aset Nyata (Tangible Asset) Berlegalitas SHM.*
   4. *Analisis Waktu Balik Modal (BEP) dan Net Rental Yield pada Properti Sewa Multi-Pintu.*
   5. *Strategi Melindungi Kekayaan Keluarga (Wealth Preservation) Melalui Properti Komersial Tapak Berlegalitas SHM.*
 
@@ -81,7 +104,7 @@ Konten ini secara sadar **menghindari topik receh mahasiswa / pencari sewa kamar
 
 ---
 
-### 🏢 PILAR 4: Arsitektur Komersial, Standar Mutu & Yield Maximization (Design & Operations)
+### 🏢 PILAR 4: Arsitektur Komersial, Standar Mutu & Nilai Sewa (Design & Operations)
 * **Tujuan:** Memberikan wawasan teknis arsitektur komersial yang efisien, tahan lama, dan menghasilkan harga sewa premium.
 * **Bank Topik 6–12 Bulan:**
   1. *Standar Desain Gedung Rumah Kost Modern Tropis yang Tahan Lama dan Minim Biaya Maintenance Jangka Panjang.*
@@ -92,7 +115,7 @@ Konten ini secara sadar **menghindari topik receh mahasiswa / pencari sewa kamar
 
 ---
 
-## 🔗 3. Formula "Soft CTA" (Jembatan Menuju Penjualan di Akhir Setiap Artikel)
+## 🔗 4. Formula "Soft CTA" (Jembatan Menuju Penjualan di Akhir Setiap Artikel)
 
 Setiap artikel di atas **wajib memberikan 90% konten edukasi bernilai tinggi bagi investor/pengusaha**, dan di 10% bagian akhir disisipkan jembatan konversi yang berkelas:
 
@@ -104,6 +127,6 @@ Setiap artikel di atas **wajib memberikan 90% konten edukasi bernilai tinggi bag
 
 ---
 
-## 🎨 4. Standar Visual AI Asset Generation (Image Prompts)
+## 🎨 5. Standar Visual AI Asset Generation (Image Prompts)
 
 Semua artikel wajib dilengkapi cover gambar fotorealistik beresolusi tinggi (16:9) dengan standar fotografi arsitektur korporat mewah (*luxury corporate architectural photography*).
