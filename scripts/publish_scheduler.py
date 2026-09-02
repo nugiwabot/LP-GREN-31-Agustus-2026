@@ -205,7 +205,9 @@ def inject_url_into_sitemap(item, meta, release_dt):
         return True
 
     date_str = release_dt.strftime("%Y-%m-%d")
-    url_entry = f'''  <!-- Artikel: {meta["title"]} -->
+    import html
+    xml_title = html.escape(meta["title"])
+    url_entry = f'''  <!-- Artikel: {xml_title} -->
   <url>
     <loc>{loc_url}</loc>
     <lastmod>{date_str}</lastmod>
@@ -213,7 +215,7 @@ def inject_url_into_sitemap(item, meta, release_dt):
     <priority>0.85</priority>
     <image:image>
       <image:loc>{meta["image_sitemap"]}</image:loc>
-      <image:title>{meta["title"]}</image:title>
+      <image:title>{xml_title}</image:title>
     </image:image>
   </url>
 '''
