@@ -30,4 +30,3 @@ Allow: /
 
 # Sitemap Location
 Sitemap: https://www.gren.biz.id/sitemap.xml
-Sitemap: https://grenpropertykost.com/sitemap.xml

@@ -27,6 +27,8 @@ jobs:
           python-version: '3.10'
 
       - name: Run Scheduled Publishing Engine
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
         run: |
           python scripts/publish_scheduler.py
 

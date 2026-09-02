@@ -1,93 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  
+
   <!-- 1. Halaman Beranda Utama -->
   <url>
     <loc>https://www.gren.biz.id/</loc>
-    <lastmod>2026-08-31</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://www.gren.biz.id/assets/images/rumah-asli.jpg</image:loc>
-      <image:title>GREN Propertykost Jatinangor — Investasi Rukost Eksklusif</image:title>
-      <image:caption>Gedung rukost modern multi-lantai di kawasan Ring-1 kampus UNPAD dan ITB Jatinangor</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.gren.biz.id/assets/images/gallery-2.webp</image:loc>
-      <image:title>Interior Kamar Tidur Full Furnished GREN Propertykost</image:title>
     </image:image>
   </url>
 
   <!-- 2. Halaman Direktori Artikel / Blog Hub -->
   <url>
     <loc>https://www.gren.biz.id/artikel</loc>
-    <lastmod>2026-08-31</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- 3. Artikel Makro 1: Dampak Tol Cisumdawu -->
-  <url>
-    <loc>https://www.gren.biz.id/artikel/dampak-tol-cisumdawu-properti-jatinangor</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://www.gren.biz.id/assets/images/tol-cisumdawu-jatinangor.jpg</image:loc>
-      <image:title>Dampak Tol Cisumdawu pada Properti Jatinangor — GREN Property</image:title>
-    </image:image>
-  </url>
-
-  <!-- 4. Artikel Pensiun & Wealth: Pasif Income Pensiun -->
-  <url>
-    <loc>https://www.gren.biz.id/artikel/pasif-income-pensiun-properti-sewa</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://www.gren.biz.id/assets/images/pensiun-passive-income.jpg</image:loc>
-      <image:title>Pasif Income Rp 20 Juta/Bulan untuk Pensiun — GREN Property</image:title>
-    </image:image>
-  </url>
-
-  <!-- 5. Artikel Pilar 1: Panduan Investasi Rumah Kost Jatinangor -->
-  <url>
-    <loc>https://www.gren.biz.id/artikel/panduan-investasi-rumah-kost-jatinangor-unpad</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://www.gren.biz.id/assets/images/rumah-asli.jpg</image:loc>
-      <image:title>Panduan Lengkap Investasi Rumah Kost di Episentrum UNPAD &amp; ITB Jatinangor</image:title>
-    </image:image>
-  </url>
-
-  <!-- 6. Artikel Pilar 2: Analisis Rental Yield & Okupansi Kost -->
-  <url>
-    <loc>https://www.gren.biz.id/artikel/analisis-rental-yield-dan-okupansi-kost-jatinangor</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://www.gren.biz.id/assets/images/gallery-2.webp</image:loc>
-      <image:title>Analisis Rental Yield 8%–12% &amp; Okupansi Kost Mahasiswa Jatinangor 2026</image:title>
-    </image:image>
-  </url>
-
-  <!-- 7. Artikel Pilar 3: Perbandingan Apartemen vs Rumah Kost Tapak SHM -->
-  <url>
-    <loc>https://www.gren.biz.id/artikel/perbandingan-apartemen-vs-rumah-kost-tapak-jatinangor</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://www.gren.biz.id/assets/images/gallery-3.webp</image:loc>
-      <image:title>Perbandingan Investasi Apartemen Mahasiswa vs Rumah Kost Tapak SHM di Jatinangor</image:title>
-    </image:image>
-  </url>
-
-  <!-- Artikel: Akses Jalan &amp; Pedestrian Jatinangor -->
+  <!-- Artikel: Akses Jalan &amp; Pedestrian Jatinangor — GREN Property -->
   <url>
     <loc>https://www.gren.biz.id/artikel/akses-jalan-dan-jalur-pedestrian-kampus-jatinangor</loc>
     <lastmod>2026-09-01</lastmod>
@@ -95,11 +32,11 @@
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.gren.biz.id/assets/images/artikel/jalur-pedestrian-kampus-unpad.webp</image:loc>
-      <image:title>Akses Jalan &amp; Pedestrian Jatinangor</image:title>
+      <image:title>Akses Jalan &amp; Pedestrian Jatinangor — GREN Property</image:title>
     </image:image>
   </url>
 
-  <!-- Artikel: Pertumbuhan IHPR Properti Jabar -->
+  <!-- Artikel: Pertumbuhan IHPR Properti Jabar — GREN Property -->
   <url>
     <loc>https://www.gren.biz.id/artikel/analisis-pertumbuhan-indeks-harga-properti-residensial-ihpr-jabar</loc>
     <lastmod>2026-09-01</lastmod>
@@ -107,11 +44,23 @@
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.gren.biz.id/assets/images/artikel/investasi-emas-vs-properti.webp</image:loc>
-      <image:title>Pertumbuhan IHPR Properti Jabar</image:title>
+      <image:title>Pertumbuhan IHPR Properti Jabar — GREN Property</image:title>
     </image:image>
   </url>
 
-  <!-- Artikel: Analisis Tata Ruang Jatinangor 2030 -->
+  <!-- Artikel: Rental Yield 8–12% Kost Jatinangor — GREN Propertykost -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/analisis-rental-yield-dan-okupansi-kost-jatinangor</loc>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/kamar-kost-meja-belajar-ac.webp</image:loc>
+      <image:title>Rental Yield 8–12% Kost Jatinangor — GREN Propertykost</image:title>
+    </image:image>
+  </url>
+
+  <!-- Artikel: Analisis Tata Ruang Jatinangor 2030 — GREN Property -->
   <url>
     <loc>https://www.gren.biz.id/artikel/analisis-tata-ruang-jatinangor-2030</loc>
     <lastmod>2026-09-02</lastmod>
@@ -119,7 +68,55 @@
     <priority>0.85</priority>
     <image:image>
       <image:loc>https://www.gren.biz.id/assets/images/artikel/kawasan-bebas-banjir-tinggi.webp</image:loc>
-      <image:title>Analisis Tata Ruang Jatinangor 2030</image:title>
+      <image:title>Analisis Tata Ruang Jatinangor 2030 — GREN Property</image:title>
+    </image:image>
+  </url>
+
+  <!-- Artikel: Dampak Tol Cisumdawu pada Properti Jatinangor — GREN Property -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/dampak-tol-cisumdawu-properti-jatinangor</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/bus-trans-metro-pasundan.webp</image:loc>
+      <image:title>Dampak Tol Cisumdawu pada Properti Jatinangor — GREN Property</image:title>
+    </image:image>
+  </url>
+
+  <!-- Artikel: Panduan Investasi Rumah Kost Jatinangor — GREN Propertykost -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/panduan-investasi-rumah-kost-jatinangor-unpad</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/rumah-asli.jpg</image:loc>
+      <image:title>Panduan Investasi Rumah Kost Jatinangor — GREN Propertykost</image:title>
+    </image:image>
+  </url>
+
+  <!-- Artikel: Pasif Income Rp 20 Juta/Bulan untuk Pensiun — GREN Property -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/pasif-income-pensiun-properti-sewa</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/investasi-emas-vs-properti.webp</image:loc>
+      <image:title>Pasif Income Rp 20 Juta/Bulan untuk Pensiun — GREN Property</image:title>
+    </image:image>
+  </url>
+
+  <!-- Artikel: Apartemen vs Rumah Kost Tapak Jatinangor — GREN Propertykost -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/perbandingan-apartemen-vs-rumah-kost-tapak-jatinangor</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/fasad-kost-modern-scandinavian.webp</image:loc>
+      <image:title>Apartemen vs Rumah Kost Tapak Jatinangor — GREN Propertykost</image:title>
     </image:image>
   </url>
 

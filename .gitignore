@@ -1,0 +1,9 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Internal workspace / plans (not part of the public site)
+.kilo/
+
+# Scratch experiments
+scratch/

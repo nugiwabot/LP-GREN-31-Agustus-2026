@@ -15,7 +15,10 @@ import sys
 import json
 import shutil
 import re
+import urllib.request
 from datetime import datetime, timezone, timedelta
+
+from _common import MONTH_NAMES_ID, format_id_date, to_absolute_image
 
 # WIB Timezone (UTC+7)
 WIB = timezone(timedelta(hours=7))
@@ -25,11 +28,6 @@ MANIFEST_PATH = os.path.join(ROOT_DIR, "_scheduled_content", "manifest.json")
 ARTIKEL_INDEX_PATH = os.path.join(ROOT_DIR, "artikel", "index.html")
 SITEMAP_PATH = os.path.join(ROOT_DIR, "sitemap.xml")
 ARTICLES_DRAFT_DIR = os.path.join(ROOT_DIR, "_scheduled_content", "articles")
-
-MONTH_NAMES_ID = [
-    "", "Januari", "Februari", "Maret", "April", "Mei", "Juni",
-    "Juli", "Agustus", "September", "Oktober", "November", "Desember"
-]
 
 CATEGORY_MAP = {
     "infrastruktur & kawasan": {"slug": "panduan", "badge": "Infrastruktur & Makro"},
@@ -52,12 +50,6 @@ def load_manifest():
 def save_manifest(manifest):
     with open(MANIFEST_PATH, "w", encoding="utf-8") as f:
         json.dump(manifest, f, indent=2, ensure_ascii=False)
-
-def format_id_date(dt):
-    day = dt.day
-    month = MONTH_NAMES_ID[dt.month]
-    year = dt.year
-    return f"{day} {month} {year}"
 
 def parse_article_meta(slug, item):
     """Extract metadata from draft HTML file or fallback to manifest data."""
@@ -104,8 +96,7 @@ def parse_article_meta(slug, item):
             else:
                 image_rel = img_raw
 
-            filename = os.path.basename(img_raw)
-            image_sitemap = f"https://www.gren.biz.id/assets/images/artikel/{filename}"
+            image_sitemap = to_absolute_image(img_raw)
 
     # Category resolution
     cat_raw = (item.get("category") or "").lower().strip()
@@ -228,6 +219,41 @@ def inject_url_into_sitemap(item, meta, release_dt):
         return True
     return False
 
+def find_indexnow_key():
+    """IndexNow key: prefer env var (GitHub secret), fall back to <32-hex>.txt at repo root."""
+    env_key = os.environ.get("INDEXNOW_KEY", "").strip()
+    if env_key:
+        return env_key
+    for fname in os.listdir(ROOT_DIR):
+        if re.fullmatch(r"[0-9a-f]{32}\.txt", fname):
+            return fname[:32]
+    return None
+
+
+def ping_indexnow(urls, key):
+    """Notify IndexNow (Bing/Yandex/etc) about freshly published URLs."""
+    if not key or not urls:
+        return False
+    payload = {
+        "host": "www.gren.biz.id",
+        "key": key,
+        "urlList": urls,
+    }
+    req = urllib.request.Request(
+        "https://api.indexnow.org/indexnow",
+        data=json.dumps(payload).encode("utf-8"),
+        headers={"Content-Type": "application/json; charset=utf-8"},
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            print(f"[OK] IndexNow ping status {resp.status} for {len(urls)} URL(s).")
+            return True
+    except Exception as e:
+        print(f"[WARN] IndexNow ping failed (non-fatal): {e}")
+        return False
+
+
 def run_publisher():
     manifest = load_manifest()
     if not manifest:
@@ -238,6 +264,7 @@ def run_publisher():
     print(f"[INFO] Running GREN Content Scheduler at {now_iso} WIB")
 
     published_count = 0
+    new_urls = []
 
     for item in manifest.get("articles", []):
         if item.get("status") == "scheduled":
@@ -275,6 +302,7 @@ def run_publisher():
                 item["status"] = "published"
                 item["live_url"] = f"/artikel/{slug}"
                 item["published_at"] = now_iso
+                new_urls.append(f"https://www.gren.biz.id/artikel/{slug}")
                 published_count += 1
 
     if published_count > 0:
@@ -283,6 +311,12 @@ def run_publisher():
         manifest["scheduled_count"] = len([a for a in manifest["articles"] if a.get("status") == "scheduled"])
         save_manifest(manifest)
         print(f"[SUCCESS] Successfully published {published_count} new article(s)! (Total published: {manifest['published_count']})")
+        # Notify IndexNow for immediate Bing/Yandex discovery
+        indexnow_key = find_indexnow_key()
+        if indexnow_key:
+            ping_indexnow(["https://www.gren.biz.id/"] + new_urls, indexnow_key)
+        else:
+            print("[INFO] No IndexNow key file found; skipping ping.")
         return True
     else:
         print("[INFO] No pending scheduled articles reached their release timestamp.")
