@@ -11,7 +11,7 @@ Anda **TIDAK PERLU** membuka atau mengedit file `index.html`. Cukup buka file **
 ```javascript
 window.LANDING_CONFIG = {
   // 1. Ganti dengan nomor WhatsApp penerima lead Anda (awali dengan 628, tanpa + atau spasi)
-  nomorWhatsApp: "6281234567890", 
+  nomorWhatsApp: "6282246846950", 
 
   // 2. Data Brand / Properti
   namaProperti: "GREN Propertykost Jatinangor",

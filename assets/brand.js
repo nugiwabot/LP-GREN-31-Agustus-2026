@@ -7,7 +7,7 @@
 
   function getCleanPhone() {
     const cfg = window.LANDING_CONFIG || {};
-    return (cfg.nomorWhatsApp || '6281234567890').replace(/[^0-9]/g, '');
+    return (cfg.nomorWhatsApp || '6282246846950').replace(/[^0-9]/g, '');
   }
 
   function trackLeadEvent(data) {

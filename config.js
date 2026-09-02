@@ -11,7 +11,7 @@
 window.LANDING_CONFIG = {
   // 1. INFORMASI KONTAK RESMI
   // Format No. WhatsApp: 628xxxxxxxxxx (awali 628, tanpa +, spasi, atau strip)
-  nomorWhatsApp: "6281234567890",
+  nomorWhatsApp: "6282246846950",
 
   // Email Resmi Properti
   emailResmi: "grenpropertykost@gmail.com",
