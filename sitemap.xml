@@ -87,4 +87,40 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Akses Jalan & Pedestrian Jatinangor -->
+  <url>
+    <loc>https://grenpropertykost.vercel.app/artikel/akses-jalan-dan-jalur-pedestrian-kampus-jatinangor</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://grenpropertykost.vercel.app/assets/images/artikel/jalur-pedestrian-kampus-unpad.webp</image:loc>
+      <image:title>Akses Jalan & Pedestrian Jatinangor</image:title>
+    </image:image>
+  </url>
+
+  <!-- Artikel: Pertumbuhan IHPR Properti Jabar -->
+  <url>
+    <loc>https://grenpropertykost.vercel.app/artikel/analisis-pertumbuhan-indeks-harga-properti-residensial-ihpr-jabar</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://grenpropertykost.vercel.app/assets/images/artikel/investasi-emas-vs-properti.webp</image:loc>
+      <image:title>Pertumbuhan IHPR Properti Jabar</image:title>
+    </image:image>
+  </url>
+
+  <!-- Artikel: Analisis Tata Ruang Jatinangor 2030 -->
+  <url>
+    <loc>https://grenpropertykost.vercel.app/artikel/analisis-tata-ruang-jatinangor-2030</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://grenpropertykost.vercel.app/assets/images/artikel/kawasan-bebas-banjir-tinggi.webp</image:loc>
+      <image:title>Analisis Tata Ruang Jatinangor 2030</image:title>
+    </image:image>
+  </url>
+
 </urlset>

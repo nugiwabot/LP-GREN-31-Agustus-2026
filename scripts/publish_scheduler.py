@@ -5,16 +5,16 @@ GREN Propertykost - Automated Scheduled Publishing Engine
 This script reads `_scheduled_content/manifest.json`, checks if any scheduled
 article has reached its release timestamp, and automatically publishes it:
 1. Copies the article HTML into `artikel/<slug>/index.html`
-2. Copies the image into `assets/images/<image_name>`
-3. Injects the new card into the top of the grid in `artikel/index.html`
-4. Updates `sitemap.xml` with the new URL and image metadata
-5. Updates the manifest status to 'published'
+2. Injects the new card into the top of the grid in `artikel/index.html`
+3. Updates `sitemap.xml` with the new URL and image metadata
+4. Updates the manifest status to 'published'
 """
 
 import os
 import sys
 import json
 import shutil
+import re
 from datetime import datetime, timezone, timedelta
 
 # WIB Timezone (UTC+7)
@@ -24,12 +24,22 @@ ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MANIFEST_PATH = os.path.join(ROOT_DIR, "_scheduled_content", "manifest.json")
 ARTIKEL_INDEX_PATH = os.path.join(ROOT_DIR, "artikel", "index.html")
 SITEMAP_PATH = os.path.join(ROOT_DIR, "sitemap.xml")
+ARTICLES_DRAFT_DIR = os.path.join(ROOT_DIR, "_scheduled_content", "articles")
 
-CATEGORY_CONFIG = {
-    "panduan": {"name": "Infrastruktur & Makro", "bg": "bg-emerald-700", "text": "text-emerald-700", "badge_bg": "bg-emerald-50", "badge_label": "Makro Trend"},
-    "finansial": {"name": "Finansial & Yield", "bg": "bg-amber-600", "text": "text-amber-600", "badge_bg": "bg-emerald-50", "badge_label": "Simulasi Data"},
-    "pensiun": {"name": "Pensiun & Wealth", "bg": "bg-amber-700", "text": "text-amber-700", "badge_bg": "bg-amber-50", "badge_label": "Hari Tua Aman"},
-    "komparasi": {"name": "Legalitas & Komparasi", "bg": "bg-indigo-700", "text": "text-indigo-700", "badge_bg": "bg-indigo-50", "badge_label": "Head to Head"}
+MONTH_NAMES_ID = [
+    "", "Januari", "Februari", "Maret", "April", "Mei", "Juni",
+    "Juli", "Agustus", "September", "Oktober", "November", "Desember"
+]
+
+CATEGORY_MAP = {
+    "infrastruktur & kawasan": {"slug": "panduan", "badge": "Infrastruktur & Makro"},
+    "infrastruktur & makro": {"slug": "panduan", "badge": "Infrastruktur & Makro"},
+    "panduan investasi": {"slug": "panduan", "badge": "Panduan Investasi"},
+    "finansial & arus kas": {"slug": "finansial", "badge": "Finansial & Yield"},
+    "finansial & yield": {"slug": "finansial", "badge": "Finansial & Yield"},
+    "wealth strategy & pensiun": {"slug": "pensiun", "badge": "Pensiun & Wealth"},
+    "pensiun & wealth": {"slug": "pensiun", "badge": "Pensiun & Wealth"},
+    "legalitas & komparasi": {"slug": "komparasi", "badge": "Legalitas & Komparasi"}
 }
 
 def load_manifest():
@@ -43,7 +53,76 @@ def save_manifest(manifest):
     with open(MANIFEST_PATH, "w", encoding="utf-8") as f:
         json.dump(manifest, f, indent=2, ensure_ascii=False)
 
-def inject_card_into_index(item):
+def format_id_date(dt):
+    day = dt.day
+    month = MONTH_NAMES_ID[dt.month]
+    year = dt.year
+    return f"{day} {month} {year}"
+
+def parse_article_meta(slug, item):
+    """Extract metadata from draft HTML file or fallback to manifest data."""
+    html_path = os.path.join(ARTICLES_DRAFT_DIR, f"{slug}.html")
+    
+    title = item.get("title", "").replace(" — GREN Property", "").replace(" — GREN Propertykost", "").strip()
+    description = item.get("meta_description") or item.get("description", "")
+    author = "Tim Riset GREN"
+    image_rel = "../assets/images/gallery-1.webp"
+    image_sitemap = "https://grenpropertykost.vercel.app/assets/images/gallery-1.webp"
+    read_time = "5 Menit"
+
+    if os.path.exists(html_path):
+        with open(html_path, "r", encoding="utf-8") as f:
+            content = f.read()
+
+        # Extract title from <title> or <h1>
+        m_title = re.search(r'<title>([^<]+)</title>', content, re.IGNORECASE)
+        if m_title:
+            t = m_title.group(1).split("—")[0].split("-")[0].strip()
+            if t:
+                title = t
+
+        # Extract author
+        m_auth = re.search(r'<meta\s+name=[\'"]author[\'"]\s+content=[\'"]([^\'"]+)[\'"]', content, re.IGNORECASE)
+        if m_auth:
+            author = m_auth.group(1).replace(" GREN Property", "").replace(" GREN Propertykost", "").strip()
+
+        # Extract description
+        m_desc = re.search(r'<meta\s+name=[\'"]description[\'"]\s+content=[\'"]([^\'"]+)[\'"]', content, re.IGNORECASE)
+        if m_desc:
+            description = m_desc.group(1).strip()
+
+        # Extract og:image
+        m_img = re.search(r'<meta\s+property=[\'"]og:image[\'"]\s+content=[\'"]([^\'"]+)[\'"]', content, re.IGNORECASE)
+        if m_img:
+            img_raw = m_img.group(1)
+            # normalize relative path for artikel/index.html
+            # if img_raw is ../../assets/images/artikel/xxx.webp -> ../assets/images/artikel/xxx.webp
+            if img_raw.startswith("../../"):
+                image_rel = "../" + img_raw[6:]
+            elif img_raw.startswith("/"):
+                image_rel = ".." + img_raw
+            else:
+                image_rel = img_raw
+
+            filename = os.path.basename(img_raw)
+            image_sitemap = f"https://grenpropertykost.vercel.app/assets/images/artikel/{filename}"
+
+    # Category resolution
+    cat_raw = (item.get("category") or "").lower().strip()
+    cat_data = CATEGORY_MAP.get(cat_raw, {"slug": "panduan", "badge": item.get("category", "Panduan Investasi")})
+
+    return {
+        "title": title,
+        "description": description,
+        "author": author,
+        "image_rel": image_rel,
+        "image_sitemap": image_sitemap,
+        "read_time": read_time,
+        "category_slug": cat_data["slug"],
+        "category_badge": cat_data["badge"]
+    }
+
+def inject_card_into_index(item, meta, release_dt):
     if not os.path.exists(ARTIKEL_INDEX_PATH):
         print(f"[ERROR] artikel/index.html not found!")
         return False
@@ -51,75 +130,67 @@ def inject_card_into_index(item):
     with open(ARTIKEL_INDEX_PATH, "r", encoding="utf-8") as f:
         html = f.read()
 
-    cat_info = CATEGORY_CONFIG.get(item["category"], CATEGORY_CONFIG["panduan"])
+    slug = item["slug"]
     
-    card_html = f'''        <!-- CARD: {item["title"]} -->
-        <article class="article-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="{item["category"]}">
-          <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
-            <a href="/artikel/{item["slug"]}">
-              <img 
-                src="../assets/images/{item["image"]}" 
-                alt="{item["title"]}" 
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-            </a>
-            <div class="absolute top-3 left-3">
-              <span class="{cat_info["bg"]} text-white text-[11px] font-extrabold px-2.5 py-1 rounded-md shadow">
-                {cat_info["name"]}
-              </span>
-            </div>
-            <div class="absolute bottom-3 right-3 bg-slate-900/80 backdrop-blur text-white text-[11px] font-bold px-2 py-0.5 rounded">
-              ⏱️ {item.get("read_time", "5 Menit")}
-            </div>
-          </div>
+    # Avoid duplicate injection
+    if f'/artikel/{slug}' in html:
+        print(f"[SKIP] Card for '{slug}' already present in artikel/index.html")
+        return True
 
-          <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+    date_str = format_id_date(release_dt)
+    
+    card_html = f'''        <!-- CARD: {meta["title"]} -->
+        <article class="article-card bg-white border border-slate-200 flex flex-col group" data-category="{meta["category_slug"]}">
+          <div class="relative overflow-hidden aspect-[16/10] bg-slate-100">
+            <a href="/artikel/{slug}">
+              <img src="{meta["image_rel"]}" alt="{meta["title"]}" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" />
+            </a>
+            <span class="absolute top-4 left-4 badge badge-dark">{meta["category_badge"]}</span>
+          </div>
+          <div class="p-7 flex-grow flex flex-col justify-between">
             <div>
-              <div class="text-xs text-slate-500 font-semibold mb-2">{item.get("publish_display_date", "Terbaru")} • Oleh {item.get("author", "Tim Riset GREN")}</div>
-              <h3 class="text-lg font-bold text-slate-900 group-hover:text-brand-700 transition-colors line-clamp-2 leading-snug">
-                <a href="/artikel/{item["slug"]}">
-                  {item["title"]}
-                </a>
+              <div class="text-xs text-slate-500 font-medium mb-2">{date_str} · {meta["author"]}</div>
+              <h3 class="font-serif text-xl text-slate-900 leading-snug group-hover:text-brand-700 transition-colors line-clamp-2">
+                <a href="/artikel/{slug}">{meta["title"]}</a>
               </h3>
-              <p class="text-slate-600 text-xs sm:text-sm mt-2.5 line-clamp-3 leading-relaxed">
-                {item["description"]}
+              <p class="mt-3 text-sm text-slate-600 line-clamp-3 leading-relaxed">
+                {meta["description"]}
               </p>
             </div>
-
-            <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-              <a href="/artikel/{item["slug"]}" class="text-xs font-bold text-brand-700 group-hover:underline flex items-center gap-1">
-                <span>Baca Selengkapnya</span> &rarr;
+            <div class="pt-5 mt-6 border-t border-slate-200 flex items-center justify-between">
+              <a href="/artikel/{slug}" class="text-xs font-bold text-brand-700 uppercase tracking-[0.14em] flex items-center gap-1.5 group-hover:gap-3 transition-all">
+                Baca Artikel
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
               </a>
-              <span class="text-[11px] font-bold {cat_info["text"]} {cat_info["badge_bg"]} px-2 py-0.5 rounded">{cat_info["badge_label"]}</span>
+              <span class="text-[0.62rem] uppercase tracking-[0.14em] text-slate-400 font-bold">{meta["read_time"]}</span>
             </div>
           </div>
         </article>
 '''
 
-        # Inject right after `<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="articles-grid">`
     grid_marker = '<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="articles-grid">'
     if grid_marker in html:
         parts = html.split(grid_marker, 1)
         html = parts[0] + grid_marker + "\n" + card_html + parts[1]
         
-        # Update article count text if present
-        # e.g. <span id="article-count"...>5 Artikel Tersedia</span>
-        import re
+        # Recount all article cards in index
+        total_cards = len(re.findall(r'<article class="article-card', html))
+        
         html = re.sub(
-            r'(<span id="article-count"[^>]*>)\s*\d+\s*Artikel Tersedia(</span>)',
-            lambda m: f"{m.group(1)} {get_total_published_count()} Artikel Tersedia {m.group(2)}",
+            r'(<span id="article-count"[^>]*>)\s*\d+\s*Artikel\s*(?:Tersedia|Ditemukan)?(</span>)',
+            f'\\g<1>\n          {total_cards} Artikel Tersedia\n        \\g<2>',
             html
         )
 
         with open(ARTIKEL_INDEX_PATH, "w", encoding="utf-8") as f:
             f.write(html)
-        print(f"[OK] Injected card for '{item['slug']}' into artikel/index.html")
+        print(f"[OK] Injected card for '{slug}' into artikel/index.html (Total: {total_cards})")
         return True
     else:
         print("[ERROR] Could not find #articles-grid marker in artikel/index.html")
         return False
 
-def inject_url_into_sitemap(item):
+def inject_url_into_sitemap(item, meta, release_dt):
     if not os.path.exists(SITEMAP_PATH):
         print(f"[ERROR] sitemap.xml not found!")
         return False
@@ -127,16 +198,22 @@ def inject_url_into_sitemap(item):
     with open(SITEMAP_PATH, "r", encoding="utf-8") as f:
         xml = f.read()
 
-    today_str = datetime.now(WIB).strftime("%Y-%m-%d")
-    url_entry = f'''  <!-- Artikel: {item["title"]} -->
+    slug = item["slug"]
+    loc_url = f"https://grenpropertykost.vercel.app/artikel/{slug}"
+    
+    if loc_url in xml:
+        return True
+
+    date_str = release_dt.strftime("%Y-%m-%d")
+    url_entry = f'''  <!-- Artikel: {meta["title"]} -->
   <url>
-    <loc>https://grenpropertykost.vercel.app/artikel/{item["slug"]}</loc>
-    <lastmod>{today_str}</lastmod>
+    <loc>{loc_url}</loc>
+    <lastmod>{date_str}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://grenpropertykost.vercel.app/assets/images/{item["image"]}</image:loc>
-      <image:title>{item["title"]}</image:title>
+      <image:loc>{meta["image_sitemap"]}</image:loc>
+      <image:title>{meta["title"]}</image:title>
     </image:image>
   </url>
 '''
@@ -145,15 +222,9 @@ def inject_url_into_sitemap(item):
         xml = xml.replace("</urlset>", url_entry + "\n</urlset>")
         with open(SITEMAP_PATH, "w", encoding="utf-8") as f:
             f.write(xml)
-        print(f"[OK] Added '{item['slug']}' to sitemap.xml")
+        print(f"[OK] Added '{slug}' to sitemap.xml")
         return True
     return False
-
-def get_total_published_count():
-    manifest = load_manifest()
-    if not manifest:
-        return 5
-    return len([item for item in manifest.get("articles", []) if item.get("status") == "published"])
 
 def run_publisher():
     manifest = load_manifest()
@@ -168,47 +239,48 @@ def run_publisher():
 
     for item in manifest.get("articles", []):
         if item.get("status") == "scheduled":
-            release_time_str = item.get("release_timestamp")
+            release_time_str = item.get("publish_date") or item.get("release_timestamp")
             if not release_time_str:
                 continue
 
             release_time = datetime.fromisoformat(release_time_str)
             if release_time <= now_wib:
-                print(f"[PROCESS] Due article found: {item['title']} ({item['slug']})")
+                slug = item["slug"]
+                print(f"[PROCESS] Publishing article #{item['id']}: {item['title']} ({slug})")
 
-                # 1. Copy article HTML
-                src_html = os.path.join(ROOT_DIR, "_scheduled_content", "articles", f"{item['slug']}.html")
-                dst_dir = os.path.join(ROOT_DIR, "artikel", item["slug"])
+                # Parse meta from draft HTML
+                meta = parse_article_meta(slug, item)
+
+                # 1. Copy article HTML to live directory
+                src_html = os.path.join(ROOT_DIR, "_scheduled_content", "articles", f"{slug}.html")
+                dst_dir = os.path.join(ROOT_DIR, "artikel", slug)
                 dst_html = os.path.join(dst_dir, "index.html")
 
                 if os.path.exists(src_html):
                     os.makedirs(dst_dir, exist_ok=True)
                     shutil.copy2(src_html, dst_html)
-                    print(f"  -> Created article page at {dst_html}")
+                    print(f"  -> Published article page to {dst_html}")
                 else:
-                    print(f"  [WARN] Source HTML not found at {src_html}, skipping page copy.")
+                    print(f"  [WARN] Source HTML not found at {src_html}")
 
-                # 2. Copy image
-                src_img = os.path.join(ROOT_DIR, "_scheduled_content", "images", item["image"])
-                dst_img = os.path.join(ROOT_DIR, "assets", "images", item["image"])
-                if os.path.exists(src_img):
-                    shutil.copy2(src_img, dst_img)
-                    print(f"  -> Copied image to {dst_img}")
+                # 2. Inject card into catalog artikel/index.html
+                inject_card_into_index(item, meta, release_time)
 
-                # 3. Inject card into catalog
-                inject_card_into_index(item)
+                # 3. Inject URL into sitemap.xml
+                inject_url_into_sitemap(item, meta, release_time)
 
-                # 4. Inject URL into sitemap
-                inject_url_into_sitemap(item)
-
-                # 5. Update status
+                # 4. Update manifest entry
                 item["status"] = "published"
+                item["live_url"] = f"/artikel/{slug}"
                 item["published_at"] = now_iso
                 published_count += 1
 
     if published_count > 0:
+        # Update manifest summary counts
+        manifest["published_count"] = len([a for a in manifest["articles"] if a.get("status") == "published"])
+        manifest["scheduled_count"] = len([a for a in manifest["articles"] if a.get("status") == "scheduled"])
         save_manifest(manifest)
-        print(f"[SUCCESS] Successfully published {published_count} article(s)!")
+        print(f"[SUCCESS] Successfully published {published_count} new article(s)! (Total published: {manifest['published_count']})")
         return True
     else:
         print("[INFO] No pending scheduled articles reached their release timestamp.")
