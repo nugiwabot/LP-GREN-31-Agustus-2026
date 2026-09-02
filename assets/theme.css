@@ -3,8 +3,6 @@
  * Fonts, base styles, and shared component classes.
  * ========================================================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700&display=swap');
-
 html {
   scroll-behavior: smooth;
 }
