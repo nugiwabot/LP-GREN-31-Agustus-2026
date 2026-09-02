@@ -1,0 +1,6 @@
+# Ignore internal automation & scratch tools from Vercel public deploy
+scratch/
+SEO Website GREN Propertykost Jatinangor/
+.env*
+*.pyc
+__pycache__/
