@@ -120,4 +120,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Legalitas Kontrak Staf Kost -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/aspek-legalitas-dan-kontrak-kerja-staf-pengelola-kost</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/ajb-notaris-transaksi.webp</image:loc>
+      <image:title>Legalitas Kontrak Staf Kost</image:title>
+    </image:image>
+  </url>
+
 </urlset>

@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 8,
-  "scheduled_count": 52,
+  "published_count": 9,
+  "scheduled_count": 51,
   "articles": [
     {
       "id": 1,
@@ -101,13 +101,15 @@
     {
       "id": 9,
       "slug": "aspek-legalitas-dan-kontrak-kerja-staf-pengelola-kost",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-02T16:00:00+07:00",
       "title": "Legalitas Kontrak Staf Kost — GREN Property",
       "meta_description": "Panduan mengelola aspek hukum ketenagakerjaan penjaga dan petugas kebersihan rumah kost komersial agar terhindar dari sengketa hubungan industrial.",
       "category": "Legalitas & Komparasi",
       "draft_path": "_scheduled_content/articles/aspek-legalitas-dan-kontrak-kerja-staf-pengelola-kost.html",
-      "destination_path": "artikel/aspek-legalitas-dan-kontrak-kerja-staf-pengelola-kost/index.html"
+      "destination_path": "artikel/aspek-legalitas-dan-kontrak-kerja-staf-pengelola-kost/index.html",
+      "live_url": "/artikel/aspek-legalitas-dan-kontrak-kerja-staf-pengelola-kost",
+      "published_at": "2026-09-02T20:11:48.259729+07:00"
     },
     {
       "id": 10,
