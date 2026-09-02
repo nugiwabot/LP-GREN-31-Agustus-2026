@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
   <!-- Primary SEO Meta Tags -->
   <title>GREN Propertykost Jatinangor — Investasi Rukost Eksklusif Ring-1 Kampus UNPAD & ITB</title>
   <meta name="title" content="GREN Propertykost Jatinangor — Investasi Rukost Eksklusif Ring-1 Kampus UNPAD & ITB" />
@@ -12,7 +12,7 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="author" content="GREN Property" />
   <meta name="language" content="Indonesian" />
-  <meta name="theme-color" content="#15803d" />
+  <meta name="theme-color" content="#27482F" />
 
   <!-- Geo & Local SEO Tags (Jatinangor, Sumedang, Jawa Barat) -->
   <meta name="geo.region" content="ID-JB" />
@@ -138,88 +138,19 @@
   <!-- ⚙️ LOAD FILE PENGATURAN TUNGGAL (config.js) -->
   <script src="./config.js"></script>
 
-  <!-- Google Font: Plus Jakarta Sans (Modern, Clean, Sharp Hierarchy) -->
+  <!-- Design system: Tailwind CDN + shared theme + shared helpers -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-
-  <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              50: '#f0fdf4',
-              100: '#dcfce7',
-              200: '#bbf7d0',
-              600: '#16a34a',
-              700: '#15803d',
-              800: '#166534',
-              900: '#14532d',
-              950: '#052e16',
-            },
-            accent: {
-              50: '#fffbeb',
-              100: '#fef3c7',
-              500: '#f59e0b',
-              600: '#d97706',
-              700: '#b45309',
-              800: '#92400e',
-            },
-            slate: {
-              850: '#151f32',
-              900: '#0f172a',
-              950: '#020617',
-            }
-          },
-          fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
-
-  <style>
-    body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      background-color: #ffffff;
-      color: #1e293b;
-    }
-
-    /* Custom range slider styling */
-    input[type=range] {
-      -webkit-appearance: none;
-      background: #e2e8f0;
-      height: 6px;
-      border-radius: 3px;
-    }
-    input[type=range]::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      height: 20px;
-      width: 20px;
-      border-radius: 50%;
-      background: #15803d;
-      border: 3px solid #ffffff;
-      cursor: pointer;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.25);
-    }
-
-    /* Interactive image comparison container */
-    .comparison-box {
-      position: relative;
-      user-select: none;
-      -webkit-user-select: none;
-    }
-  </style>
+  <script src="./assets/theme.js"></script>
+  <link rel="stylesheet" href="./assets/theme.css" />
+  <script src="./assets/brand.js"></script>
 
   <!-- AUTO DYNAMIC ANALYTICS INJECTOR SCRIPT -->
   <script>
     (function() {
       const cfg = window.LANDING_CONFIG || {};
-      
+
       // 1. Meta Pixel Auto Inject
       if (cfg.metaPixelId && cfg.metaPixelId.trim() !== "") {
         !function(f,b,e,v,n,t,s)
@@ -253,65 +184,60 @@
     })();
   </script>
 </head>
-<body class="antialiased selection:bg-brand-700 selection:text-white">
+<body class="antialiased">
 
   <!-- ========================================================================= -->
   <!-- 1. TOP ANNOUNCEMENT BAR -->
   <!-- ========================================================================= -->
-  <div class="bg-slate-900 text-white text-xs sm:text-sm py-2.5 px-4 text-center border-b border-slate-800 sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto flex items-center justify-center gap-2 sm:gap-3 flex-wrap font-medium">
-      <span class="bg-accent-600 text-white text-[11px] font-bold px-2.5 py-0.5 rounded tracking-wide uppercase">
-        Program Investor
-      </span>
-      <span class="text-slate-200 font-semibold">Pricelist ALL IN • PPN Ditanggung Developer • Garansi Okupansi 70% (2 Tahun)</span>
-      <a href="#tipe-unit" class="text-accent-400 hover:text-white underline font-bold transition-colors ml-1">Lihat Unit &rarr;</a>
+  <div class="bg-slate-900 text-slate-300 text-[0.7rem] sm:text-xs py-2.5 px-4 text-center border-b border-slate-800 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-center gap-3 flex-wrap font-medium tracking-wide">
+      <span class="text-slate-400">Pricelist ALL IN</span>
+      <span class="text-slate-700">|</span>
+      <span class="text-slate-400">PPN ditanggung developer</span>
+      <span class="text-slate-700">|</span>
+      <span class="text-slate-400">Garansi okupansi 70% (2 tahun)</span>
+      <a href="#tipe-unit" class="text-accent-400 hover:text-white uppercase tracking-[0.14em] font-bold transition-colors ml-1">Lihat Unit</a>
     </div>
   </div>
 
   <!-- ========================================================================= -->
   <!-- 2. NAVIGATION HEADER -->
   <!-- ========================================================================= -->
-  <header class="bg-white/95 backdrop-blur-md sticky top-9 z-40 border-b border-slate-200 transition-all duration-200">
+  <header class="bg-slate-50/95 backdrop-blur-md sticky top-8 z-40 border-b border-slate-200 transition-all duration-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      
-      <!-- Brand Logo (Logo Image + Text) -->
+
+      <!-- Brand Logo -->
       <a href="#" class="flex items-center gap-3 group">
-        <img 
-          src="./assets/images/logo.webp" 
-          alt="Logo GREN Propertykost" 
-          class="h-11 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-200"
+        <img
+          src="./assets/images/logo.webp"
+          alt="Logo GREN Propertykost"
+          class="h-11 sm:h-12 w-auto object-contain group-hover:opacity-80 transition-opacity duration-200"
           onerror="this.src='./Logo GREN Propertykost.png'"
         />
-        <div class="flex flex-col">
-          <span class="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-900 leading-none">
-            GREN <span class="text-brand-700">PROPERTYKOST</span>
+        <span class="flex flex-col leading-none">
+          <span class="font-serif text-xl sm:text-2xl font-medium tracking-tight text-slate-900">
+            GREN <span class="text-brand-700">Propertykost</span>
           </span>
-          <span class="text-[11px] font-bold tracking-widest text-slate-500 uppercase mt-1">
-            Jatinangor • By GREN Property
+          <span class="text-[0.6rem] font-bold tracking-[0.3em] text-slate-500 uppercase mt-1.5">
+            Jatinangor · By GREN Property
           </span>
-        </div>
+        </span>
       </a>
 
       <!-- Desktop Nav Links -->
-      <nav class="hidden md:flex items-center gap-7 text-sm font-bold text-slate-700">
+      <nav class="hidden md:flex items-center gap-8 text-[0.8rem] font-semibold text-slate-700 tracking-wide">
         <a href="#keunggulan" class="hover:text-brand-700 transition-colors">Keunggulan</a>
-        <a href="#tipe-unit" class="hover:text-brand-700 transition-colors">Tipe & Harga</a>
-        <a href="#simulasi-3d" class="hover:text-brand-700 transition-colors">Simulasi 3D</a>
-        <a href="#kalkulator-yield" class="hover:text-brand-700 transition-colors">Kalkulator Yield</a>
+        <a href="#tipe-unit" class="hover:text-brand-700 transition-colors">Tipe &amp; Harga</a>
+        <a href="#simulasi-3d" class="hover:text-brand-700 transition-colors">Simulasi</a>
+        <a href="#kalkulator-yield" class="hover:text-brand-700 transition-colors">Kalkulator</a>
         <a href="#galeri" class="hover:text-brand-700 transition-colors">Galeri</a>
         <a href="#faq" class="hover:text-brand-700 transition-colors">FAQ</a>
-        <a href="./artikel" class="text-brand-700 hover:text-brand-800 transition-colors flex items-center gap-1 font-extrabold bg-brand-50 px-2.5 py-1 rounded-md border border-brand-200">
-          <span>Artikel</span>
-          <span class="text-[10px] bg-accent-500 text-slate-900 font-black px-1 rounded uppercase">New</span>
-        </a>
+        <a href="./artikel" class="text-brand-700 hover:text-brand-800 transition-colors">Artikel</a>
       </nav>
 
       <!-- Desktop CTA -->
       <div class="hidden sm:flex items-center gap-3">
-        <a href="#konsultasi" class="inline-flex items-center gap-2 bg-brand-800 hover:bg-brand-900 text-white font-bold text-sm px-6 py-3 rounded-lg shadow-sm hover:shadow transition-all">
-          <span>Konsultasi & Survey</span>
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-        </a>
+        <a href="#konsultasi" class="btn btn-primary !py-3 !px-6">Konsultasi &amp; Survey</a>
       </div>
 
       <!-- Mobile Menu Button -->
@@ -322,128 +248,84 @@
     </div>
 
     <!-- Mobile Drawer -->
-    <div id="mobile-drawer" class="hidden md:hidden bg-white border-t border-slate-200 px-4 py-6 space-y-3 font-bold text-sm text-slate-800">
-      <a href="#keunggulan" class="block py-2 px-3 rounded hover:bg-slate-50">Keunggulan Produk</a>
-      <a href="#tipe-unit" class="block py-2 px-3 rounded hover:bg-slate-50">Tipe Unit & Harga</a>
-      <a href="#simulasi-3d" class="block py-2 px-3 rounded hover:bg-slate-50">Simulasi 3D</a>
-      <a href="#kalkulator-yield" class="block py-2 px-3 rounded hover:bg-slate-50">Kalkulator Yield Sewa</a>
-      <a href="#galeri" class="block py-2 px-3 rounded hover:bg-slate-50">Galeri Properti</a>
-      <a href="#faq" class="block py-2 px-3 rounded hover:bg-slate-50">FAQ Investor</a>
-      <a href="./artikel" class="block py-2.5 px-3 rounded bg-brand-50 text-brand-800 font-extrabold flex items-center justify-between">
-        <span>📖 Artikel & Edukasi Properti</span>
-        <span class="text-xs bg-accent-500 text-slate-900 font-black px-1.5 py-0.5 rounded">BACA</span>
-      </a>
-      <a href="#konsultasi" class="block bg-brand-800 text-white text-center py-3 rounded-lg mt-4 font-bold">Hubungi Konsultan WhatsApp</a>
+    <div id="mobile-drawer" class="hidden md:hidden bg-slate-50 border-t border-slate-200 px-4 py-6 space-y-3 font-semibold text-sm text-slate-800">
+      <a href="#keunggulan" class="block py-2 px-3 hover:bg-white transition-colors">Keunggulan Produk</a>
+      <a href="#tipe-unit" class="block py-2 px-3 hover:bg-white transition-colors">Tipe Unit &amp; Harga</a>
+      <a href="#simulasi-3d" class="block py-2 px-3 hover:bg-white transition-colors">Simulasi Interior</a>
+      <a href="#kalkulator-yield" class="block py-2 px-3 hover:bg-white transition-colors">Kalkulator Yield</a>
+      <a href="#galeri" class="block py-2 px-3 hover:bg-white transition-colors">Galeri Properti</a>
+      <a href="#faq" class="block py-2 px-3 hover:bg-white transition-colors">FAQ Investor</a>
+      <a href="./artikel" class="block py-2 px-3 hover:bg-white transition-colors">Artikel &amp; Riset Properti</a>
+      <a href="#konsultasi" class="block bg-brand-800 text-white text-center py-3 mt-4 uppercase tracking-[0.12em] text-xs font-bold">Konsultasi &amp; Survey</a>
     </div>
   </header>
 
   <!-- ========================================================================= -->
-  <!-- 3. HERO SECTION (STRONG HIERARCHY & HIGH CONTRAST) -->
+  <!-- 3. HERO SECTION -->
   <!-- ========================================================================= -->
-  <section class="relative bg-slate-50 pt-12 pb-20 lg:pt-20 lg:pb-28 border-b border-slate-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
-        
-        <!-- Hero Left: Copy & Actions -->
-        <div class="lg:col-span-7 space-y-6 text-left">
-          
-          <!-- Eyebrow Tag -->
-          <div class="inline-flex items-center gap-2 bg-brand-100 text-brand-900 border border-brand-300 px-3.5 py-1.5 rounded-md text-xs font-bold uppercase tracking-wider">
-            <span class="w-2 h-2 rounded-full bg-brand-600"></span>
-            Kawasan Pendidikan Ring-1 Jatinangor
-          </div>
+  <section class="bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-16 lg:pt-20 lg:pb-24">
 
-          <!-- Main Bold Headline -->
-          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-[1.15] tracking-tight">
-            Miliki 1 Gedung Rukost Utuh, <span class="text-brand-700">Passive Income Pasti</span> dari 100.000+ Mahasiswa.
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+        <!-- Hero Copy -->
+        <div class="lg:col-span-7">
+
+          <span class="eyebrow"><span class="rule w-10"></span>Kawasan Pendidikan Ring-1 Jatinangor</span>
+
+          <h1 class="display text-[2rem] sm:text-5xl mt-6 text-slate-900">
+            Miliki Satu Gedung Rukost Utuh, <em>Langsung Menghasilkan</em> dari 100.000+ Mahasiswa.
           </h1>
 
-          <!-- Crisp Body Description -->
-          <p class="text-base sm:text-lg text-slate-700 font-medium leading-relaxed max-w-2xl">
-            Bukan sekadar unit strata title. Anda memiliki gedung rukost multi-lantai di atas tanah tapak kawasan kampus UNPAD, ITB, IPDN, dan IKOPIN. Lengkap dengan <strong>Pricelist ALL IN</strong>, <strong>PPN Ditanggung Developer</strong>, dan <strong>Garansi Okupansi 70% selama 2 Tahun</strong>.
+          <p class="mt-6 text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
+            Bukan sekadar unit strata title. Anda memiliki gedung rukost multi-lantai di atas tanah tapak kawasan kampus UNPAD, ITB, IPDN, dan IKOPIN — lengkap dengan Pricelist ALL IN, PPN ditanggung developer, dan Garansi Okupansi 70% selama 2 tahun.
           </p>
 
-          <!-- Key Feature Badges Grid -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-sm font-semibold text-slate-800">
-            <div class="flex items-center gap-2.5 bg-white p-3 rounded-lg border border-slate-200 shadow-sm">
-              <span class="w-5 h-5 rounded-full bg-brand-100 text-brand-800 flex items-center justify-center font-bold text-xs">✓</span>
-              <span>Satu Gedung, Satu Kepemilikan Utuh</span>
-            </div>
-            <div class="flex items-center gap-2.5 bg-white p-3 rounded-lg border border-slate-200 shadow-sm">
-              <span class="w-5 h-5 rounded-full bg-brand-100 text-brand-800 flex items-center justify-center font-bold text-xs">✓</span>
-              <span>Desain Full Furnished Tiap Kamar</span>
-            </div>
-            <div class="flex items-center gap-2.5 bg-white p-3 rounded-lg border border-slate-200 shadow-sm">
-              <span class="w-5 h-5 rounded-full bg-brand-100 text-brand-800 flex items-center justify-center font-bold text-xs">✓</span>
-              <span>Opsi Bantuan Pengelolaan Kost</span>
-            </div>
-            <div class="flex items-center gap-2.5 bg-white p-3 rounded-lg border border-slate-200 shadow-sm">
-              <span class="w-5 h-5 rounded-full bg-brand-100 text-brand-800 flex items-center justify-center font-bold text-xs">✓</span>
-              <span>Harga Publish Mulai Rp 2,3 M-an</span>
-            </div>
-          </div>
-
           <!-- CTA Buttons -->
-          <div class="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-            <a href="#konsultasi" class="inline-flex items-center justify-center gap-2 bg-brand-800 hover:bg-brand-900 text-white font-bold text-base px-8 py-4 rounded-xl shadow-md transition-all">
-              <span>Klaim Pricelist & Jadwal Survey</span>
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          <div class="mt-9 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <a href="#konsultasi" class="btn btn-primary">
+              Jadwalkan Survey Lokasi
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </a>
-            
-            <a href="#tipe-unit" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-800 font-bold text-base px-7 py-4 rounded-xl border border-slate-300 shadow-sm transition-all">
-              <span>Lihat Tipe Unit</span>
-              <svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            <a href="#tipe-unit" class="btn btn-outline">
+              Lihat Pricelist Unit
             </a>
           </div>
 
           <!-- Metrics Row -->
-          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-300 text-left">
-            <div>
-              <p class="text-2xl sm:text-3xl font-extrabold text-slate-900">100.000+</p>
-              <p class="text-xs text-slate-600 font-semibold mt-0.5">Mahasiswa Aktif</p>
+          <div class="mt-12 grid grid-cols-3 divide-x divide-slate-200 border-t border-slate-200">
+            <div class="pt-6 pr-6">
+              <p class="stat-num text-3xl text-slate-900">100.000+</p>
+              <p class="text-xs text-slate-500 font-semibold mt-1.5 uppercase tracking-wider">Mahasiswa Aktif</p>
             </div>
-            <div>
-              <p class="text-2xl sm:text-3xl font-extrabold text-brand-700">70% (2 Thn)</p>
-              <p class="text-xs text-slate-600 font-semibold mt-0.5">Garansi Okupansi</p>
+            <div class="pt-6 px-6">
+              <p class="stat-num text-3xl text-brand-700">70%</p>
+              <p class="text-xs text-slate-500 font-semibold mt-1.5 uppercase tracking-wider">Garansi Okupansi 2 Tahun</p>
             </div>
-            <div>
-              <p class="text-2xl sm:text-3xl font-extrabold text-accent-700">Bebas PPN</p>
-              <p class="text-xs text-slate-600 font-semibold mt-0.5">Ditanggung Developer</p>
+            <div class="pt-6 pl-6">
+              <p class="stat-num text-3xl text-accent-600">Rp 2,3 M</p>
+              <p class="text-xs text-slate-500 font-semibold mt-1.5 uppercase tracking-wider">Harga Publikasi Awal</p>
             </div>
           </div>
 
         </div>
 
-        <!-- Hero Right: Property Image Box -->
+        <!-- Hero Image -->
         <div class="lg:col-span-5">
-          <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-xl space-y-3">
-            <div class="relative aspect-[4/3] rounded-xl overflow-hidden bg-slate-900">
-              <img 
-                src="./assets/images/rumah-asli.jpg" 
-                alt="GREN Propertykost Jatinangor" 
-                class="w-full h-full object-cover"
-                onerror="this.src='https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80'"
-              />
-              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
-              
-              <div class="absolute bottom-4 left-4 right-4 text-white">
-                <span class="text-xs font-bold uppercase tracking-wider bg-accent-600 px-2.5 py-1 rounded text-white">
-                  GREN Property • Foto Properti
-                </span>
-                <h3 class="text-lg font-extrabold text-white mt-1.5">GREN Propertykost Jatinangor</h3>
-                <p class="text-xs text-slate-300 font-medium">Kawasan Ring-1 Dekat Gerbang Kampus UNPAD & ITB</p>
+          <div class="relative">
+            <div class="absolute -top-4 -left-4 w-full h-full border border-accent-400/70"></div>
+            <div class="relative bg-white p-3 border border-slate-200">
+              <div class="relative aspect-[4/3] overflow-hidden bg-slate-900">
+                <img
+                  src="./assets/images/rumah-asli.jpg"
+                  alt="Fasad GREN Propertykost Jatinangor"
+                  class="w-full h-full object-cover"
+                  onerror="this.src='https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80'"
+                />
               </div>
-            </div>
-
-            <div class="grid grid-cols-2 gap-3 text-xs pt-1">
-              <div class="bg-slate-50 p-3 rounded-lg border border-slate-200">
-                <span class="text-slate-500 block font-semibold text-[11px]">Tipe Pilihan:</span>
-                <span class="font-extrabold text-slate-900 text-sm">9, 11, & 12 Kamar</span>
-              </div>
-              <div class="bg-brand-50 p-3 rounded-lg border border-brand-200">
-                <span class="text-brand-700 block font-semibold text-[11px]">Harga Mulai:</span>
-                <span class="font-extrabold text-brand-900 text-sm">Rp 2,3 Miliar-an</span>
+              <div class="pt-3 flex items-center justify-between">
+                <span class="eyebrow">Foto Properti</span>
+                <span class="text-xs text-slate-500 font-medium">Jl. GKPN · Jatinangor</span>
               </div>
             </div>
           </div>
@@ -455,441 +337,421 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 4. TRUST & KAMPUS LOGO BAR -->
+  <!-- 4. TRUST & KAMPUS WORDMARK BAR -->
   <!-- ========================================================================= -->
-  <div class="bg-white border-b border-slate-200 py-6">
+  <div class="bg-white border-b border-slate-200 py-10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <p class="text-center text-xs uppercase tracking-widest text-slate-500 font-bold mb-4">
-        Dikelilingi 4 Perguruan Tinggi Negeri & Akses Infrastruktur Utama
+      <p class="text-center text-[0.68rem] uppercase tracking-[0.22em] text-slate-500 font-bold">
+        Dikelilingi Perguruan Tinggi &amp; Infrastruktur Utama
       </p>
-      <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-12 text-slate-800 font-extrabold text-sm sm:text-base">
-        <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-brand-600"></span> UNPAD Jatinangor</div>
-        <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-brand-600"></span> ITB Kampus Jatinangor</div>
-        <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-brand-600"></span> IPDN Jatinangor</div>
-        <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-brand-600"></span> IKOPIN University</div>
-        <div class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-accent-600"></span> Tol Cisumdawu / Cileunyi</div>
+      <div class="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-3 font-serif text-sm sm:text-base text-slate-700">
+        <span>UNPAD Jatinangor</span>
+        <span class="text-slate-300 hidden sm:inline">/</span>
+        <span>ITB Kampus Jatinangor</span>
+        <span class="text-slate-300 hidden sm:inline">/</span>
+        <span>IPDN Jatinangor</span>
+        <span class="text-slate-300 hidden sm:inline">/</span>
+        <span>IKOPIN University</span>
+        <span class="text-slate-300 hidden sm:inline">/</span>
+        <span>Tol Cisumdawu · Cileunyi</span>
       </div>
     </div>
   </div>
 
   <!-- ========================================================================= -->
-  <!-- 5. KEUNGGULAN / VALUE PROPOSITION -->
+  <!-- 5. KEUNGGULAN -->
   <!-- ========================================================================= -->
-  <section id="keunggulan" class="py-20 bg-slate-50 border-b border-slate-200">
+  <section id="keunggulan" class="py-20 lg:py-28 bg-slate-50 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-        <span class="text-xs font-bold uppercase tracking-wider text-brand-800 bg-brand-100 px-3 py-1 rounded border border-brand-300">
-          Keunggulan Utama
-        </span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-          Investasi Properti Nyata yang Terbukti Menghasilkan
-        </h2>
-        <p class="text-slate-600 text-base font-medium">
-          Solusi cerdas bagi investor yang menginginkan pendapatan pasif rutin tanpa dipusingkan urusan operasional.
-        </p>
-      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
 
-      <!-- 4 Grid Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        
-        <!-- Card 1 -->
-        <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
-          <div class="space-y-3">
-            <span class="text-xs font-extrabold text-brand-700 bg-brand-50 px-2.5 py-1 rounded border border-brand-200 inline-block">01. Pasarnya Pasti</span>
-            <h3 class="text-xl font-bold text-slate-900">100.000+ Mahasiswa Aktif</h3>
-            <p class="text-sm text-slate-600 font-medium leading-relaxed">
-              Permintaan hunian sewa mahasiswa Jatinangor tidak mengenal resesi. Lebih dari 15.000 mahasiswa baru hadir setiap tahun ajaran baru.
-            </p>
-          </div>
-          <div class="pt-4 mt-6 border-t border-slate-100 text-xs font-bold text-brand-800">
-            Rata-rata Okupansi: 85% – 95%
-          </div>
+        <!-- Section Header -->
+        <div class="lg:col-span-5">
+          <span class="eyebrow"><span class="rule w-10"></span>Mengapa GREN</span>
+          <h2 class="display text-3xl sm:text-4xl mt-5 text-slate-900">
+            Investasi yang Berpijak pada Realitas Pasar
+          </h2>
+          <p class="mt-5 text-slate-600 leading-relaxed">
+            Empat hal yang membuat aset ini berbeda dari sekadar bangunan kosong: pasarnya nyata, unitnya siap huni, pengelolaannya terukur, dan syaratnya transparan.
+          </p>
+          <a href="#tipe-unit" class="btn btn-ghost mt-6">
+            Jelajahi Tipe Unit
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
         </div>
 
-        <!-- Card 2 -->
-        <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
-          <div class="space-y-3">
-            <span class="text-xs font-extrabold text-accent-700 bg-accent-50 px-2.5 py-1 rounded border border-accent-200 inline-block">02. Siap Digunakan</span>
-            <h3 class="text-xl font-bold text-slate-900">Desain Full Furnished</h3>
-            <p class="text-sm text-slate-600 font-medium leading-relaxed">
-              Setiap kamar dirancang lengkap dengan AC Split, Water Heater kamar mandi dalam, springbed, lemari pakaian, dan meja belajar.
-            </p>
-          </div>
-          <div class="pt-4 mt-6 border-t border-slate-100 text-xs font-bold text-accent-700">
-            Standar Interior Developer
-          </div>
-        </div>
+        <!-- Numbered Editorial List -->
+        <div class="lg:col-span-7">
+          <div class="divide-y divide-slate-200">
 
-        <!-- Card 3 -->
-        <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
-          <div class="space-y-3">
-            <span class="text-xs font-extrabold text-brand-700 bg-brand-50 px-2.5 py-1 rounded border border-brand-200 inline-block">03. Bebas Repot</span>
-            <h3 class="text-xl font-bold text-slate-900">Opsi Bantuan Pengelolaan</h3>
-            <p class="text-sm text-slate-600 font-medium leading-relaxed">
-              Tersedia tim profesional yang membantu pemasaran kamar, seleksi penyewa, penagihan sewa, hingga perawatan teknis harian properti.
-            </p>
-          </div>
-          <div class="pt-4 mt-6 border-t border-slate-100 text-xs font-bold text-brand-800">
-            Passive Income Tanpa Repot
-          </div>
-        </div>
+            <div class="py-8 flex gap-8">
+              <span class="stat-num text-2xl text-accent-600 shrink-0">01</span>
+              <div>
+                <h3 class="font-serif text-2xl text-slate-900">Pasar yang Pasti</h3>
+                <p class="mt-2.5 text-sm text-slate-600 leading-relaxed">
+                  Permintaan hunian sewa mahasiswa Jatinangor tidak mengenal resesi. Lebih dari 15.000 mahasiswa baru hadir setiap tahun ajaran baru.
+                </p>
+                <p class="mt-4 text-xs uppercase tracking-[0.16em] text-brand-700 font-bold">Okupansi rata-rata 85–95%</p>
+              </div>
+            </div>
 
-        <!-- Card 4 -->
-        <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
-          <div class="space-y-3">
-            <span class="text-xs font-extrabold text-accent-700 bg-accent-50 px-2.5 py-1 rounded border border-accent-200 inline-block">04. Transparan</span>
-            <h3 class="text-xl font-bold text-slate-900">Pricelist ALL IN & Bebas PPN</h3>
-            <p class="text-sm text-slate-600 font-medium leading-relaxed">
-              Tanpa biaya tersembunyi. Pajak PPN ditanggung oleh developer, ditambah jaminan Garansi Okupansi 70% selama 2 tahun pertama.
-            </p>
-          </div>
-          <div class="pt-4 mt-6 border-t border-slate-100 text-xs font-bold text-accent-700">
-            Jaminan Garansi 2 Tahun
+            <div class="py-8 flex gap-8">
+              <span class="stat-num text-2xl text-accent-600 shrink-0">02</span>
+              <div>
+                <h3 class="font-serif text-2xl text-slate-900">Siap Huni</h3>
+                <p class="mt-2.5 text-sm text-slate-600 leading-relaxed">
+                  Setiap kamar dirancang lengkap: AC split, kamar mandi dalam dengan water heater, springbed, lemari pakaian, dan meja belajar.
+                </p>
+                <p class="mt-4 text-xs uppercase tracking-[0.16em] text-brand-700 font-bold">Standar Interior Developer</p>
+              </div>
+            </div>
+
+            <div class="py-8 flex gap-8">
+              <span class="stat-num text-2xl text-accent-600 shrink-0">03</span>
+              <div>
+                <h3 class="font-serif text-2xl text-slate-900">Bebas Repot</h3>
+                <p class="mt-2.5 text-sm text-slate-600 leading-relaxed">
+                  Tersedia tim pengelola profesional: pemasaran kamar, seleksi penyewa, penagihan sewa, hingga perawatan teknis harian properti.
+                </p>
+                <p class="mt-4 text-xs uppercase tracking-[0.16em] text-brand-700 font-bold">Passive Income Tanpa Repot</p>
+              </div>
+            </div>
+
+            <div class="py-8 flex gap-8">
+              <span class="stat-num text-2xl text-accent-600 shrink-0">04</span>
+              <div>
+                <h3 class="font-serif text-2xl text-slate-900">Transparan</h3>
+                <p class="mt-2.5 text-sm text-slate-600 leading-relaxed">
+                  Tanpa biaya tersembunyi. Pajak PPN ditanggung developer, ditambah jaminan Garansi Okupansi 70% selama 2 tahun pertama.
+                </p>
+                <p class="mt-4 text-xs uppercase tracking-[0.16em] text-brand-700 font-bold">Jaminan Garansi 2 Tahun</p>
+              </div>
+            </div>
+
           </div>
         </div>
 
       </div>
-
     </div>
   </section>
 
   <!-- ========================================================================= -->
   <!-- 6. TIPE UNIT & HARGA PUBLISH -->
   <!-- ========================================================================= -->
-  <section id="tipe-unit" class="py-20 bg-white border-b border-slate-200">
+  <section id="tipe-unit" class="py-20 lg:py-28 bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-        <span class="text-xs font-bold uppercase tracking-wider text-brand-800 bg-brand-100 px-3 py-1 rounded border border-brand-300">
-          Pilihan Tipe Unit
-        </span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-          Pricelist Resmi GREN Propertykost Jatinangor
+
+      <div class="max-w-2xl">
+        <span class="eyebrow"><span class="rule w-10"></span>Pricelist Resmi</span>
+        <h2 class="display text-3xl sm:text-4xl mt-5 text-slate-900">
+          Tiga Pilihan Kapasitas, Satu Kepemilikan Utuh
         </h2>
-        <p class="text-slate-600 text-base font-medium">
-          Pilihan kapasitas 9, 11, hingga 12 kamar dengan konsep arsitektur multi-lantai modern.
+        <p class="mt-5 text-slate-600 leading-relaxed">
+          Konsep arsitektur multi-lantai modern dengan kepemilikan bangunan utuh. Seluruh harga dalam skema Pricelist ALL IN dan PPN ditanggung developer.
         </p>
       </div>
 
-      <!-- 3 Cards Pricing Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
-        
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-14 items-stretch">
+
         <!-- Tipe 9 Kamar -->
-        <div class="bg-white rounded-2xl border border-slate-200 p-7 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
-          <div>
-            <div class="aspect-[16/10] rounded-xl overflow-hidden bg-slate-100 mb-5 relative">
-              <img src="./assets/images/tipe-9-kamar.webp" alt="Tipe 9 Kamar" class="w-full h-full object-cover" onerror="this.src='./assets/images/gallery-1.webp'"/>
-              <span class="absolute top-3 left-3 bg-slate-900 text-white text-xs font-bold px-2.5 py-1 rounded">
-                Entry Portofolio
-              </span>
-            </div>
-
-            <h3 class="text-2xl font-extrabold text-slate-900">Tipe 9 Kamar</h3>
-            <p class="text-xs text-slate-500 font-semibold mt-1">Bangunan 2–3 Lantai • Full Furnished</p>
-
-            <div class="my-6 p-4 rounded-xl bg-slate-50 border border-slate-200">
-              <span class="text-xs text-slate-500 font-bold block uppercase">Harga Publish:</span>
-              <span class="text-2xl sm:text-3xl font-extrabold text-brand-900 block mt-0.5">Rp 2,3 Miliar-an</span>
-              <span class="text-xs font-bold text-brand-700 block mt-1">✓ Pricelist ALL IN (Bebas PPN)</span>
-            </div>
-
-            <ul class="space-y-2.5 text-sm text-slate-700 font-medium">
-              <li class="flex items-center gap-2">
-                <span class="text-brand-700 font-bold">✓</span>
-                <span><strong>9 Kamar Tidur</strong> Eksklusif</span>
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="text-brand-700 font-bold">✓</span>
-                <span>AC Split & Water Heater tiap kamar</span>
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="text-brand-700 font-bold">✓</span>
-                <span>Garansi Okupansi 70% (2 Tahun)</span>
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="text-brand-700 font-bold">✓</span>
-                <span>Tersedia Opsi Bantuan Pengelolaan</span>
-              </li>
-            </ul>
+        <div class="flex flex-col bg-white border border-slate-200 p-8">
+          <div class="relative aspect-[16/10] overflow-hidden bg-slate-100">
+            <img src="./assets/images/tipe-9-kamar.webp" alt="Tipe 9 Kamar" class="w-full h-full object-cover" onerror="this.src='./assets/images/gallery-1.webp'"/>
           </div>
 
-          <div class="pt-8 mt-6">
-            <button onclick="pilihUnitWhatsApp('Tipe 9 Kamar (Mulai Rp 2,3 M-an)')" class="w-full bg-slate-900 hover:bg-brand-900 text-white font-bold py-3.5 px-4 rounded-xl text-sm transition-all shadow-sm">
-              Tanya Unit Tipe 9 Kamar
-            </button>
+          <div class="mt-7 flex items-baseline justify-between gap-4">
+            <h3 class="font-serif text-2xl text-slate-900">Tipe 9 Kamar</h3>
+            <span class="badge">Entry Portfolio</span>
           </div>
+
+          <div class="mt-6 pt-6 border-t border-slate-200">
+            <span class="text-[0.68rem] uppercase tracking-[0.18em] text-slate-500 font-bold">Harga Publikasi</span>
+            <p class="display text-3xl mt-1.5 text-slate-900">Rp 2,3 Miliar-an</p>
+            <p class="mt-1.5 text-xs text-brand-700 font-semibold">Pricelist ALL IN · Bebas PPN</p>
+          </div>
+
+          <ul class="mt-7 space-y-3 text-sm text-slate-600 flex-grow">
+            <li class="flex gap-3">
+              <svg class="w-4 h-4 text-brand-700 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span><strong class="text-slate-900">9 kamar tidur</strong> eksklusif, full furnished</span>
+            </li>
+            <li class="flex gap-3">
+              <svg class="w-4 h-4 text-brand-700 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>AC split &amp; water heater di tiap kamar</span>
+            </li>
+            <li class="flex gap-3">
+              <svg class="w-4 h-4 text-brand-700 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>Garansi okupansi 70% (2 tahun)</span>
+            </li>
+            <li class="flex gap-3">
+              <svg class="w-4 h-4 text-brand-700 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>Opsi bantuan pengelolaan kost</span>
+            </li>
+          </ul>
+
+          <button onclick="pilihUnitWhatsApp('Tipe 9 Kamar (Mulai Rp 2,3 M-an)')" class="btn btn-outline w-full mt-9">
+            Tanya Tipe 9 Kamar
+          </button>
         </div>
 
         <!-- Tipe 11 Kamar (Featured) -->
-        <div class="bg-slate-900 text-white rounded-2xl border-2 border-accent-500 p-7 shadow-xl flex flex-col justify-between relative transform md:-translate-y-2">
-          
-          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-accent-600 text-white font-extrabold text-xs uppercase tracking-wider px-4 py-1 rounded-full shadow">
-            Paling Banyak Diminati
+        <div class="relative flex flex-col bg-white border border-slate-200 border-t-4 border-t-accent-500 p-8">
+          <div class="absolute top-6 right-6">
+            <span class="badge badge-dark">Paling Diminati</span>
           </div>
 
-          <div>
-            <div class="aspect-[16/10] rounded-xl overflow-hidden bg-slate-800 mb-5 relative">
-              <img src="./assets/images/tipe-11-kamar.webp" alt="Tipe 11 Kamar" class="w-full h-full object-cover" onerror="this.src='./assets/images/gallery-2.webp'"/>
-              <span class="absolute top-3 left-3 bg-accent-600 text-white text-xs font-bold px-2.5 py-1 rounded">
-                Gedung 3 Lantai
-              </span>
-            </div>
-
-            <h3 class="text-2xl font-extrabold text-white">Tipe 11 Kamar</h3>
-            <p class="text-xs text-slate-300 font-semibold mt-1">Bangunan 3 Lantai • 1 Kepemilikan Utuh</p>
-
-            <div class="my-6 p-4 rounded-xl bg-slate-800 border border-slate-700">
-              <span class="text-xs text-slate-400 font-bold block uppercase">Harga Publish:</span>
-              <span class="text-2xl sm:text-3xl font-extrabold text-accent-400 block mt-0.5">Rp 2,6 Miliar-an</span>
-              <span class="text-xs font-bold text-emerald-400 block mt-1">✓ Pricelist ALL IN (Bebas PPN)</span>
-            </div>
-
-            <ul class="space-y-2.5 text-sm text-slate-200 font-medium">
-              <li class="flex items-center gap-2">
-                <span class="text-accent-400 font-bold">✓</span>
-                <span><strong>11 Kamar Tidur</strong> Full Furnished</span>
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="text-accent-400 font-bold">✓</span>
-                <span>Bangunan Kokoh 3 Lantai</span>
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="text-accent-400 font-bold">✓</span>
-                <span>Garansi Okupansi 70% (2 Tahun)</span>
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="text-accent-400 font-bold">✓</span>
-                <span>Skema Cash Keras & Cash Bertahap</span>
-              </li>
-            </ul>
+          <div class="relative aspect-[16/10] overflow-hidden bg-slate-100">
+            <img src="./assets/images/tipe-11-kamar.webp" alt="Tipe 11 Kamar" class="w-full h-full object-cover" onerror="this.src='./assets/images/gallery-2.webp'"/>
           </div>
 
-          <div class="pt-8 mt-6">
-            <button onclick="pilihUnitWhatsApp('Tipe 11 Kamar 3 Lantai (Mulai Rp 2,6 M-an)')" class="w-full bg-accent-500 hover:bg-accent-600 text-slate-950 font-extrabold py-3.5 px-4 rounded-xl text-sm transition-all shadow-md">
-              Pilih Unit Tipe 11 Kamar &rarr;
-            </button>
+          <div class="mt-7 flex items-baseline justify-between gap-4">
+            <h3 class="font-serif text-2xl text-slate-900">Tipe 11 Kamar</h3>
+            <span class="text-[0.65rem] uppercase tracking-[0.14em] text-slate-500 font-bold">3 Lantai</span>
           </div>
+
+          <div class="mt-6 pt-6 border-t border-slate-200">
+            <span class="text-[0.68rem] uppercase tracking-[0.18em] text-slate-500 font-bold">Harga Publikasi</span>
+            <p class="display text-3xl mt-1.5 text-slate-900">Rp 2,6 Miliar-an</p>
+            <p class="mt-1.5 text-xs text-brand-700 font-semibold">Pricelist ALL IN · Bebas PPN</p>
+          </div>
+
+          <ul class="mt-7 space-y-3 text-sm text-slate-600 flex-grow">
+            <li class="flex gap-3">
+              <svg class="w-4 h-4 text-brand-700 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span><strong class="text-slate-900">11 kamar tidur</strong> full furnished</span>
+            </li>
+            <li class="flex gap-3">
+              <svg class="w-4 h-4 text-brand-700 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>Bangunan kokoh 3 lantai</span>
+            </li>
+            <li class="flex gap-3">
+              <svg class="w-4 h-4 text-brand-700 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>Garansi okupansi 70% (2 tahun)</span>
+            </li>
+            <li class="flex gap-3">
+              <svg class="w-4 h-4 text-brand-700 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>Cash keras &amp; cash bertahap</span>
+            </li>
+          </ul>
+
+          <button onclick="pilihUnitWhatsApp('Tipe 11 Kamar 3 Lantai (Mulai Rp 2,6 M-an)')" class="btn btn-accent w-full mt-9">
+            Pilih Tipe 11 Kamar
+          </button>
         </div>
 
         <!-- Tipe 12 Kamar -->
-        <div class="bg-white rounded-2xl border border-slate-200 p-7 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
-          <div>
-            <div class="aspect-[16/10] rounded-xl overflow-hidden bg-slate-100 mb-5 relative">
-              <img src="./assets/images/tipe-12-kamar.webp" alt="Tipe 12 Kamar" class="w-full h-full object-cover" onerror="this.src='./assets/images/gallery-3.webp'"/>
-              <span class="absolute top-3 left-3 bg-slate-900 text-white text-xs font-bold px-2.5 py-1 rounded">
-                Yield Tertinggi
-              </span>
-            </div>
-
-            <h3 class="text-2xl font-extrabold text-slate-900">Tipe 12 Kamar</h3>
-            <p class="text-xs text-slate-500 font-semibold mt-1">Bangunan 3 Lantai • Kapasitas Maksimal</p>
-
-            <div class="my-6 p-4 rounded-xl bg-slate-50 border border-slate-200">
-              <span class="text-xs text-slate-500 font-bold block uppercase">Harga Publish:</span>
-              <span class="text-2xl sm:text-3xl font-extrabold text-brand-900 block mt-0.5">Rp 2,7 Miliar-an</span>
-              <span class="text-xs font-bold text-brand-700 block mt-1">✓ Pricelist ALL IN (Bebas PPN)</span>
-            </div>
-
-            <ul class="space-y-2.5 text-sm text-slate-700 font-medium">
-              <li class="flex items-center gap-2">
-                <span class="text-brand-700 font-bold">✓</span>
-                <span><strong>12 Kamar Tidur</strong> Eksklusif</span>
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="text-brand-700 font-bold">✓</span>
-                <span>AC Split & Water Heater tiap kamar</span>
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="text-brand-700 font-bold">✓</span>
-                <span>Garansi Okupansi 70% (2 Tahun)</span>
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="text-brand-700 font-bold">✓</span>
-                <span>Potensi Arus Kas Paling Maksimal</span>
-              </li>
-            </ul>
+        <div class="flex flex-col bg-white border border-slate-200 p-8">
+          <div class="relative aspect-[16/10] overflow-hidden bg-slate-100">
+            <img src="./assets/images/tipe-12-kamar.webp" alt="Tipe 12 Kamar" class="w-full h-full object-cover" onerror="this.src='./assets/images/gallery-3.webp'"/>
           </div>
 
-          <div class="pt-8 mt-6">
-            <button onclick="pilihUnitWhatsApp('Tipe 12 Kamar 3 Lantai (Mulai Rp 2,7 M-an)')" class="w-full bg-slate-900 hover:bg-brand-900 text-white font-bold py-3.5 px-4 rounded-xl text-sm transition-all shadow-sm">
-              Tanya Unit Tipe 12 Kamar
-            </button>
+          <div class="mt-7 flex items-baseline justify-between gap-4">
+            <h3 class="font-serif text-2xl text-slate-900">Tipe 12 Kamar</h3>
+            <span class="badge">Yield Tertinggi</span>
           </div>
+
+          <div class="mt-6 pt-6 border-t border-slate-200">
+            <span class="text-[0.68rem] uppercase tracking-[0.18em] text-slate-500 font-bold">Harga Publikasi</span>
+            <p class="display text-3xl mt-1.5 text-slate-900">Rp 2,7 Miliar-an</p>
+            <p class="mt-1.5 text-xs text-brand-700 font-semibold">Pricelist ALL IN · Bebas PPN</p>
+          </div>
+
+          <ul class="mt-7 space-y-3 text-sm text-slate-600 flex-grow">
+            <li class="flex gap-3">
+              <svg class="w-4 h-4 text-brand-700 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span><strong class="text-slate-900">12 kamar tidur</strong> eksklusif</span>
+            </li>
+            <li class="flex gap-3">
+              <svg class="w-4 h-4 text-brand-700 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>AC split &amp; water heater di tiap kamar</span>
+            </li>
+            <li class="flex gap-3">
+              <svg class="w-4 h-4 text-brand-700 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>Garansi okupansi 70% (2 tahun)</span>
+            </li>
+            <li class="flex gap-3">
+              <svg class="w-4 h-4 text-brand-700 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>Potensi arus kas paling maksimal</span>
+            </li>
+          </ul>
+
+          <button onclick="pilihUnitWhatsApp('Tipe 12 Kamar 3 Lantai (Mulai Rp 2,7 M-an)')" class="btn btn-outline w-full mt-9">
+            Tanya Tipe 12 Kamar
+          </button>
         </div>
 
       </div>
+
+      <p class="mt-10 text-xs text-slate-500 max-w-3xl">
+        Seluruh harga dalam skema Pricelist ALL IN, PPN ditanggung developer. Ketersediaan unit terbatas: total 22 unit di seluruh kawasan.
+      </p>
 
     </div>
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 7. SEKSI MANIPULASI GAMBAR (BEFORE/AFTER SLIDER & LIGHTING) -->
+  <!-- 7. SIMULASI TRANSFORMASI INTERIOR -->
   <!-- ========================================================================= -->
-  <section id="simulasi-3d" class="py-20 bg-slate-900 text-white border-b border-slate-800">
+  <section id="simulasi-3d" class="py-20 lg:py-28 bg-slate-950 text-white border-b border-slate-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
-        <span class="text-xs font-bold uppercase tracking-wider text-accent-400 bg-slate-800 px-3 py-1 rounded border border-slate-700">
-          Fitur Interaktif
-        </span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-          Simulasi Perbandingan Ruangan & Desain Interior
-        </h2>
-        <p class="text-slate-300 text-sm sm:text-base font-medium">
-          Geser garis slider di bawah untuk melihat perbedaan kondisi ruang awal vs kamar full furnished siap huni.
-        </p>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-14">
+        <div class="lg:col-span-8">
+          <span class="eyebrow !text-accent-400"><span class="rule w-10" style="background:linear-gradient(to right, rgba(198,164,90,0.45), rgba(198,164,90,0))"></span>Interaktif</span>
+          <h2 class="display text-3xl sm:text-4xl mt-5 text-white">
+            Simulasi Transformasi Interior
+          </h2>
+          <p class="mt-5 text-slate-400 leading-relaxed max-w-2xl">
+            Geser garis pembanding untuk melihat perbedaan ruang awal dengan kamar full furnished siap huni.
+          </p>
+        </div>
+        <div class="lg:col-span-4 flex items-center gap-1 lg:justify-end">
+          <button onclick="setLightMode('day')" id="lbtn-day" class="text-[0.7rem] uppercase tracking-[0.16em] font-bold px-3 py-2 text-white border-b-2 border-accent-400 transition-colors">Siang</button>
+          <button onclick="setLightMode('golden')" id="lbtn-golden" class="text-[0.7rem] uppercase tracking-[0.16em] font-bold px-3 py-2 text-slate-500 hover:text-white border-b-2 border-transparent transition-colors">Golden Hour</button>
+          <button onclick="setLightMode('night')" id="lbtn-night" class="text-[0.7rem] uppercase tracking-[0.16em] font-bold px-3 py-2 text-slate-500 hover:text-white border-b-2 border-transparent transition-colors">Malam</button>
+        </div>
       </div>
 
-      <div class="max-w-4xl mx-auto bg-slate-800 p-4 sm:p-7 rounded-2xl border border-slate-700 shadow-2xl">
-        
-        <!-- Lighting Filter Buttons -->
-        <div class="flex items-center justify-between flex-wrap gap-3 pb-5 border-b border-slate-700">
-          <span class="text-xs font-bold text-slate-300 uppercase tracking-wider">Mode Pencahayaan Kamar:</span>
-          <div class="flex items-center gap-2">
-            <button onclick="setLightMode('day')" id="lbtn-day" class="px-3.5 py-1.5 bg-brand-700 text-white rounded text-xs font-bold transition-all">☀️ Siang Cerah</button>
-            <button onclick="setLightMode('golden')" id="lbtn-golden" class="px-3.5 py-1.5 bg-slate-700 text-slate-300 hover:text-white rounded text-xs font-bold transition-all">🌅 Golden Hour</button>
-            <button onclick="setLightMode('night')" id="lbtn-night" class="px-3.5 py-1.5 bg-slate-700 text-slate-300 hover:text-white rounded text-xs font-bold transition-all">🌙 Malam Hari</button>
-          </div>
-        </div>
+      <div class="max-w-4xl mx-auto bg-slate-900 border border-slate-800 p-4 sm:p-7">
+        <div class="relative aspect-[16/10] sm:aspect-[16/9] overflow-hidden comparison-box bg-slate-950">
 
-        <!-- Slider Canvas Container -->
-        <div class="mt-6 relative aspect-[16/10] sm:aspect-[16/9] rounded-xl overflow-hidden comparison-box border border-slate-600 bg-slate-950">
-          
           <!-- Background: AFTER (Furnished) -->
-          <img 
+          <img
             id="pic-after"
-            src="./assets/images/after-furnished.webp" 
-            alt="Kamar Full Furnished" 
+            src="./assets/images/after-furnished.webp"
+            alt="Kamar Full Furnished"
             class="absolute inset-0 w-full h-full object-cover transition-all duration-300"
           />
-          <span class="absolute top-4 right-4 bg-brand-900/90 text-brand-200 text-xs font-bold px-3 py-1 rounded border border-brand-600">
+          <span class="absolute top-4 right-4 bg-brand-900/90 text-brand-200 text-xs font-bold px-3 py-1 border border-brand-600 tracking-wide uppercase text-[0.65rem]">
             Hasil Full Furnished
           </span>
 
           <!-- Foreground: BEFORE (Unfurnished) -->
           <div id="clip-before" class="absolute inset-0 w-1/2 overflow-hidden border-r-2 border-white z-20">
-            <img 
+            <img
               id="pic-before"
-              src="./assets/images/before-unfurnished.webp" 
-              alt="Ruang Awal / Kosong" 
+              src="./assets/images/before-unfurnished.webp"
+              alt="Ruang Awal / Kosong"
               class="absolute inset-0 w-full h-full object-cover max-w-none transition-all duration-300"
             />
-            <span class="absolute top-4 left-4 bg-slate-900/90 text-slate-200 text-xs font-bold px-3 py-1 rounded border border-slate-700">
-              Tahap Awal / Kosong
+            <span class="absolute top-4 left-4 bg-slate-950/90 text-slate-300 text-xs font-bold px-3 py-1 border border-slate-700 tracking-wide uppercase text-[0.65rem]">
+              Ruang Awal
             </span>
           </div>
 
           <!-- Divider Handle -->
           <div id="drag-handle" class="absolute top-0 bottom-0 left-1/2 -ml-3.5 w-7 flex items-center justify-center cursor-ew-resize z-30 pointer-events-none">
             <div class="w-7 h-7 rounded-full bg-white text-slate-900 font-bold text-xs flex items-center justify-center shadow-lg border-2 border-brand-700">
-              ↔
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7l-4 5 4 5m8-10l4 5-4 5"/></svg>
             </div>
           </div>
 
           <!-- Draggable Range Input -->
-          <input 
-            type="range" 
-            min="0" 
-            max="100" 
-            value="50" 
-            id="range-slider-input" 
-            class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40" 
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            id="range-slider-input"
+            class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40"
             aria-label="Geser perbandingan"
           />
         </div>
 
-        <p class="text-center text-xs text-slate-400 font-semibold mt-4">
-          👆 Geser slider ke kanan atau ke kiri untuk melihat transformasi kamar tidur.
+        <p class="text-center text-xs text-slate-500 font-medium mt-5">
+          Geser slider ke kanan atau kiri untuk melihat transformasi kamar tidur.
         </p>
-
       </div>
 
     </div>
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 8. KALKULATOR POTENSI YIELD ARUS KAS -->
+  <!-- 8. KALKULATOR POTENSI PENDAPATAN SEWA -->
   <!-- ========================================================================= -->
-  <section id="kalkulator-yield" class="py-20 bg-slate-50 border-b border-slate-200">
+  <section id="kalkulator-yield" class="py-20 lg:py-28 bg-slate-50 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="max-w-4xl mx-auto bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-lg">
-        
-        <div class="text-center space-y-2 mb-10">
-          <span class="text-xs font-bold uppercase tracking-wider text-brand-800 bg-brand-100 px-3 py-1 rounded border border-brand-300">
-            Simulasi Finansial
-          </span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+
+        <!-- Header -->
+        <div class="lg:col-span-5">
+          <span class="eyebrow"><span class="rule w-10"></span>Simulasi Finansial</span>
+          <h2 class="display text-3xl sm:text-4xl mt-5 text-slate-900">
             Kalkulator Proyeksi Pendapatan Sewa
           </h2>
-          <p class="text-slate-600 text-sm font-medium">
+          <p class="mt-5 text-slate-600 leading-relaxed">
             Hitung perkiraan pendapatan sewa bruto tahunan berdasarkan kapasitas unit dan estimasi tarif sewa kamar mahasiswa.
+          </p>
+          <p class="mt-6 text-xs text-slate-500">
+            * Garansi developer minimal 70% okupansi selama 2 tahun.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-          
-          <!-- Sliders -->
-          <div class="md:col-span-6 space-y-6">
-            
-            <div>
-              <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Pilih Tipe Unit:</label>
-              <div class="grid grid-cols-3 gap-2">
-                <button type="button" onclick="setCalcUnit(9)" id="btn-c-9" class="calc-unit-btn py-2.5 px-3 rounded-lg border text-sm font-bold bg-slate-900 text-white border-slate-900 transition-all">9 Kamar</button>
-                <button type="button" onclick="setCalcUnit(11)" id="btn-c-11" class="calc-unit-btn py-2.5 px-3 rounded-lg border text-sm font-bold bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 transition-all">11 Kamar</button>
-                <button type="button" onclick="setCalcUnit(12)" id="btn-c-12" class="calc-unit-btn py-2.5 px-3 rounded-lg border text-sm font-bold bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100 transition-all">12 Kamar</button>
+        <!-- Panel -->
+        <div class="lg:col-span-7 bg-white border border-slate-200 p-6 sm:p-10">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+
+            <!-- Controls -->
+            <div class="md:col-span-6 space-y-8">
+
+              <div>
+                <label class="block text-[0.7rem] uppercase tracking-[0.18em] font-bold text-slate-700 mb-3">Pilih Tipe Unit</label>
+                <div class="grid grid-cols-3 gap-2">
+                  <button type="button" onclick="setCalcUnit(9)" id="btn-c-9" class="calc-unit-btn py-3 px-2 border text-sm font-bold bg-brand-900 text-white border-brand-900 transition-all">9 Kamar</button>
+                  <button type="button" onclick="setCalcUnit(11)" id="btn-c-11" class="calc-unit-btn py-3 px-2 border text-sm font-bold bg-white text-slate-700 border-slate-200 hover:bg-slate-50 transition-all">11 Kamar</button>
+                  <button type="button" onclick="setCalcUnit(12)" id="btn-c-12" class="calc-unit-btn py-3 px-2 border text-sm font-bold bg-white text-slate-700 border-slate-200 hover:bg-slate-50 transition-all">12 Kamar</button>
+                </div>
               </div>
+
+              <div>
+                <div class="flex justify-between items-center mb-2 text-[0.7rem] uppercase tracking-[0.14em] font-bold text-slate-700">
+                  <span>Tarif Sewa / Kamar / Bulan</span>
+                  <span class="text-brand-800 text-sm normal-case tracking-normal" id="label-sewa">Rp 1.800.000</span>
+                </div>
+                <input type="range" min="1500000" max="2500000" step="50000" value="1800000" id="slider-sewa" class="w-full"/>
+                <div class="flex justify-between text-[11px] text-slate-400 font-semibold mt-1.5">
+                  <span>Rp 1,5 Jt</span>
+                  <span>Rp 2,0 Jt</span>
+                  <span>Rp 2,5 Jt</span>
+                </div>
+              </div>
+
+              <div>
+                <div class="flex justify-between items-center mb-2 text-[0.7rem] uppercase tracking-[0.14em] font-bold text-slate-700">
+                  <span>Tingkat Okupansi</span>
+                  <span class="text-accent-700 text-sm normal-case tracking-normal" id="label-okupansi">90%</span>
+                </div>
+                <input type="range" min="70" max="100" step="5" value="90" id="slider-okupansi" class="w-full"/>
+              </div>
+
             </div>
 
-            <div>
-              <div class="flex justify-between items-center mb-1.5 text-xs">
-                <span class="font-bold uppercase text-slate-700">Tarif Sewa / Kamar / Bulan:</span>
-                <span class="font-extrabold text-brand-800 text-sm" id="label-sewa">Rp 1.800.000</span>
-              </div>
-              <input type="range" min="1500000" max="2500000" step="50000" value="1800000" id="slider-sewa" class="w-full"/>
-              <div class="flex justify-between text-[11px] text-slate-400 font-semibold mt-1">
-                <span>Rp 1,5 Jt</span>
-                <span>Rp 2,0 Jt</span>
-                <span>Rp 2,5 Jt</span>
-              </div>
-            </div>
+            <!-- Result -->
+            <div class="md:col-span-6 bg-brand-900 text-slate-200 p-7 sm:p-8">
+              <span class="eyebrow !text-accent-400">Hasil Estimasi Pendapatan</span>
 
-            <div>
-              <div class="flex justify-between items-center mb-1.5 text-xs">
-                <span class="font-bold uppercase text-slate-700">Tingkat Okupansi:</span>
-                <span class="font-extrabold text-accent-700 text-sm" id="label-okupansi">90%</span>
+              <div class="mt-7">
+                <span class="text-xs text-slate-400 font-medium block">Potensi Arus Kas Bulanan</span>
+                <span class="stat-num text-3xl text-white block mt-1.5" id="val-monthly">Rp 14.580.000</span>
               </div>
-              <input type="range" min="70" max="100" step="5" value="90" id="slider-okupansi" class="w-full"/>
-              <p class="text-[11px] text-slate-500 font-semibold mt-1">*Garansi developer minimal 70% (2 tahun).</p>
+
+              <div class="mt-6 pt-6 border-t border-slate-800">
+                <span class="text-xs text-slate-400 font-medium block">Potensi Arus Kas Tahunan</span>
+                <span class="stat-num text-4xl text-accent-400 block mt-1.5" id="val-annual">Rp 174.960.000</span>
+              </div>
+
+              <div class="mt-6 pt-6 border-t border-slate-800 flex items-center justify-between text-xs text-slate-300 font-medium">
+                <span>Indikator Yield Sewa</span>
+                <span class="font-bold text-white text-sm" id="val-yield">~7,6% / Tahun</span>
+              </div>
+
+              <button onclick="kirimHasilCalcWA()" class="btn btn-accent w-full mt-8">
+                Konsultasi Hasil Hitung
+              </button>
             </div>
 
           </div>
-
-          <!-- Display Output Card -->
-          <div class="md:col-span-6 bg-slate-900 text-white rounded-xl p-6 sm:p-7 border border-slate-800 shadow-md">
-            <span class="text-xs font-bold uppercase tracking-wider text-accent-400 block mb-3">Hasil Estimasi Pendapatan:</span>
-            
-            <div class="mb-4">
-              <span class="text-xs text-slate-400 font-medium block">Potensi Arus Kas Bulanan:</span>
-              <span class="text-2xl font-extrabold text-white block mt-0.5" id="val-monthly">Rp 14.580.000</span>
-            </div>
-
-            <div class="mb-4 pt-4 border-t border-slate-800">
-              <span class="text-xs text-slate-400 font-medium block">Potensi Arus Kas Tahunan:</span>
-              <span class="text-3xl font-extrabold text-accent-400 block mt-0.5" id="val-annual">Rp 174.960.000</span>
-            </div>
-
-            <div class="pt-3 border-t border-slate-800 flex items-center justify-between text-xs text-slate-300 font-medium">
-              <span>Indikator Yield Sewa:</span>
-              <span class="font-bold text-white text-sm" id="val-yield">~7,6% / Tahun</span>
-            </div>
-
-            <button onclick="kirimHasilCalcWA()" class="w-full mt-6 bg-accent-500 hover:bg-accent-600 text-slate-950 font-extrabold py-3 px-4 rounded-lg text-xs uppercase tracking-wider transition-all">
-              Konsultasi Hasil Hitung via WhatsApp &rarr;
-            </button>
-          </div>
-
         </div>
 
       </div>
@@ -898,93 +760,83 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 9. GALERI PROPERTI -->
+  <!-- 9. GALERI -->
   <!-- ========================================================================= -->
-  <section id="galeri" class="py-20 bg-white border-b border-slate-200">
+  <section id="galeri" class="py-20 lg:py-28 bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
-        <span class="text-xs font-bold uppercase tracking-wider text-brand-800 bg-brand-100 px-3 py-1 rounded border border-brand-300">
-          Dokumentasi Visual
-        </span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-          Galeri & Dokumentasi Kawasan Properti
+
+      <div class="max-w-2xl">
+        <span class="eyebrow"><span class="rule w-10"></span>Dokumentasi</span>
+        <h2 class="display text-3xl sm:text-4xl mt-5 text-slate-900">
+          Galeri &amp; Dokumentasi Properti
         </h2>
-        <p class="text-slate-600 text-sm sm:text-base font-medium">
+        <p class="mt-5 text-slate-600 leading-relaxed">
           Foto lapangan, visualisasi arsitektur eksterior, dan desain interior GREN Propertykost Jatinangor.
         </p>
       </div>
 
-      <!-- Grid Photos -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        
-        <!-- Photo 1: Foto Asli -->
-        <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 shadow-sm cursor-pointer group" onclick="showLightbox('./assets/images/rumah-asli.jpg', 'Foto Properti & Kawasan GREN Propertykost')">
-          <div class="aspect-[4/3] overflow-hidden bg-slate-900">
-            <img src="./assets/images/rumah-asli.jpg" alt="Foto Properti Lapangan GREN Property" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80'" />
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
+
+        <div class="group cursor-pointer" onclick="showLightbox('./assets/images/rumah-asli.jpg', 'Fasad & akses kawasan GREN Propertykost')">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-100">
+            <img src="./assets/images/rumah-asli.jpg" alt="Foto properti lapangan GREN Property" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80'" />
           </div>
-          <div class="p-4 bg-white">
-            <span class="text-[11px] font-bold text-accent-700 uppercase">GREN Property • Dokumentasi Properti</span>
-            <p class="font-bold text-slate-900 text-base mt-0.5">Fasad & Akses Kawasan Properti</p>
+          <div class="pt-4 flex items-baseline justify-between gap-4 border-t border-slate-200 mt-4">
+            <p class="font-serif text-lg text-slate-900">Fasad &amp; Akses Kawasan</p>
+            <span class="text-[0.62rem] uppercase tracking-[0.16em] text-slate-400 font-bold shrink-0">Foto Properti</span>
           </div>
         </div>
 
-        <!-- Photo 2: Visual Sudut -->
-        <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 shadow-sm cursor-pointer group" onclick="showLightbox('./assets/images/gallery-1.webp', 'Fasad Arsitektur Gedung 3 Lantai GREN Property')">
-          <div class="aspect-[4/3] overflow-hidden bg-slate-900">
-            <img src="./assets/images/gallery-1.webp" alt="Desain Arsitektur GREN Property" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+        <div class="group cursor-pointer" onclick="showLightbox('./assets/images/gallery-1.webp', 'Fasad arsitektur gedung 3 lantai')">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-100">
+            <img src="./assets/images/gallery-1.webp" alt="Desain arsitektur GREN Property" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" />
           </div>
-          <div class="p-4 bg-white">
-            <span class="text-[11px] font-bold text-brand-700 uppercase">GREN Property • Arsitektur 3 Lantai</span>
-            <p class="font-bold text-slate-900 text-base mt-0.5">Gedung Rukost 3 Lantai Modern</p>
-          </div>
-        </div>
-
-        <!-- Photo 3: Kamar Tidur -->
-        <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 shadow-sm cursor-pointer group" onclick="showLightbox('./assets/images/gallery-2.webp', 'Desain Kamar Tidur Full Furnished GREN Property')">
-          <div class="aspect-[4/3] overflow-hidden bg-slate-900">
-            <img src="./assets/images/gallery-2.webp" alt="Interior Kamar Tidur GREN Property" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-          </div>
-          <div class="p-4 bg-white">
-            <span class="text-[11px] font-bold text-accent-700 uppercase">GREN Property • Interior Kamar</span>
-            <p class="font-bold text-slate-900 text-base mt-0.5">Kamar Full Furnished Siap Huni</p>
+          <div class="pt-4 flex items-baseline justify-between gap-4 border-t border-slate-200 mt-4">
+            <p class="font-serif text-lg text-slate-900">Gedung Rukost 3 Lantai</p>
+            <span class="text-[0.62rem] uppercase tracking-[0.16em] text-slate-400 font-bold shrink-0">Arsitektur</span>
           </div>
         </div>
 
-        <!-- Photo 4: Kamar Mandi -->
-        <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 shadow-sm cursor-pointer group" onclick="showLightbox('./assets/images/gallery-3.webp', 'Kamar Mandi Dalam & Water Heater GREN Property')">
-          <div class="aspect-[4/3] overflow-hidden bg-slate-900">
-            <img src="./assets/images/gallery-3.webp" alt="Kamar Mandi GREN Property" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+        <div class="group cursor-pointer" onclick="showLightbox('./assets/images/gallery-2.webp', 'Kamar tidur full furnished siap huni')">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-100">
+            <img src="./assets/images/gallery-2.webp" alt="Interior kamar tidur GREN Property" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" />
           </div>
-          <div class="p-4 bg-white">
-            <span class="text-[11px] font-bold text-brand-700 uppercase">GREN Property • Sanitair Toto</span>
-            <p class="font-bold text-slate-900 text-base mt-0.5">Sanitair Toto & Water Heater</p>
-          </div>
-        </div>
-
-        <!-- Photo 5: Kawasan -->
-        <div class="bg-slate-50 rounded-xl overflow-hidden border border-slate-200 shadow-sm cursor-pointer group" onclick="showLightbox('./assets/images/gallery-4.webp', 'Marketing Gallery & Jalan Kawasan GREN Property')">
-          <div class="aspect-[4/3] overflow-hidden bg-slate-900">
-            <img src="./assets/images/gallery-4.webp" alt="Kawasan GREN Property" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-          </div>
-          <div class="p-4 bg-white">
-            <span class="text-[11px] font-bold text-accent-700 uppercase">GREN Property • Infrastruktur Kawasan</span>
-            <p class="font-bold text-slate-900 text-base mt-0.5">Marketing Gallery & Jalan Paving</p>
+          <div class="pt-4 flex items-baseline justify-between gap-4 border-t border-slate-200 mt-4">
+            <p class="font-serif text-lg text-slate-900">Kamar Full Furnished</p>
+            <span class="text-[0.62rem] uppercase tracking-[0.16em] text-slate-400 font-bold shrink-0">Interior</span>
           </div>
         </div>
 
-        <!-- Photo 6: Request Siteplan -->
-        <div class="bg-slate-900 text-white rounded-xl p-6 flex flex-col justify-between border border-slate-800 cursor-pointer shadow-sm" onclick="document.getElementById('konsultasi').scrollIntoView({behavior:'smooth'})">
+        <div class="group cursor-pointer" onclick="showLightbox('./assets/images/gallery-3.webp', 'Kamar mandi dalam dengan water heater')">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-100">
+            <img src="./assets/images/gallery-3.webp" alt="Kamar mandi GREN Property" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" />
+          </div>
+          <div class="pt-4 flex items-baseline justify-between gap-4 border-t border-slate-200 mt-4">
+            <p class="font-serif text-lg text-slate-900">Kamar Mandi Dalam</p>
+            <span class="text-[0.62rem] uppercase tracking-[0.16em] text-slate-400 font-bold shrink-0">Sanitair</span>
+          </div>
+        </div>
+
+        <div class="group cursor-pointer" onclick="showLightbox('./assets/images/gallery-4.webp', 'Marketing gallery & jalan kawasan')">
+          <div class="aspect-[4/3] overflow-hidden bg-slate-100">
+            <img src="./assets/images/gallery-4.webp" alt="Kawasan GREN Property" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" />
+          </div>
+          <div class="pt-4 flex items-baseline justify-between gap-4 border-t border-slate-200 mt-4">
+            <p class="font-serif text-lg text-slate-900">Marketing Gallery &amp; Jalan</p>
+            <span class="text-[0.62rem] uppercase tracking-[0.16em] text-slate-400 font-bold shrink-0">Kawasan</span>
+          </div>
+        </div>
+
+        <!-- CTA Tile -->
+        <div class="flex flex-col justify-between bg-slate-50 border border-slate-200 p-8 cursor-pointer" onclick="document.getElementById('konsultasi').scrollIntoView({behavior:'smooth'})">
           <div>
-            <span class="text-xs font-bold text-accent-400 uppercase tracking-wider">Booklet & Siteplan</span>
-            <h4 class="text-xl font-bold text-white mt-2">Dapatkan Masterplan & Denah Lantai Lengkap</h4>
-            <p class="text-xs text-slate-300 font-medium mt-2 leading-relaxed">
-              Minta file PDF denah per lantai, spesifikasi material, dan master stock aktif langsung melalui konsultan kami.
+            <span class="badge">Booklet &amp; Siteplan</span>
+            <h4 class="font-serif text-2xl text-slate-900 mt-4">Dapatkan Masterplan &amp; Denah Lantai Lengkap</h4>
+            <p class="mt-3 text-sm text-slate-600 leading-relaxed">
+              Minta file PDF denah per lantai, spesifikasi material, dan master stock aktif melalui konsultan kami.
             </p>
           </div>
-          <button class="mt-6 w-full bg-brand-700 hover:bg-brand-600 text-white font-bold py-3 rounded-lg text-xs uppercase tracking-wider">
-            Minta Booklet PDF &rarr;
-          </button>
+          <button class="btn btn-primary w-full mt-8">Minta Booklet PDF</button>
         </div>
 
       </div>
@@ -993,81 +845,68 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 10. FORMULIR KONSULTASI PRIVAT (DIRECT WHATSAPP) -->
+  <!-- 10. FORMULIR KONSULTASI -->
   <!-- ========================================================================= -->
-  <section id="konsultasi" class="py-20 bg-slate-50 border-b border-slate-200">
+  <section id="konsultasi" class="py-20 lg:py-28 bg-slate-50 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
+
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-        
-        <!-- Left: Copy -->
-        <div class="lg:col-span-5 space-y-5">
-          <span class="text-xs font-bold uppercase tracking-wider text-brand-800 bg-brand-100 px-3 py-1 rounded border border-brand-300">
-            Jadwal Survey & Booking
-          </span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+
+        <!-- Copy -->
+        <div class="lg:col-span-5">
+          <span class="eyebrow"><span class="rule w-10"></span>Jadwal Survey &amp; Booking</span>
+          <h2 class="display text-3xl sm:text-4xl mt-5 text-slate-900 leading-[1.2]">
             Amankan Unit Pilihan Anda di GREN Propertykost
           </h2>
-          <p class="text-slate-600 text-base font-medium leading-relaxed">
+          <p class="mt-5 text-slate-600 leading-relaxed">
             Hanya tersedia total 22 unit di seluruh kawasan. Isi formulir singkat di samping untuk mendapatkan pricelist resmi, cek nomor unit yang masih aktif, dan jadwal survey lokasi.
           </p>
 
-          <div class="pt-4 space-y-3 text-sm text-slate-700 font-semibold">
-            <div class="flex items-center gap-3">
-              <span class="w-6 h-6 rounded-full bg-brand-100 text-brand-800 flex items-center justify-center text-xs font-bold">✓</span>
+          <div class="mt-8 space-y-4 text-sm text-slate-700 font-medium">
+            <div class="flex items-center gap-3.5">
+              <span class="w-7 h-7 border border-brand-700 text-brand-700 flex items-center justify-center shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              </span>
               <span>Respon cepat dari konsultan resmi GREN Property</span>
             </div>
-            <div class="flex items-center gap-3">
-              <span class="w-6 h-6 rounded-full bg-brand-100 text-brand-800 flex items-center justify-center text-xs font-bold">✓</span>
-              <span>Booking Fee Rp 10 Juta untuk mengunci unit</span>
+            <div class="flex items-center gap-3.5">
+              <span class="w-7 h-7 border border-brand-700 text-brand-700 flex items-center justify-center shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <span>Booking fee Rp 10 juta untuk mengunci unit</span>
             </div>
-            <div class="flex items-center gap-3">
-              <span class="w-6 h-6 rounded-full bg-brand-100 text-brand-800 flex items-center justify-center text-xs font-bold">✓</span>
-              <span>Tersedia Video Call Live Site-Tour untuk luar pulau</span>
+            <div class="flex items-center gap-3.5">
+              <span class="w-7 h-7 border border-brand-700 text-brand-700 flex items-center justify-center shrink-0">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <span>Tersedia video call live site-tour untuk investor luar pulau</span>
             </div>
           </div>
         </div>
 
-        <!-- Right: Form -->
-        <div class="lg:col-span-7 bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-lg">
-          <form id="contact-form" class="space-y-5">
-            
+        <!-- Form -->
+        <div class="lg:col-span-7 bg-white border border-slate-200 p-6 sm:p-12">
+          <form id="contact-form" class="space-y-6">
+
             <div>
-              <label for="in-nama" class="block text-xs font-bold uppercase tracking-wider text-slate-800 mb-1.5">Nama Lengkap *</label>
-              <input 
-                type="text" 
-                id="in-nama" 
-                required 
-                placeholder="Contoh: Bpk. Hendra / Ibu Rina" 
-                class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-700 text-sm font-medium"
-              />
+              <label for="in-nama" class="block text-[0.7rem] uppercase tracking-[0.18em] font-bold text-slate-800 mb-2">Nama Lengkap *</label>
+              <input type="text" id="in-nama" required placeholder="Bpk. Hendra / Ibu Rina" class="field" />
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
               <div>
-                <label for="in-wa" class="block text-xs font-bold uppercase tracking-wider text-slate-800 mb-1.5">Nomor WhatsApp *</label>
-                <input 
-                  type="tel" 
-                  id="in-wa" 
-                  required 
-                  placeholder="08xxxxxxxxxx" 
-                  class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-700 text-sm font-medium"
-                />
+                <label for="in-wa" class="block text-[0.7rem] uppercase tracking-[0.18em] font-bold text-slate-800 mb-2">Nomor WhatsApp *</label>
+                <input type="tel" id="in-wa" required placeholder="08xxxxxxxxxx" class="field" />
               </div>
               <div>
-                <label for="in-email" class="block text-xs font-bold uppercase tracking-wider text-slate-800 mb-1.5">Email (Opsional)</label>
-                <input 
-                  type="email" 
-                  id="in-email" 
-                  placeholder="email@anda.com" 
-                  class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-700 text-sm font-medium"
-                />
+                <label for="in-email" class="block text-[0.7rem] uppercase tracking-[0.18em] font-bold text-slate-800 mb-2">Email (Opsional)</label>
+                <input type="email" id="in-email" placeholder="email@anda.com" class="field" />
               </div>
             </div>
 
             <div>
-              <label for="in-unit" class="block text-xs font-bold uppercase tracking-wider text-slate-800 mb-1.5">Pilihan Tipe Unit</label>
-              <select id="in-unit" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-700 text-sm font-semibold bg-white">
+              <label for="in-unit" class="block text-[0.7rem] uppercase tracking-[0.18em] font-bold text-slate-800 mb-2">Pilihan Tipe Unit</label>
+              <select id="in-unit" class="field bg-white">
                 <option value="Tipe 9 Kamar (Mulai Rp 2,3 M-an)">Tipe 9 Kamar — Mulai Rp 2,3 Miliar-an</option>
                 <option value="Tipe 11 Kamar 3 Lantai (Mulai Rp 2,6 M-an)" selected>Tipe 11 Kamar (3 Lantai) — Mulai Rp 2,6 Miliar-an</option>
                 <option value="Tipe 12 Kamar 3 Lantai (Mulai Rp 2,7 M-an)">Tipe 12 Kamar (3 Lantai) — Mulai Rp 2,7 Miliar-an</option>
@@ -1076,24 +915,17 @@
             </div>
 
             <div>
-              <label for="in-pesan" class="block text-xs font-bold uppercase tracking-wider text-slate-800 mb-1.5">Pesan / Rencana Kunjungan</label>
-              <textarea 
-                id="in-pesan" 
-                rows="3" 
-                placeholder="Contoh: Mohon kirimkan pricelist lengkap dan jadwalkan survey lokasi hari Sabtu ini."
-                class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-700 text-sm font-medium"
-              ></textarea>
+              <label for="in-pesan" class="block text-[0.7rem] uppercase tracking-[0.18em] font-bold text-slate-800 mb-2">Pesan / Rencana Kunjungan</label>
+              <textarea id="in-pesan" rows="3" placeholder="Contoh: mohon kirimkan pricelist lengkap dan jadwalkan survey lokasi hari Sabtu ini." class="field"></textarea>
             </div>
 
-            <button 
-              type="submit" 
-              class="w-full bg-brand-800 hover:bg-brand-900 text-white font-extrabold py-4 px-6 rounded-xl text-base shadow-md transition-all flex items-center justify-center gap-2"
-            >
-              <span>Kirim Pesan ke WhatsApp &rarr;</span>
+            <button type="submit" class="btn btn-primary w-full !py-4">
+              Kirim Pesan ke WhatsApp
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
             </button>
 
             <p class="text-[11px] text-center text-slate-500 font-medium">
-              🔒 Data Anda aman & hanya digunakan untuk keperluan konsultasi resmi GREN Property.
+              Data Anda aman dan hanya digunakan untuk keperluan konsultasi resmi GREN Property.
             </p>
           </form>
         </div>
@@ -1104,59 +936,57 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 11. FAQ ACCORDION -->
+  <!-- 11. FAQ -->
   <!-- ========================================================================= -->
-  <section id="faq" class="py-20 bg-white border-b border-slate-200">
+  <section id="faq" class="py-20 lg:py-28 bg-white border-b border-slate-200">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center mb-14 space-y-3">
-        <span class="text-xs font-bold uppercase tracking-wider text-brand-800 bg-brand-100 px-3 py-1 rounded border border-brand-300">
-          FAQ
-        </span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+
+      <div class="max-w-2xl">
+        <span class="eyebrow"><span class="rule w-10"></span>FAQ</span>
+        <h2 class="display text-3xl sm:text-4xl mt-5 text-slate-900">
           Pertanyaan Seputar Investasi
         </h2>
       </div>
 
-      <div class="space-y-4" id="faq-wrapper">
-        
-        <div class="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden">
-          <button class="faq-btn w-full p-5 sm:p-6 text-left flex items-center justify-between font-bold text-slate-900 text-base focus:outline-none">
-            <span>Bagaimana mekanisme bantuan pengelolaan kost bagi pemilik luar kota?</span>
-            <span class="faq-icon text-xl text-slate-400 font-bold">+</span>
+      <div class="mt-12 divide-y divide-slate-200">
+
+        <div>
+          <button class="faq-btn w-full py-7 text-left flex items-center justify-between gap-8 focus:outline-none">
+            <span class="font-serif text-lg sm:text-xl text-slate-900">Bagaimana mekanisme bantuan pengelolaan kost bagi pemilik luar kota?</span>
+            <span class="faq-icon text-2xl text-slate-400 font-light shrink-0 leading-none">+</span>
           </button>
-          <div class="faq-body hidden px-5 sm:px-6 pb-6 text-sm text-slate-700 font-medium leading-relaxed border-t border-slate-200 pt-4">
+          <div class="faq-body hidden pb-7 -mt-2 text-sm text-slate-600 leading-relaxed max-w-3xl">
             Bagi pemilik unit yang berdomisili di luar kota atau berprofesi sibuk, GREN Property menyediakan opsi tim manajemen operasional profesional. Tim menangani pemasaran sewa ke mahasiswa UNPAD/ITB, penyaringan penyewa, kebersihan lingkungan, hingga pemeliharaan rutin. Pemilik menerima laporan hasil sewa secara berkala.
           </div>
         </div>
 
-        <div class="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden">
-          <button class="faq-btn w-full p-5 sm:p-6 text-left flex items-center justify-between font-bold text-slate-900 text-base focus:outline-none">
-            <span>Apa yang dimaksud dengan Garansi Okupansi 70% selama 2 Tahun?</span>
-            <span class="faq-icon text-xl text-slate-400 font-bold">+</span>
+        <div>
+          <button class="faq-btn w-full py-7 text-left flex items-center justify-between gap-8 focus:outline-none">
+            <span class="font-serif text-lg sm:text-xl text-slate-900">Apa yang dimaksud dengan Garansi Okupansi 70% selama 2 tahun?</span>
+            <span class="faq-icon text-2xl text-slate-400 font-light shrink-0 leading-none">+</span>
           </button>
-          <div class="faq-body hidden px-5 sm:px-6 pb-6 text-sm text-slate-700 font-medium leading-relaxed border-t border-slate-200 pt-4">
+          <div class="faq-body hidden pb-7 -mt-2 text-sm text-slate-600 leading-relaxed max-w-3xl">
             Developer memberikan jaminan tingkat keterisian kamar minimal 70% selama 2 tahun pertama sejak serah terima unit, sehingga arus kas masuk tetap terjaga sejak awal kepemilikan Anda.
           </div>
         </div>
 
-        <div class="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden">
-          <button class="faq-btn w-full p-5 sm:p-6 text-left flex items-center justify-between font-bold text-slate-900 text-base focus:outline-none">
-            <span>Apakah unit sudah diserahterimakan dengan perabotan lengkap?</span>
-            <span class="faq-icon text-xl text-slate-400 font-bold">+</span>
+        <div>
+          <button class="faq-btn w-full py-7 text-left flex items-center justify-between gap-8 focus:outline-none">
+            <span class="font-serif text-lg sm:text-xl text-slate-900">Apakah unit sudah diserahterimakan dengan perabotan lengkap?</span>
+            <span class="faq-icon text-2xl text-slate-400 font-light shrink-0 leading-none">+</span>
           </button>
-          <div class="faq-body hidden px-5 sm:px-6 pb-6 text-sm text-slate-700 font-medium leading-relaxed border-t border-slate-200 pt-4">
-            Ya, setiap unit dirancang Full Furnished lengkap dengan tempat tidur springbed, lemari pakaian, meja dan kursi belajar, unit AC Split di setiap kamar, serta kamar mandi dalam dengan instalasi Water Heater.
+          <div class="faq-body hidden pb-7 -mt-2 text-sm text-slate-600 leading-relaxed max-w-3xl">
+            Ya, setiap unit dirancang full furnished lengkap dengan tempat tidur springbed, lemari pakaian, meja dan kursi belajar, unit AC split di setiap kamar, serta kamar mandi dalam dengan instalasi water heater.
           </div>
         </div>
 
-        <div class="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden">
-          <button class="faq-btn w-full p-5 sm:p-6 text-left flex items-center justify-between font-bold text-slate-900 text-base focus:outline-none">
-            <span>Bagaimana cara melakukan survey lokasi jika tinggal di luar Jawa?</span>
-            <span class="faq-icon text-xl text-slate-400 font-bold">+</span>
+        <div>
+          <button class="faq-btn w-full py-7 text-left flex items-center justify-between gap-8 focus:outline-none">
+            <span class="font-serif text-lg sm:text-xl text-slate-900">Bagaimana cara melakukan survey lokasi jika tinggal di luar Jawa?</span>
+            <span class="faq-icon text-2xl text-slate-400 font-light shrink-0 leading-none">+</span>
           </button>
-          <div class="faq-body hidden px-5 sm:px-6 pb-6 text-sm text-slate-700 font-medium leading-relaxed border-t border-slate-200 pt-4">
-            Kami melayani survey lokasi langsung di Jatinangor (Marketing Gallery tersedia), atau sesi Video Call Live Site-Tour langsung dari lokasi proyek bersama tim konsultan kami untuk investor luar pulau.
+          <div class="faq-body hidden pb-7 -mt-2 text-sm text-slate-600 leading-relaxed max-w-3xl">
+            Kami melayani survey lokasi langsung di Jatinangor (marketing gallery tersedia), atau sesi video call live site-tour langsung dari lokasi proyek bersama tim konsultan untuk investor luar pulau.
           </div>
         </div>
 
@@ -1168,95 +998,92 @@
   <!-- ========================================================================= -->
   <!-- 12. FOOTER -->
   <!-- ========================================================================= -->
-  <footer class="bg-slate-900 text-slate-400 py-16 text-sm font-medium">
+  <footer class="bg-slate-950 text-slate-400 py-16 text-sm font-medium">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 pb-12 border-b border-slate-800">
-        
-        <!-- Col 1: Brand & Bio -->
-        <div class="md:col-span-4 space-y-4">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-12 pb-12 border-b border-slate-800">
+
+        <!-- Brand -->
+        <div class="md:col-span-4 space-y-5">
           <div class="flex items-center gap-3">
-            <img 
-              src="./assets/images/logo.webp" 
-              alt="Logo GREN Propertykost" 
-              class="h-11 w-auto object-contain bg-white/10 p-1 rounded-lg"
+            <img
+              src="./assets/images/logo.webp"
+              alt="Logo GREN Propertykost"
+              class="h-11 w-auto object-contain bg-white/10 p-1"
               onerror="this.src='./Logo GREN Propertykost.png'"
             />
-            <span class="text-xl font-extrabold text-white tracking-tight block">
-              GREN PROPERTYKOST
+            <span class="font-serif text-xl text-white tracking-tight">
+              GREN <span class="text-brand-600">Propertykost</span>
             </span>
           </div>
-          <p class="text-slate-400 text-xs leading-relaxed font-medium">
-            Proyek hunian rukost eksklusif multi-lantai di kawasan pendidikan Ring-1 Jatinangor, Sumedang, Jawa Barat. Menghasilkan passive income pasti dari pasar mahasiswa UNPAD & ITB.
+          <p class="text-xs text-slate-500 leading-relaxed">
+            Proyek hunian rukost eksklusif multi-lantai di kawasan pendidikan Ring-1 Jatinangor, Sumedang, Jawa Barat. Menghasilkan passive income yang berkelanjutan dari pasar mahasiswa UNPAD &amp; ITB.
           </p>
-          <div class="inline-block bg-slate-800 text-accent-400 border border-slate-700 text-xs font-bold px-3 py-1.5 rounded-lg">
+          <div class="inline-block bg-slate-900 text-accent-400 border border-slate-800 text-xs font-bold px-3 py-1.5">
             Dikembangkan oleh <span id="footer-developer">GREN Property</span>
           </div>
         </div>
 
-        <!-- Col 2: Kontak & Alamat Kantor (Dynamic from config.js) -->
-        <div class="md:col-span-4 space-y-3.5 text-xs">
-          <span class="text-white font-bold uppercase tracking-wider block mb-2 text-xs">Informasi & Kontak Resmi</span>
-          
+        <!-- Kontak -->
+        <div class="md:col-span-4 space-y-4 text-xs">
+          <span class="text-white font-bold uppercase tracking-[0.18em] block text-[0.68rem]">Kontak Resmi</span>
+
           <div class="flex items-start gap-2.5">
             <svg class="w-4 h-4 text-brand-600 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
             <div>
-              <span class="text-slate-300 font-semibold block">Alamat Kantor / Lokasi:</span>
-              <p id="footer-alamat" class="text-slate-400 mt-0.5 leading-relaxed">Jl. GKPN, Cipacing, Kec. Jatinangor, Kabupaten Sumedang, Jawa Barat 45363</p>
-              <a id="footer-maps-link" href="#" target="_blank" rel="noopener noreferrer" class="text-accent-400 hover:text-white font-bold inline-flex items-center gap-1 mt-1">Buka di Google Maps &rarr;</a>
+              <span class="text-slate-300 font-semibold block">Alamat Kantor / Lokasi</span>
+              <p id="footer-alamat" class="text-slate-500 mt-0.5 leading-relaxed">Jl. GKPN, Cipacing, Kec. Jatinangor, Kabupaten Sumedang, Jawa Barat 45363</p>
+              <a id="footer-maps-link" href="#" target="_blank" rel="noopener noreferrer" class="text-accent-400 hover:text-white font-bold inline-flex items-center gap-1 mt-1.5">Buka di Google Maps</a>
             </div>
           </div>
 
-          <div class="flex items-center gap-2.5 pt-1">
+          <div class="flex items-center gap-2.5">
             <svg class="w-4 h-4 text-brand-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
             <div>
-              <span class="text-slate-300 font-semibold">Email:</span>
+              <span class="text-slate-300 font-semibold">Email</span>
               <a id="footer-email" href="mailto:grenpropertykost@gmail.com" class="text-slate-300 hover:text-white ml-1 font-semibold">grenpropertykost@gmail.com</a>
             </div>
           </div>
 
-          <div class="flex items-center gap-2.5 pt-1">
+          <div class="flex items-center gap-2.5">
             <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c1.024.557 1.776.819 2.796.819 3.183 0 5.77-2.587 5.77-5.768.001-3.18-2.585-5.766-5.77-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.823 0-3.529-.49-5.002-1.341l-5.998 1.568 1.602-5.856c-.958-1.536-1.502-3.348-1.502-5.371 0-5.514 4.486-10 10-10s10 4.486 10 10z"/></svg>
             <div>
-              <span class="text-slate-300 font-semibold">WhatsApp:</span>
+              <span class="text-slate-300 font-semibold">WhatsApp</span>
               <a id="footer-phone" href="javascript:void(0)" onclick="openDirectWA()" class="text-emerald-400 hover:underline ml-1 font-bold">+62 812-3456-7890</a>
             </div>
           </div>
 
-          <!-- Social Media Icons (Dynamic) -->
           <div class="pt-2">
-            <span class="text-slate-300 font-semibold block mb-2">Media Sosial Resmi:</span>
-            <div id="footer-socials" class="flex items-center gap-2">
-              <!-- Dynamically rendered from config.js -->
-            </div>
+            <span class="text-slate-300 font-semibold block mb-2.5">Media Sosial Resmi</span>
+            <div id="footer-socials" class="flex items-center gap-2"></div>
           </div>
         </div>
 
-        <!-- Col 3: Navigasi Properti -->
+        <!-- Menu -->
         <div class="md:col-span-2 space-y-2 text-xs">
-          <span class="text-white font-bold uppercase tracking-wider block mb-3 text-xs">Menu Cepat</span>
-          <ul class="space-y-2 text-slate-400">
+          <span class="text-white font-bold uppercase tracking-[0.18em] block mb-4 text-[0.68rem]">Menu Cepat</span>
+          <ul class="space-y-2.5 text-slate-500">
             <li><a href="#keunggulan" class="hover:text-white transition-colors">Keunggulan</a></li>
-            <li><a href="#tipe-unit" class="hover:text-white transition-colors">Tipe & Harga</a></li>
-            <li><a href="#simulasi-3d" class="hover:text-white transition-colors">Simulasi 3D</a></li>
+            <li><a href="#tipe-unit" class="hover:text-white transition-colors">Tipe &amp; Harga</a></li>
+            <li><a href="#simulasi-3d" class="hover:text-white transition-colors">Simulasi Interior</a></li>
             <li><a href="#kalkulator-yield" class="hover:text-white transition-colors">Kalkulator Yield</a></li>
             <li><a href="#galeri" class="hover:text-white transition-colors">Galeri Foto</a></li>
             <li><a href="#faq" class="hover:text-white transition-colors">FAQ Investor</a></li>
-            <li><a href="./artikel" class="text-accent-400 hover:text-white font-extrabold transition-colors flex items-center gap-1"><span>Artikel & Edukasi</span> &rarr;</a></li>
+            <li><a href="./artikel" class="text-accent-400 hover:text-white transition-colors font-bold">Artikel &amp; Riset</a></li>
           </ul>
         </div>
 
-        <!-- Col 4: Catatan Legalitas -->
+        <!-- Legal -->
         <div class="md:col-span-2 space-y-2 text-xs">
-          <span class="text-white font-bold uppercase tracking-wider block mb-3 text-xs">Catatan Legal</span>
-          <p class="text-slate-400 leading-relaxed font-normal">
-            Seluruh ilustrasi dan spesifikasi merupakan representasi desain proyek. Hak kepemilikan mengikat secara sah pada dokumen akad Notaris.
+          <span class="text-white font-bold uppercase tracking-[0.18em] block mb-4 text-[0.68rem]">Catatan Legal</span>
+          <p class="text-slate-500 leading-relaxed">
+            Seluruh ilustrasi dan spesifikasi merupakan representasi desain proyek. Hak kepemilikan mengikat secara sah pada dokumen akad notaris.
           </p>
         </div>
 
       </div>
 
-      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-3">
-        <p>&copy; 2026 GREN Propertykost Jatinangor by GREN Property. Seluruh Hak Cipta Dilindungi.</p>
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-600 gap-3">
+        <p>&copy; 2026 GREN Propertykost Jatinangor by GREN Property. Seluruh hak cipta dilindungi.</p>
         <p>Investasi Properti Mahasiswa Jatinangor</p>
       </div>
     </div>
@@ -1265,14 +1092,14 @@
   <!-- ========================================================================= -->
   <!-- FLOATING WHATSAPP BUTTON -->
   <!-- ========================================================================= -->
-  <div class="fixed bottom-6 right-6 z-50 flex items-center gap-2">
-    <a 
-      href="javascript:void(0)" 
+  <div class="fixed bottom-6 right-6 z-50">
+    <a
+      href="javascript:void(0)"
       onclick="openDirectWA()"
-      class="flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm px-4 sm:px-5 py-3.5 rounded-full shadow-2xl transition-all hover:scale-105"
+      class="btn btn-wa !py-3.5 !px-5 text-xs sm:text-sm"
       aria-label="Konsultasi WhatsApp"
     >
-      <span class="w-2 h-2 rounded-full bg-white animate-ping"></span>
+      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c1.024.557 1.776.819 2.796.819 3.183 0 5.77-2.587 5.77-5.768.001-3.18-2.585-5.766-5.77-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.823 0-3.529-.49-5.002-1.341l-5.998 1.568 1.602-5.856c-.958-1.536-1.502-3.348-1.502-5.371 0-5.514 4.486-10 10-10s10 4.486 10 10z"/></svg>
       <span>Konsultasi WhatsApp</span>
     </a>
   </div>
@@ -1280,51 +1107,21 @@
   <!-- ========================================================================= -->
   <!-- LIGHTBOX MODAL -->
   <!-- ========================================================================= -->
-  <div id="lightbox" class="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-sm hidden items-center justify-center p-4">
+  <div id="lightbox" class="fixed inset-0 z-[60] bg-slate-950/95 hidden items-center justify-center p-4">
     <div class="relative max-w-4xl w-full">
-      <button onclick="closeLightbox()" class="absolute -top-10 right-0 text-white hover:text-accent-400 text-sm font-bold">&times; Tutup Galeri</button>
-      <img id="lightbox-img" src="" alt="Preview Galeri" class="w-full max-h-[80vh] object-contain rounded-xl border border-slate-700"/>
-      <p id="lightbox-caption" class="text-center text-sm text-slate-300 mt-3 font-semibold"></p>
+      <button onclick="closeLightbox()" class="absolute -top-10 right-0 text-slate-300 hover:text-accent-400 text-sm font-bold uppercase tracking-[0.14em]">Tutup</button>
+      <img id="lightbox-img" src="" alt="Preview Galeri" class="w-full max-h-[80vh] object-contain border border-slate-800"/>
+      <p id="lightbox-caption" class="text-center text-sm text-slate-400 mt-3 font-medium"></p>
     </div>
   </div>
 
-
   <!-- ========================================================================= -->
-  <!-- JAVASCRIPT LOGIC (CONNECTED TO config.js) -->
+  <!-- PAGE-SPECIFIC JAVASCRIPT -->
   <!-- ========================================================================= -->
   <script>
-    // Helper to get phone from config.js
-    function getCleanPhone() {
-      const cfg = window.LANDING_CONFIG || {};
-      const phone = cfg.nomorWhatsApp || "6281234567890";
-      return phone.replace(/[^0-9]/g, '');
-    }
-
-    // Tracking Helper
-    function trackLeadEvent(data) {
-      const cfg = window.LANDING_CONFIG || {};
-      if (typeof fbq === 'function') {
-        fbq('track', 'Lead', { content_name: cfg.namaProperti || 'GREN Propertykost', unit: data.unit });
-      }
-      if (typeof gtag === 'function') {
-        gtag('event', 'generate_lead', { event_category: 'Lead', event_label: data.unit });
-      }
-      if (window.dataLayer && Array.isArray(window.dataLayer)) {
-        window.dataLayer.push({ event: 'lead_form_submitted', leadData: data });
-      }
-      console.log('Lead conversion tracked:', data);
-    }
-
-    // Direct WhatsApp Helper
-    function openDirectWA(pesan) {
-      const cfg = window.LANDING_CONFIG || {};
-      const msg = pesan || cfg.pesanDefault || "Halo Tim GREN Property, saya ingin menanyakan informasi unit dan pricelist resmi.";
-      const phone = getCleanPhone();
-      const url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(msg);
-      trackLeadEvent({ unit: 'Direct WhatsApp Click', pesan: msg });
-      window.open(url, '_blank');
-    }
-
+    // =========================================================================
+    // UNIT SELECT + WHATSAPP FORM
+    // =========================================================================
     function pilihUnitWhatsApp(unit) {
       const select = document.getElementById('in-unit');
       if (select) {
@@ -1338,15 +1135,12 @@
       document.getElementById('konsultasi').scrollIntoView({ behavior: 'smooth' });
     }
 
-    // =========================================================================
-    // DOM READY EVENTS
-    // =========================================================================
-    document.addEventListener('DOMContentLoaded', function() {
-      
-      // 1. Form WhatsApp Submit Handler
+    document.addEventListener('DOMContentLoaded', function () {
+
+      // Form WhatsApp Submit Handler
       const contactForm = document.getElementById('contact-form');
       if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', function (e) {
           e.preventDefault();
 
           const cfg = window.LANDING_CONFIG || {};
@@ -1356,172 +1150,65 @@
           const unit = document.getElementById('in-unit').value;
           const pesan = document.getElementById('in-pesan').value.trim();
 
-          const textWA = 
+          const textWA =
 `*HALO TIM GREN PROPERTYKOST JATINANGOR*
 Saya tertarik dan ingin meminta pricelist serta jadwal survey:
 
-👤 *Nama:* ${nama}
-📱 *No. WhatsApp:* ${wa}
-📧 *Email:* ${email ? email : '-'}
-🏢 *Tipe Unit Diminati:* ${unit}
-💬 *Pesan / Rencana Kunjungan:*
+*Nama:* ${nama}
+*No. WhatsApp:* ${wa}
+*Email:* ${email ? email : '-'}
+*Tipe Unit Diminati:* ${unit}
+*Pesan / Rencana Kunjungan:*
 ${pesan ? pesan : 'Mohon informasi ketersediaan unit aktif dan jadwal survey lokasi.'}
 
 ----------------------------------------
 _Website Resmi ${cfg.namaProperti || 'GREN Propertykost'} by ${cfg.developer || 'GREN Property'}_`;
 
-          trackLeadEvent({ nama, wa, email, unit, pesan });
+          window.trackLeadEvent({ nama, wa, email, unit, pesan });
 
-          const phone = getCleanPhone();
+          const phone = window.getCleanPhone();
           const waUrl = "https://wa.me/" + phone + "?text=" + encodeURIComponent(textWA);
           window.open(waUrl, '_blank');
         });
       }
 
-      // 2. Before / After Slider
+      // Before / After Slider
       const rangeInput = document.getElementById('range-slider-input');
       const clipBefore = document.getElementById('clip-before');
       const dragHandle = document.getElementById('drag-handle');
       if (rangeInput && clipBefore && dragHandle) {
-        rangeInput.addEventListener('input', function(e) {
+        rangeInput.addEventListener('input', function (e) {
           const val = e.target.value;
           clipBefore.style.width = val + '%';
           dragHandle.style.left = val + '%';
         });
       }
 
-      // 3. Calculator Event Listeners
+      // Calculator Event Listeners
       const slSewa = document.getElementById('slider-sewa');
       const slOkupansi = document.getElementById('slider-okupansi');
       if (slSewa) slSewa.addEventListener('input', calculateFinancials);
       if (slOkupansi) slOkupansi.addEventListener('input', calculateFinancials);
       calculateFinancials();
-
-      // 4. FAQ Accordion
-      document.querySelectorAll('.faq-btn').forEach(btn => {
-        btn.addEventListener('click', function() {
-          const body = this.nextElementSibling;
-          const icon = this.querySelector('.faq-icon');
-          const isHidden = body.classList.contains('hidden');
-
-          document.querySelectorAll('.faq-body').forEach(b => b.classList.add('hidden'));
-          document.querySelectorAll('.faq-icon').forEach(i => i.textContent = '+');
-
-          if (isHidden) {
-            body.classList.remove('hidden');
-            if (icon) icon.textContent = '—';
-          }
-        });
-      });
-
-      // 5. Mobile Toggle
-      const mobileBtn = document.getElementById('mobile-toggle');
-      const drawer = document.getElementById('mobile-drawer');
-      if (mobileBtn && drawer) {
-        mobileBtn.addEventListener('click', () => drawer.classList.toggle('hidden'));
-        drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => drawer.classList.add('hidden')));
-      }
-
-      // 6. Dynamic Footer Contact & Social Media Renderer from config.js
-      renderFooterContact();
     });
 
     // =========================================================================
-    // RENDER FOOTER CONTACT & SOCIAL MEDIA
-    // =========================================================================
-    function renderFooterContact() {
-      const cfg = window.LANDING_CONFIG || {};
-
-      // 1. Alamat Kantor
-      const elAlamat = document.getElementById('footer-alamat');
-      if (elAlamat && cfg.alamatKantor) elAlamat.textContent = cfg.alamatKantor;
-
-      // 2. Maps Link
-      const elMaps = document.getElementById('footer-maps-link');
-      if (elMaps) {
-        if (cfg.googleMapsUrl && cfg.googleMapsUrl.trim() !== '') {
-          elMaps.href = cfg.googleMapsUrl;
-          elMaps.classList.remove('hidden');
-        } else {
-          elMaps.classList.add('hidden');
-        }
-      }
-
-      // 3. Email
-      const elEmail = document.getElementById('footer-email');
-      if (elEmail && cfg.emailResmi) {
-        elEmail.textContent = cfg.emailResmi;
-        elEmail.href = 'mailto:' + cfg.emailResmi;
-      }
-
-      // 4. Phone
-      const elPhone = document.getElementById('footer-phone');
-      if (elPhone && cfg.nomorWhatsApp) {
-        const raw = cfg.nomorWhatsApp.replace(/[^0-9]/g, '');
-        let formatted = '+' + raw;
-        if (raw.startsWith('62') && raw.length >= 10) {
-          formatted = '+62 ' + raw.substring(2, 5) + '-' + raw.substring(5, 9) + '-' + raw.substring(9);
-        }
-        elPhone.textContent = formatted;
-      }
-
-      // 5. Developer Brand
-      const elDev = document.getElementById('footer-developer');
-      if (elDev && cfg.developer) elDev.textContent = cfg.developer;
-
-      // 6. Social Media Buttons
-      const elSocials = document.getElementById('footer-socials');
-      if (elSocials && cfg.socialMedia) {
-        elSocials.innerHTML = '';
-        const s = cfg.socialMedia;
-
-        if (s.instagram && s.instagram.trim() !== '') {
-          elSocials.innerHTML += `
-            <a href="${s.instagram}" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-pink-600 text-slate-300 hover:text-white flex items-center justify-center transition-all shadow-sm" title="Instagram">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-            </a>`;
-        }
-
-        if (s.tiktok && s.tiktok.trim() !== '') {
-          elSocials.innerHTML += `
-            <a href="${s.tiktok}" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white flex items-center justify-center transition-all shadow-sm" title="TikTok">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.86 4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-3.04-1.52z"/></svg>
-            </a>`;
-        }
-
-        if (s.youtube && s.youtube.trim() !== '') {
-          elSocials.innerHTML += `
-            <a href="${s.youtube}" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-red-600 text-slate-300 hover:text-white flex items-center justify-center transition-all shadow-sm" title="YouTube">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-            </a>`;
-        }
-
-        if (s.facebook && s.facebook.trim() !== '') {
-          elSocials.innerHTML += `
-            <a href="${s.facebook}" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-blue-600 text-slate-300 hover:text-white flex items-center justify-center transition-all shadow-sm" title="Facebook">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-            </a>`;
-        }
-      }
-    }
-
-    // =========================================================================
-    // LIGHTING MOOD
+    // LIGHTING MODE (BEFORE/AFTER)
     // =========================================================================
     function setLightMode(mode) {
       const pBefore = document.getElementById('pic-before');
       const pAfter = document.getElementById('pic-after');
       const btns = ['day', 'golden', 'night'];
 
-      btns.forEach(m => {
-        const btn = document.getElementById(`lbtn-${m}`);
+      btns.forEach(function (m) {
+        const btn = document.getElementById('lbtn-' + m);
         if (btn) {
           if (m === mode) {
-            btn.classList.remove('bg-slate-700', 'text-slate-300');
-            btn.classList.add('bg-brand-700', 'text-white');
+            btn.classList.remove('border-transparent', 'text-slate-500');
+            btn.classList.add('border-accent-400', 'text-white');
           } else {
-            btn.classList.remove('bg-brand-700', 'text-white');
-            btn.classList.add('bg-slate-700', 'text-slate-300');
+            btn.classList.remove('border-accent-400', 'text-white');
+            btn.classList.add('border-transparent', 'text-slate-500');
           }
         }
       });
@@ -1541,15 +1228,15 @@ _Website Resmi ${cfg.namaProperti || 'GREN Propertykost'} by ${cfg.developer || 
 
     function setCalcUnit(kamar) {
       currentKamarCalc = kamar;
-      document.querySelectorAll('.calc-unit-btn').forEach(b => {
-        b.classList.remove('bg-slate-900', 'text-white', 'border-slate-900');
-        b.classList.add('bg-slate-50', 'text-slate-700', 'border-slate-200');
+      document.querySelectorAll('.calc-unit-btn').forEach(function (b) {
+        b.classList.remove('bg-brand-900', 'text-white', 'border-brand-900');
+        b.classList.add('bg-white', 'text-slate-700', 'border-slate-200');
       });
 
-      const activeBtn = document.getElementById(`btn-c-${kamar}`);
+      const activeBtn = document.getElementById('btn-c-' + kamar);
       if (activeBtn) {
-        activeBtn.classList.remove('bg-slate-50', 'text-slate-700', 'border-slate-200');
-        activeBtn.classList.add('bg-slate-900', 'text-white', 'border-slate-900');
+        activeBtn.classList.remove('bg-white', 'text-slate-700', 'border-slate-200');
+        activeBtn.classList.add('bg-brand-900', 'text-white', 'border-brand-900');
       }
       calculateFinancials();
     }
@@ -1576,13 +1263,13 @@ _Website Resmi ${cfg.namaProperti || 'GREN Propertykost'} by ${cfg.developer || 
 
       document.getElementById('val-monthly').innerText = 'Rp ' + monthly.toLocaleString('id-ID');
       document.getElementById('val-annual').innerText = 'Rp ' + annual.toLocaleString('id-ID');
-      document.getElementById('val-yield').innerText = `~${yieldPct}% / Tahun (Tipe ${currentKamarCalc} Kamar)`;
+      document.getElementById('val-yield').innerText = '~' + yieldPct + '% / Tahun (Tipe ' + currentKamarCalc + ' Kamar)';
     }
 
     function kirimHasilCalcWA() {
       const annual = document.getElementById('val-annual').innerText;
-      const pesan = `Halo Tim GREN Property, saya mencoba simulasi yield untuk *Tipe ${currentKamarCalc} Kamar* (Estimasi Gross ${annual}/tahun). Mohon info lengkap dan jadwal survey lokasi.`;
-      openDirectWA(pesan);
+      const pesan = 'Halo Tim GREN Property, saya mencoba simulasi yield untuk *Tipe ' + currentKamarCalc + ' Kamar* (Estimasi Gross ' + annual + '/tahun). Mohon info lengkap dan jadwal survey lokasi.';
+      window.openDirectWA(pesan);
     }
 
     // =========================================================================

@@ -3,39 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <!-- ========================================================================= -->
-  <!-- 📝 PANDUAN STANDAR ALGORITMA 2026 UNTUK ARTIKEL BARU:
-       1. Buat folder baru di dalam /artikel/ dengan nama slug bersih (3-5 kata, contoh: artikel/bisnis-rumah-kost-autopilot/)
-       2. Simpan file ini sebagai `index.html` di dalam folder tersebut.
-       3. Batasan Karakter Wajib:
-          - <title> Tag: WAJIB 50 - 60 KARAKTER (agar tidak terpotong di Google).
-          - Meta Description: WAJIB 140 - 155 KARAKTER.
-       4. Siapkan gambar cover 16:9 (simpan di /assets/images/nama-gambar.jpg).
-       5. Isi kotak "Key Takeaways" (Intisari 100 kata pertama untuk dikutip AI Gemini & ChatGPT).
-       6. Tambahkan kartu artikel baru ke artikel/index.html & sitemap.xml.
-  ========================================================================= -->
 
-  <!-- Primary SEO Meta Tags (2026 Algorithmic Compliance: Title 50-60 chars, Meta 140-155 chars) -->
+  <!--
+    PANDUAN ARTIKEL BARU (GREN Propertykost):
+    1. Buat folder baru di dalam /artikel/ dengan nama slug bersih (contoh: artikel/bisnis-rumah-kost-autopilot/).
+    2. Simpan file ini sebagai `index.html` di dalam folder tersebut.
+    3. Batasan karakter wajib: <title> 50-60 karakter; meta description 140-155 karakter.
+    4. Siapkan gambar cover 16:9 (simpan di /assets/images/nama-gambar.jpg).
+    5. Isi kotak "Intisari" (key takeaways) di bawah.
+    6. Tambahkan kartu artikel baru ke artikel/index.html & sitemap.xml.
+  -->
+
+  <!-- Primary SEO Meta Tags -->
   <title>[JUDUL_SEO_50_SAMPAI_60_KARAKTER] — GREN Property</title>
   <meta name="title" content="[JUDUL_SEO_50_SAMPAI_60_KARAKTER] — GREN Property" />
-  <meta name="description" content="[DESKRIPSI_RINGKAS_PADAT_DAN_MENARIK_TEPAT_140_HINGGA_155_KARAKTER_MEMUAT_KATA_KUNCI_DAN_AJAKAN]" />
+  <meta name="description" content="[DESKRIPSI_RINGKAS_PADAT_DAN_MENARIK_TEPAT_140_HINGGA_155_KARAKTER]" />
   <meta name="keywords" content="investasi properti jatinangor, rumah kost unpad, pasif income properti, gren propertykost, [KATA_KUNCI_TAMBAHAN]" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <meta name="author" content="Tim Riset & Analis GREN Property" />
+  <meta name="author" content="Tim Riset &amp; Analis GREN Property" />
   <meta name="language" content="Indonesian" />
-  <meta name="theme-color" content="#15803d" />
+  <meta name="theme-color" content="#27482F" />
 
-  <!-- Canonical URL (Sesuaikan dengan nama folder slug) -->
+  <!-- Canonical URL -->
   <link rel="canonical" href="https://grenpropertykost.vercel.app/artikel/[SLUG-NAMA-FOLDER-ARTIKEL]" />
 
-  <!-- Geo & Local SEO Tags (Jatinangor, Jawa Barat) -->
+  <!-- Geo & Local SEO Tags -->
   <meta name="geo.region" content="ID-JB" />
   <meta name="geo.placename" content="Jatinangor, Kabupaten Sumedang, Jawa Barat" />
   <meta name="geo.position" content="-6.9328;107.7735" />
   <meta name="ICBM" content="-6.9328, 107.7735" />
 
-  <!-- Open Graph / WhatsApp / Facebook Preview -->
+  <!-- Open Graph -->
   <meta property="og:type" content="article" />
   <meta property="og:locale" content="id_ID" />
   <meta property="og:site_name" content="GREN Propertykost Jatinangor" />
@@ -45,7 +43,7 @@
   <meta property="og:image" content="../../assets/images/[NAMA-GAMBAR-COVER].jpg" />
   <meta property="article:published_time" content="2026-08-31T09:00:00+07:00" />
   <meta property="article:modified_time" content="2026-08-31T09:00:00+07:00" />
-  <meta property="article:author" content="Tim Riset & Analis GREN Property" />
+  <meta property="article:author" content="Tim Riset &amp; Analis GREN Property" />
   <meta property="article:section" content="[NAMA_KATEGORI_ARTIKEL]" />
 
   <!-- Twitter Card -->
@@ -54,7 +52,7 @@
   <meta name="twitter:description" content="[DESKRIPSI_RINGKAS_PADAT_DAN_MENARIK_TEPAT_140_HINGGA_155_KARAKTER]" />
   <meta name="twitter:image" content="../../assets/images/[NAMA-GAMBAR-COVER].jpg" />
 
-  <!-- Schema.org Multi-Graph JSON-LD (AEO & Rich Snippets 2026) -->
+  <!-- Schema.org Multi-Graph JSON-LD (AEO & Rich Snippets) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -69,7 +67,7 @@
         "dateModified": "2026-08-31T09:00:00+07:00",
         "author": {
           "@type": "Organization",
-          "name": "Tim Riset & Analis GREN Property"
+          "name": "Tim Riset &amp; Analis GREN Property"
         },
         "publisher": {
           "@type": "Organization",
@@ -137,279 +135,191 @@
   <!-- ⚙️ LOAD CONFIG -->
   <script src="../../config.js"></script>
 
-  <!-- Fonts & Tailwind -->
+  <!-- Design system: Tailwind CDN + shared theme + shared helpers -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              50: '#f0fdf4',
-              100: '#dcfce7',
-              200: '#bbf7d0',
-              600: '#16a34a',
-              700: '#15803d',
-              800: '#166534',
-              900: '#14532d',
-              950: '#052e16',
-            },
-            accent: {
-              50: '#fffbeb',
-              100: '#fef3c7',
-              500: '#f59e0b',
-              600: '#d97706',
-              700: '#b45309',
-              800: '#92400e',
-            },
-            slate: {
-              850: '#151f32',
-              900: '#0f172a',
-              950: '#020617',
-            }
-          },
-          fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
-
-  <style>
-    body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      background-color: #faf8f5;
-      color: #1e293b;
-    }
-    .article-content p {
-      margin-bottom: 1.35rem;
-      line-height: 1.85;
-      font-size: 1.0625rem;
-      color: #334155;
-    }
-    .article-content h2 {
-      font-size: 1.6rem;
-      font-weight: 800;
-      color: #0f172a;
-      margin-top: 2.5rem;
-      margin-bottom: 1rem;
-      letter-spacing: -0.02em;
-      border-bottom: 2px solid #e2e8f0;
-      padding-bottom: 0.5rem;
-    }
-    .article-content h3 {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: #15803d;
-      margin-top: 1.75rem;
-      margin-bottom: 0.75rem;
-    }
-    .article-content ul, .article-content ol {
-      padding-left: 1.5rem;
-      margin-bottom: 1.5rem;
-      color: #334155;
-      line-height: 1.75;
-    }
-    .article-content ul { list-style-type: disc; }
-    .article-content ol { list-style-type: decimal; }
-  </style>
+  <script src="../../assets/theme.js"></script>
+  <link rel="stylesheet" href="../../assets/theme.css" />
+  <script src="../../assets/brand.js"></script>
 </head>
-<body class="antialiased selection:bg-brand-700 selection:text-white flex flex-col min-h-screen">
+<body class="antialiased flex flex-col min-h-screen">
 
   <!-- NAVIGATION HEADER -->
-  <header class="bg-white/95 backdrop-blur-md sticky top-0 z-40 border-b border-slate-200">
+  <header class="bg-slate-50/95 backdrop-blur-md sticky top-0 z-40 border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between py-3">
       <a href="../../" class="flex items-center gap-3">
         <img src="../../assets/images/logo.webp" alt="Logo GREN" class="h-10 w-auto object-contain" onerror="this.src='../../Logo GREN Propertykost.png'"/>
-        <div class="flex flex-col">
-          <span class="text-lg sm:text-xl font-extrabold text-slate-900 leading-none">
-            GREN <span class="text-brand-700">PROPERTYKOST</span>
+        <span class="flex flex-col leading-none">
+          <span class="font-serif text-lg sm:text-xl text-slate-900 tracking-tight">
+            GREN <span class="text-brand-700">Propertykost</span>
           </span>
-          <span class="text-[10px] font-bold tracking-widest text-slate-500 uppercase mt-0.5">Jatinangor</span>
-        </div>
+          <span class="text-[0.6rem] font-bold tracking-[0.3em] text-slate-500 uppercase mt-1">Jatinangor</span>
+        </span>
       </a>
 
       <div class="flex items-center gap-4">
-        <a href="/artikel" class="text-xs sm:text-sm font-bold text-slate-700 hover:text-brand-700 transition-colors">
+        <a href="/artikel" class="text-xs sm:text-sm font-semibold text-slate-600 hover:text-brand-700 transition-colors">
           &larr; Daftar Artikel
         </a>
         <a href="../../#tipe-unit" class="text-xs sm:text-sm font-bold text-brand-700 hover:text-brand-900 hidden md:inline">
-          Pricelist Unit &rarr;
+          Pricelist Unit
         </a>
-        <a href="javascript:void(0)" onclick="openDirectWA()" class="bg-brand-800 hover:bg-brand-900 text-white font-bold text-xs sm:text-sm px-4 py-2 rounded-lg shadow transition-all">
+        <a href="javascript:void(0)" onclick="openDirectWA()" class="btn btn-primary !py-2.5 !px-4 !text-[0.7rem]">
           Konsultasi WA
         </a>
       </div>
     </div>
   </header>
 
-  <!-- ARTICLE MAIN CONTENT CONTAINER -->
+  <!-- ARTICLE -->
   <article class="flex-grow">
-    
-    <header class="bg-white border-b border-slate-200 py-10 lg:py-14">
+
+    <!-- ARTICLE HEADER -->
+    <header class="bg-slate-50 border-b border-slate-200 py-12 lg:py-16">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <!-- Breadcrumb Navigation -->
-        <nav class="flex items-center gap-2 text-xs font-semibold text-slate-500 mb-5 flex-wrap" aria-label="Breadcrumb">
+
+        <nav class="flex items-center gap-2 text-xs font-semibold text-slate-500 mb-7 flex-wrap" aria-label="Breadcrumb">
           <a href="../../" class="hover:text-slate-900 transition-colors">Beranda</a>
-          <span>/</span>
+          <span class="text-slate-300">/</span>
           <a href="/artikel" class="hover:text-slate-900 transition-colors">Artikel</a>
-          <span>/</span>
+          <span class="text-slate-300">/</span>
           <span class="text-brand-700 font-bold">[KATEGORI_ARTIKEL]</span>
         </nav>
 
-        <!-- Category Badge & Read Time -->
-        <div class="flex items-center gap-3 flex-wrap mb-4">
-          <span class="bg-brand-800 text-white text-[11px] font-extrabold uppercase px-2.5 py-1 rounded shadow-sm">
-            [KATEGORI_ARTIKEL]
-          </span>
-          <span class="text-xs text-slate-500 font-semibold">⏱️ [X] Menit Waktu Baca</span>
-          <span class="text-xs text-slate-500 font-semibold">• [TANGGAL_PUBLIKASI_CONTOH_31_AGUSTUS_2026]</span>
+        <div class="flex items-center gap-4 flex-wrap mb-5">
+          <span class="badge badge-dark">[KATEGORI_ARTIKEL]</span>
+          <span class="text-xs text-slate-500 font-semibold">[X] Menit Waktu Baca</span>
+          <span class="text-xs text-slate-400">·</span>
+          <span class="text-xs text-slate-500 font-semibold">[TANGGAL_PUBLIKASI_CONTOH_31_AGUSTUS_2026]</span>
         </div>
 
-        <!-- H1 Editorial Title (60-85 Chars, Engaging & Clear) -->
-        <h1 class="text-2xl sm:text-4xl lg:text-5xl font-black text-slate-950 tracking-tight leading-tight">
+        <h1 class="display text-3xl sm:text-4xl lg:text-[2.75rem] text-slate-950">
           [JUDUL_H1_EDITORIAL_LENGKAP_YANG_MENARIK_DAN_LENGKAP]
         </h1>
 
-        <!-- Lead Paragraph -->
-        <p class="mt-5 text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
+        <p class="mt-6 text-base sm:text-lg text-slate-600 leading-relaxed">
           [PARAGRAF_PEMBUKA_MENARIK_YANG_MENJELASKAN_MASALAH_ATAU_PELUANG_BAGI_PEMBACA]
         </p>
 
-        <!-- E-E-A-T Author Credential Box -->
-        <div class="mt-8 pt-6 border-t border-slate-100 flex items-center justify-between flex-wrap gap-4">
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-brand-800 text-white font-bold flex items-center justify-center text-sm shadow">
-              GP
-            </div>
-            <div>
-              <div class="text-xs sm:text-sm font-bold text-slate-900">[NAMA_TIM_PENULIS_CONTOH_TIM_RISET_GREN]</div>
-              <div class="text-[11px] text-slate-500">[KEAHLIAN_CONTOH_SPESIALIS_PROPERTI_KOMERSIAL_JATINANGOR]</div>
-            </div>
+        <!-- E-E-A-T Author Box -->
+        <div class="mt-9 pt-6 border-t border-slate-200 flex items-center gap-4">
+          <div class="w-11 h-11 border border-brand-700 text-brand-700 flex items-center justify-center font-serif text-sm">
+            GP
+          </div>
+          <div>
+            <div class="text-sm font-bold text-slate-900">[NAMA_TIM_PENULIS_CONTOH_TIM_RISET_GREN]</div>
+            <div class="text-xs text-slate-500">[KEAHLIAN_CONTOH_SPESIALIS_PROPERTI_KOMERSIAL_JATINANGOR]</div>
           </div>
         </div>
 
       </div>
     </header>
 
-    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-      
-      <!-- HERO IMAGE (16:9 Aspect Ratio) -->
-      <div class="mb-10 rounded-3xl overflow-hidden shadow-lg border border-slate-200 bg-slate-100">
-        <img 
-          src="../../assets/images/[NAMA-GAMBAR-COVER].jpg" 
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+      <!-- HERO IMAGE (16:9) -->
+      <figure class="mb-12">
+        <img
+          src="../../assets/images/[NAMA-GAMBAR-COVER].jpg"
           alt="[DESKRIPSI_GAMBAR_DESKRIPTIF_LENGKAP_DENGAN_KATA_KUNCI]"
           class="w-full h-auto max-h-[480px] object-cover"
           loading="eager"
         />
-        <div class="p-3 bg-slate-900/90 text-slate-300 text-xs text-center">
+        <figcaption class="mt-3 text-xs text-slate-500 text-center font-medium">
           [KETERANGAN_CAPTION_FOTO_RINGKAS]
-        </div>
-      </div>
+        </figcaption>
+      </figure>
 
-      <!-- AEO THE 100-WORD DIRECT ANSWER / KEY TAKEAWAYS BOX -->
-      <div class="bg-brand-50 border-l-4 border-brand-700 p-6 rounded-r-2xl mb-10 shadow-sm">
-        <div class="text-xs font-black uppercase text-brand-900 tracking-wider mb-2 flex items-center gap-1.5">
-          <span>⚡</span>
-          <span>Intisari Jawaban (Key Takeaways):</span>
-        </div>
-        <ul class="text-xs sm:text-sm text-slate-800 space-y-2 font-medium">
-          <li>• <strong>[POIN_KUNCI_1]:</strong> [PENJELASAN_RINGKAS_LANGSUNG_MENJAWAB_JUDUL].</li>
-          <li>• <strong>[POIN_KUNCI_2]:</strong> [DATA_ANGKA_ATAU_FAKTA_RIIL_YANG_MEYAKINKAN].</li>
-          <li>• <strong>[POIN_KUNCI_3]:</strong> [SOLUSI_PRAKTIS_ATAU_DAMPAK_BAGI_PEMILIK_MODAL].</li>
+      <!-- KEY TAKEAWAYS BOX -->
+      <div class="takeaway mb-12">
+        <div class="takeaway-title">Intisari Jawaban (Key Takeaways)</div>
+        <ul>
+          <li><strong>[POIN_KUNCI_1]:</strong> [PENJELASAN_RINGKAS_LANGSUNG_MENJAWAB_JUDUL].</li>
+          <li><strong>[POIN_KUNCI_2]:</strong> [DATA_ANGKA_ATAU_FAKTA_RIIL_YANG_MEYAKINKAN].</li>
+          <li><strong>[POIN_KUNCI_3]:</strong> [SOLUSI_PRAKTIS_ATAU_DAMPAK_BAGI_PEMILIK_MODAL].</li>
         </ul>
       </div>
 
-      <!-- MAIN TEXT BODY -->
-      <div class="article-content bg-white p-6 sm:p-10 rounded-3xl border border-slate-200 shadow-sm">
-        
+      <!-- MAIN BODY -->
+      <div class="article-content">
+
         <h2>1. [Sub Judul Pembahasan Bagian Pertama]</h2>
         <p>
-          Tuliskan pembahasan pertama di sini dengan gaya bahasa yang mengalir, santai, dan tidak kaku. Gunakan perumpamaan atau analogi yang mudah dicerna...
+          Tuliskan pembahasan pertama di sini dengan gaya bahasa yang mengalir, santai, dan tidak kaku. Gunakan perumpamaan atau analogi yang mudah dicerna.
         </p>
         <p>
           Hindari istilah asing yang rumit tanpa penjelasan. Setiap kali ada istilah teknis seperti <em>Rental Yield</em>, selalu sertakan artinya: <em>(keuntungan sewa tahunan)</em>.
         </p>
 
-        <h2>2. [Sub Judul Pembahasan Bagian Kedua & Data Konkret]</h2>
+        <h2>2. [Sub Judul Pembahasan Bagian Kedua &amp; Data Konkret]</h2>
         <p>
-          Sajikan hitungan angka nyata yang mudah dipahami oleh pembaca...
+          Sajikan hitungan angka nyata yang mudah dipahami oleh pembaca.
         </p>
 
         <!-- SEMANTIC DATA TABLE TEMPLATE -->
-        <div class="overflow-x-auto my-6">
-          <table class="w-full text-left text-xs sm:text-sm border-collapse border border-slate-200 font-sans">
+        <div class="overflow-x-auto">
+          <table class="table-premium">
             <thead>
-              <tr class="bg-slate-900 text-white">
-                <th class="border border-slate-700 p-3 font-bold">Parameter</th>
-                <th class="border border-slate-700 p-3 font-bold">Opsi Biasa / Alternatif</th>
-                <th class="border border-slate-700 p-3 font-bold text-accent-400">Solusi GREN Propertykost</th>
+              <tr>
+                <th>Parameter</th>
+                <th>Opsi Biasa / Alternatif</th>
+                <th>Solusi GREN Propertykost</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="border border-slate-200 p-3 font-bold">[Baris 1 - Kriteria]</td>
-                <td class="border border-slate-200 p-3 text-slate-600">[Penjelasan Opsi Biasa]</td>
-                <td class="border border-slate-200 p-3 font-bold text-brand-800 bg-brand-50">[Keunggulan GREN]</td>
+                <td class="font-bold">[Baris 1 - Kriteria]</td>
+                <td>[Penjelasan Opsi Biasa]</td>
+                <td class="font-bold text-brand-700">[Keunggulan GREN]</td>
               </tr>
-              <tr class="bg-slate-50">
-                <td class="border border-slate-200 p-3 font-bold">[Baris 2 - Kriteria]</td>
-                <td class="border border-slate-200 p-3 text-slate-600">[Penjelasan Opsi Biasa]</td>
-                <td class="border border-slate-200 p-3 font-bold text-brand-800 bg-brand-50">[Keunggulan GREN]</td>
+              <tr>
+                <td class="font-bold">[Baris 2 - Kriteria]</td>
+                <td>[Penjelasan Opsi Biasa]</td>
+                <td class="font-bold text-brand-700">[Keunggulan GREN]</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <h2>3. [Sub Judul Kesimpulan & Langkah Strategis]</h2>
+        <h2>3. [Sub Judul Kesimpulan &amp; Langkah Strategis]</h2>
         <p>
-          Rangkum poin penting dan berikan pandangan masa depan yang positif...
+          Rangkum poin penting dan berikan pandangan masa depan yang positif.
         </p>
-
-        <!-- IN-ARTICLE SOFT CTA CONVERSION BOX (10% AT THE END) -->
-        <div class="mt-10 p-8 rounded-3xl bg-slate-900 text-white text-center space-y-4 shadow-xl">
-          <span class="bg-brand-700 text-white text-[11px] font-extrabold uppercase px-3 py-1 rounded-full">
-            [LABEL_BADGE_CTA_CONTOH_KONSULTASI_PROPERTI]
-          </span>
-          <h3 class="text-xl sm:text-2xl font-extrabold text-white !mt-2">
-            [JUDUL_AJAKAN_KONSULTASI_YANG_ELEGAN]
-          </h3>
-          <p class="text-slate-300 text-xs sm:text-sm max-w-lg mx-auto leading-relaxed">
-            [DESKRIPSI_SINGKAT_MENGENAI_UNIT_READY_SURVEY_DAN_SIMULASI_YIELD_BERSAMA_TIM_KONSULTAN].
-          </p>
-          <div class="pt-2">
-            <a 
-              href="javascript:void(0)" 
-              onclick="openDirectWA('Halo Tim GREN Property, saya baru membaca artikel [JUDUL_ARTIKEL] dan ingin konsultasi lebih lanjut.')"
-              class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm px-6 py-3.5 rounded-xl transition-all shadow-lg hover:scale-105"
-            >
-              <span>Konsultasikan via WhatsApp</span>
-            </a>
-          </div>
-        </div>
 
       </div>
 
-      <!-- READ NEXT ARTICLES -->
-      <div class="mt-12">
-        <h3 class="text-lg font-bold text-slate-900 mb-4">Artikel Pilihan Lainnya:</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <a href="/artikel/dampak-tol-cisumdawu-properti-jatinangor" class="p-5 rounded-2xl bg-white border border-slate-200 hover:border-brand-700 shadow-sm transition-all block group">
-            <span class="text-xs font-bold text-emerald-700 block mb-1">Infrastruktur & Kawasan</span>
-            <span class="text-sm font-bold text-slate-900 group-hover:text-brand-700 transition-colors block">
-              Dampak Tol Cisumdawu & Kereta Cepat pada Lonjakan Nilai Properti Jatinangor &rarr;
-            </span>
+      <!-- IN-ARTICLE SOFT CTA -->
+      <div class="cta-panel mt-12">
+        <div class="cta-label">[LABEL_BADGE_CTA_CONTOH_KONSULTASI_PROPERTI]</div>
+        <h3 class="mt-3">[JUDUL_AJAKAN_KONSULTASI_YANG_ELEGAN]</h3>
+        <p>[DESKRIPSI_SINGKAT_MENGENAI_UNIT_READY_SURVEY_DAN_SIMULASI_YIELD_BERSAMA_TIM_KONSULTAN].</p>
+        <div class="pt-6">
+          <a
+            href="javascript:void(0)"
+            onclick="openDirectWA('Halo Tim GREN Property, saya baru membaca artikel [JUDUL_ARTIKEL] dan ingin konsultasi lebih lanjut.')"
+            class="btn btn-accent"
+          >
+            Konsultasikan via WhatsApp
           </a>
-          <a href="/artikel/pasif-income-pensiun-properti-sewa" class="p-5 rounded-2xl bg-white border border-slate-200 hover:border-brand-700 shadow-sm transition-all block group">
-            <span class="text-xs font-bold text-amber-700 block mb-1">Wealth Strategy & Pensiun</span>
-            <span class="text-sm font-bold text-slate-900 group-hover:text-brand-700 transition-colors block">
-              Strategi Membangun 'Pabrik Gaji Bulanan' Rp 15–25 Juta untuk Masa Pensiun &rarr;
-            </span>
+        </div>
+      </div>
+
+      <!-- READ NEXT ARTICLES -->
+      <div class="mt-14">
+        <span class="eyebrow"><span class="rule w-10"></span>Lanjut Membaca</span>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-6">
+          <a href="/artikel/dampak-tol-cisumdawu-properti-jatinangor" class="read-next group">
+            <div class="kicker">Infrastruktur &amp; Kawasan</div>
+            <div class="font-serif text-lg text-slate-900 group-hover:text-brand-700 transition-colors">
+              Dampak Tol Cisumdawu &amp; Kereta Cepat pada Lonjakan Nilai Properti Jatinangor
+            </div>
+          </a>
+          <a href="/artikel/pasif-income-pensiun-properti-sewa" class="read-next group">
+            <div class="kicker">Wealth Strategy &amp; Pensiun</div>
+            <div class="font-serif text-lg text-slate-900 group-hover:text-brand-700 transition-colors">
+              Strategi Membangun 'Pabrik Gaji Bulanan' Rp 15–25 Juta untuk Masa Pensiun
+            </div>
           </a>
         </div>
       </div>
@@ -421,43 +331,30 @@
   <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800 text-sm mt-12">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
       <div class="flex items-center justify-center gap-3">
-        <img src="../../assets/images/logo.webp" alt="Logo GREN" class="h-8 w-auto object-contain" onerror="this.src='../../Logo GREN Propertykost.png'"/>
-        <span class="text-lg font-extrabold text-white">GREN <span class="text-brand-600">PROPERTYKOST</span></span>
+        <img src="../../assets/images/logo.webp" alt="Logo GREN" class="h-8 w-auto object-contain bg-white/10 p-1" onerror="this.src='../../Logo GREN Propertykost.png'"/>
+        <span class="font-serif text-lg text-white">GREN <span class="text-brand-600">Propertykost</span></span>
       </div>
       <p class="text-xs text-slate-500 max-w-lg mx-auto">
         Jl. GKPN, Cipacing, Jatinangor, Kabupaten Sumedang, Jawa Barat 45363.
       </p>
       <div class="pt-4 text-xs text-slate-600">
-        &copy; 2026 GREN Propertykost. Hak Cipta Dilindungi.
+        &copy; 2026 GREN Propertykost. Hak cipta dilindungi.
       </div>
     </div>
   </footer>
 
-  <!-- STICKY WHATSAPP BUTTON -->
+  <!-- FLOATING WHATSAPP -->
   <div class="fixed bottom-6 right-6 z-50">
-    <a 
-      href="javascript:void(0)" 
+    <a
+      href="javascript:void(0)"
       onclick="openDirectWA()"
-      class="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm px-5 py-3 rounded-full shadow-2xl transition-all hover:scale-105"
+      class="btn btn-wa !py-3.5 !px-5 text-xs sm:text-sm"
+      aria-label="Konsultasi WhatsApp"
     >
-      <span class="w-2 h-2 rounded-full bg-white animate-ping"></span>
+      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c1.024.557 1.776.819 2.796.819 3.183 0 5.77-2.587 5.77-5.768.001-3.18-2.585-5.766-5.77-5.766zm9.969 5.766c0 5.514-4.486 10-10 10-1.823 0-3.529-.49-5.002-1.341l-5.998 1.568 1.602-5.856c-.958-1.536-1.502-3.348-1.502-5.371 0-5.514 4.486-10 10-10s10 4.486 10 10z"/></svg>
       <span>Konsultasi WhatsApp</span>
     </a>
   </div>
 
-  <script>
-    function getCleanPhone() {
-      const cfg = window.LANDING_CONFIG || {};
-      const phone = cfg.nomorWhatsApp || "6281234567890";
-      return phone.replace(/[^0-9]/g, '');
-    }
-    function openDirectWA(customMsg) {
-      const cfg = window.LANDING_CONFIG || {};
-      const msg = customMsg || cfg.pesanDefault || "Halo Tim GREN Property, saya ingin menanyakan informasi properti kost.";
-      const phone = getCleanPhone();
-      const url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(msg);
-      window.open(url, '_blank');
-    }
-  </script>
 </body>
 </html>
