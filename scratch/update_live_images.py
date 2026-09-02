@@ -19,7 +19,7 @@ for slug, assigned in live_map.items():
         html = f.read()
     
     img_rel = f"../../assets/images/artikel/{assigned}"
-    full_url = f"https://grenpropertykost.vercel.app/assets/images/artikel/{assigned}"
+    full_url = f"https://www.gren.biz.id/assets/images/artikel/{assigned}"
     
     html = re.sub(
         r'<meta\s+property=[\'"]og:image[\'"]\s+content=[\'"].*?[\'"]\s*/>',

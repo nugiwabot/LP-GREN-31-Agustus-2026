@@ -67,7 +67,7 @@ def parse_article_meta(slug, item):
     description = item.get("meta_description") or item.get("description", "")
     author = "Tim Riset GREN"
     image_rel = "../assets/images/gallery-1.webp"
-    image_sitemap = "https://grenpropertykost.vercel.app/assets/images/gallery-1.webp"
+    image_sitemap = "https://www.gren.biz.id/assets/images/gallery-1.webp"
     read_time = "5 Menit"
 
     if os.path.exists(html_path):
@@ -105,7 +105,7 @@ def parse_article_meta(slug, item):
                 image_rel = img_raw
 
             filename = os.path.basename(img_raw)
-            image_sitemap = f"https://grenpropertykost.vercel.app/assets/images/artikel/{filename}"
+            image_sitemap = f"https://www.gren.biz.id/assets/images/artikel/{filename}"
 
     # Category resolution
     cat_raw = (item.get("category") or "").lower().strip()
@@ -199,7 +199,7 @@ def inject_url_into_sitemap(item, meta, release_dt):
         xml = f.read()
 
     slug = item["slug"]
-    loc_url = f"https://grenpropertykost.vercel.app/artikel/{slug}"
+    loc_url = f"https://www.gren.biz.id/artikel/{slug}"
     
     if loc_url in xml:
         return True

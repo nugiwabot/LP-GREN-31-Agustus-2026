@@ -157,7 +157,7 @@ def update_article_html(file_path, slug):
     
     img_name = topic_to_image.get(slug, 'fasad-kost-modern-scandinavian.webp')
     img_rel = f"../../assets/images/artikel/{img_name}"
-    full_url = f"https://grenpropertykost.vercel.app/assets/images/artikel/{img_name}"
+    full_url = f"https://www.gren.biz.id/assets/images/artikel/{img_name}"
     
     html = re.sub(
         r'<meta\s+property=[\'"]og:image[\'"]\s+content=[\'"][^\'"]*[\'"]\s*/>',

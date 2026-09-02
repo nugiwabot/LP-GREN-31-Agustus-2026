@@ -133,7 +133,7 @@ def update_article_img(file_path):
     slug = os.path.basename(file_path)[:-5] if file_path.endswith('.html') else os.path.basename(os.path.dirname(file_path))
     assigned = article_image_routing.get(slug, 'fasad-kost-modern-scandinavian.webp')
     img_rel = f"../../assets/images/artikel/{assigned}"
-    full_url = f"https://grenpropertykost.vercel.app/assets/images/artikel/{assigned}"
+    full_url = f"https://www.gren.biz.id/assets/images/artikel/{assigned}"
     
     # 1. og:image
     html = re.sub(

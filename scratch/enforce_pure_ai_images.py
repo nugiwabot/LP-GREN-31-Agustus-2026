@@ -148,7 +148,7 @@ def update_file(file_path, slug):
     
     ai_img = resolve_ai_image(slug)
     img_rel = f"../../assets/images/artikel/{ai_img}"
-    full_url = f"https://grenpropertykost.vercel.app/assets/images/artikel/{ai_img}"
+    full_url = f"https://www.gren.biz.id/assets/images/artikel/{ai_img}"
     
     # 1. og:image
     html = re.sub(

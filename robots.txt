@@ -29,5 +29,5 @@ User-agent: anthropic-ai
 Allow: /
 
 # Sitemap Location
-Sitemap: https://grenpropertykost.vercel.app/sitemap.xml
+Sitemap: https://www.gren.biz.id/sitemap.xml
 Sitemap: https://grenpropertykost.com/sitemap.xml

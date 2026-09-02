@@ -98,7 +98,7 @@ def update_html_file(file_path, is_live_folder=False):
         img_rel_path = f"../../assets/images/artikel/{get_image_for_slug(slug)}"
     
     assigned_img = get_image_for_slug(slug)
-    full_url_img = f"https://grenpropertykost.vercel.app/assets/images/artikel/{assigned_img}"
+    full_url_img = f"https://www.gren.biz.id/assets/images/artikel/{assigned_img}"
     
     # 1. Update og:image
     html = re.sub(
