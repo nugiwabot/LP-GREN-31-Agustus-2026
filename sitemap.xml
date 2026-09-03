@@ -144,4 +144,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Bedah Finansial Unit Kost 18 Kamar Cashflow -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/bedah-finansial-unit-kost-18-kamar-cashflow</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/investasi-emas-vs-properti.webp</image:loc>
+      <image:title>Bedah Finansial Unit Kost 18 Kamar Cashflow</image:title>
+    </image:image>
+  </url>
+
 </urlset>

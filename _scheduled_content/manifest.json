@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 10,
-  "scheduled_count": 50,
+  "published_count": 11,
+  "scheduled_count": 49,
   "articles": [
     {
       "id": 1,
@@ -127,13 +127,15 @@
     {
       "id": 11,
       "slug": "bedah-finansial-unit-kost-18-kamar-cashflow",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-03T16:00:00+07:00",
       "title": "Bedah Finansial Unit Kost 18 Kamar Cashflow — GREN Property",
       "meta_description": "Simulasi mendalam arus kas bersih Rp 35 Juta per bulan dari unit kost tapak 18 kamar. Strategi percepatan pengembalian modal di Ring-1 kampus UNPAD.",
       "category": "Finansial & Arus Kas",
       "draft_path": "_scheduled_content/articles/bedah-finansial-unit-kost-18-kamar-cashflow.html",
-      "destination_path": "artikel/bedah-finansial-unit-kost-18-kamar-cashflow/index.html"
+      "destination_path": "artikel/bedah-finansial-unit-kost-18-kamar-cashflow/index.html",
+      "live_url": "/artikel/bedah-finansial-unit-kost-18-kamar-cashflow",
+      "published_at": "2026-09-03T20:13:08.746790+07:00"
     },
     {
       "id": 12,
