@@ -132,4 +132,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Asuransi Kebakaran &amp; Bencana Kost -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/asuransi-kebakaran-dan-bencana-gedung-kost</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/cctv-online-cloud-ai.webp</image:loc>
+      <image:title>Asuransi Kebakaran &amp; Bencana Kost</image:title>
+    </image:image>
+  </url>
+
 </urlset>

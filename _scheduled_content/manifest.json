@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 9,
-  "scheduled_count": 51,
+  "published_count": 10,
+  "scheduled_count": 50,
   "articles": [
     {
       "id": 1,
@@ -114,13 +114,15 @@
     {
       "id": 10,
       "slug": "asuransi-kebakaran-dan-bencana-gedung-kost",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-03T08:00:00+07:00",
       "title": "Asuransi Kebakaran & Bencana Kost — GREN Property",
       "meta_description": "Pentingnya proteksi asuransi properti all risks dan kebakaran untuk mengamankan nilai fisik bangunan gedung rumah kost komersial multi-miliar.",
       "category": "Legalitas & Komparasi",
       "draft_path": "_scheduled_content/articles/asuransi-kebakaran-dan-bencana-gedung-kost.html",
-      "destination_path": "artikel/asuransi-kebakaran-dan-bencana-gedung-kost/index.html"
+      "destination_path": "artikel/asuransi-kebakaran-dan-bencana-gedung-kost/index.html",
+      "live_url": "/artikel/asuransi-kebakaran-dan-bencana-gedung-kost",
+      "published_at": "2026-09-03T12:36:06.369099+07:00"
     },
     {
       "id": 11,
