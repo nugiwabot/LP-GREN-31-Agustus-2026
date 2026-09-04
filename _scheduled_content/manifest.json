@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 12,
-  "scheduled_count": 48,
+  "published_count": 13,
+  "scheduled_count": 47,
   "articles": [
     {
       "id": 1,
@@ -153,13 +153,15 @@
     {
       "id": 13,
       "slug": "dampak-kereta-cepat-whoosh-dan-feeder-tegalluar-jatinangor",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-04T16:00:00+07:00",
       "title": "Dampak Whoosh & Feeder Jatinangor — GREN Property",
       "meta_description": "Konektivitas Whoosh Stasiun Tegalluar ke Jatinangor cuma 20 menit: lonjakan orang tua Jakarta menjenguk anak dan apresiasi nilai properti sewa komersial.",
       "category": "Infrastruktur & Kawasan",
       "draft_path": "_scheduled_content/articles/dampak-kereta-cepat-whoosh-dan-feeder-tegalluar-jatinangor.html",
-      "destination_path": "artikel/dampak-kereta-cepat-whoosh-dan-feeder-tegalluar-jatinangor/index.html"
+      "destination_path": "artikel/dampak-kereta-cepat-whoosh-dan-feeder-tegalluar-jatinangor/index.html",
+      "live_url": "/artikel/dampak-kereta-cepat-whoosh-dan-feeder-tegalluar-jatinangor",
+      "published_at": "2026-09-04T20:06:45.978106+07:00"
     },
     {
       "id": 14,

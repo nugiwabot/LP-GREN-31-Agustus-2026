@@ -168,4 +168,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Dampak Whoosh &amp; Feeder Jatinangor -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/dampak-kereta-cepat-whoosh-dan-feeder-tegalluar-jatinangor</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/kereta-cepat-whoosh-jatinangor.webp</image:loc>
+      <image:title>Dampak Whoosh &amp; Feeder Jatinangor</image:title>
+    </image:image>
+  </url>
+
 </urlset>
