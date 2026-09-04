@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 11,
-  "scheduled_count": 49,
+  "published_count": 12,
+  "scheduled_count": 48,
   "articles": [
     {
       "id": 1,
@@ -140,13 +140,15 @@
     {
       "id": 12,
       "slug": "checklist-audit-bangunan-sebelum-beli-rumah-kost",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-04T08:00:00+07:00",
       "title": "Checklist Audit Bangunan Kost — GREN Property",
       "meta_description": "10 poin penting audit fisik, struktur beton, instalasi listrik, perizinan, dan legalitas SHM sebelum memutuskan membeli gedung rumah kost komersial.",
       "category": "Legalitas & Komparasi",
       "draft_path": "_scheduled_content/articles/checklist-audit-bangunan-sebelum-beli-rumah-kost.html",
-      "destination_path": "artikel/checklist-audit-bangunan-sebelum-beli-rumah-kost/index.html"
+      "destination_path": "artikel/checklist-audit-bangunan-sebelum-beli-rumah-kost/index.html",
+      "live_url": "/artikel/checklist-audit-bangunan-sebelum-beli-rumah-kost",
+      "published_at": "2026-09-04T12:41:45.875534+07:00"
     },
     {
       "id": 13,

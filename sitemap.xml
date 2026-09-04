@@ -156,4 +156,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Checklist Audit Bangunan Kost -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/checklist-audit-bangunan-sebelum-beli-rumah-kost</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/manajemen-maintenance-gedung.webp</image:loc>
+      <image:title>Checklist Audit Bangunan Kost</image:title>
+    </image:image>
+  </url>
+
 </urlset>
