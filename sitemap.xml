@@ -192,4 +192,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Desain Arsitektur Kost Modern Alami -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/desain-arsitektur-kost-modern-pencahayaan-alami</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/sirkulasi-udara-silang.webp</image:loc>
+      <image:title>Desain Arsitektur Kost Modern Alami</image:title>
+    </image:image>
+  </url>
+
 </urlset>

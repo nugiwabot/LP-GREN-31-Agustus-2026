@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 14,
-  "scheduled_count": 46,
+  "published_count": 15,
+  "scheduled_count": 45,
   "articles": [
     {
       "id": 1,
@@ -179,13 +179,15 @@
     {
       "id": 15,
       "slug": "desain-arsitektur-kost-modern-pencahayaan-alami",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-05T16:00:00+07:00",
       "title": "Desain Arsitektur Kost Modern Alami — GREN Property",
       "meta_description": "Pentingnya sirkulasi udara silang dan pencahayaan alami dalam efisiensi biaya listrik serta kenyamanan jangka panjang penghuni rumah kost komersial.",
       "category": "Fasilitas & Operasional",
       "draft_path": "_scheduled_content/articles/desain-arsitektur-kost-modern-pencahayaan-alami.html",
-      "destination_path": "artikel/desain-arsitektur-kost-modern-pencahayaan-alami/index.html"
+      "destination_path": "artikel/desain-arsitektur-kost-modern-pencahayaan-alami/index.html",
+      "live_url": "/artikel/desain-arsitektur-kost-modern-pencahayaan-alami",
+      "published_at": "2026-09-05T19:19:36.990941+07:00"
     },
     {
       "id": 16,
