@@ -180,4 +180,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Dampak Bandara Kertajati ke Jatinangor -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/dampak-operasional-penuh-bandara-kertajati-jatinangor</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/kereta-cepat-whoosh-jatinangor.webp</image:loc>
+      <image:title>Dampak Bandara Kertajati ke Jatinangor</image:title>
+    </image:image>
+  </url>
+
 </urlset>

@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 13,
-  "scheduled_count": 47,
+  "published_count": 14,
+  "scheduled_count": 46,
   "articles": [
     {
       "id": 1,
@@ -166,13 +166,15 @@
     {
       "id": 14,
       "slug": "dampak-operasional-penuh-bandara-kertajati-jatinangor",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-05T08:00:00+07:00",
       "title": "Dampak Bandara Kertajati ke Jatinangor — GREN Property",
       "meta_description": "Kajian pengaruh operasional penuh Bandara Internasional Kertajati (BIJB) terhadap mobilitas mahasiswa luar pulau dan lonjakan nilai sewa di Jatinangor.",
       "category": "Infrastruktur & Kawasan",
       "draft_path": "_scheduled_content/articles/dampak-operasional-penuh-bandara-kertajati-jatinangor.html",
-      "destination_path": "artikel/dampak-operasional-penuh-bandara-kertajati-jatinangor/index.html"
+      "destination_path": "artikel/dampak-operasional-penuh-bandara-kertajati-jatinangor/index.html",
+      "live_url": "/artikel/dampak-operasional-penuh-bandara-kertajati-jatinangor",
+      "published_at": "2026-09-05T12:30:00.075959+07:00"
     },
     {
       "id": 15,
