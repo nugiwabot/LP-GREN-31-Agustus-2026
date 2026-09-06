@@ -216,4 +216,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Efisiensi Listrik Token Kost -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/efisiensi-listrik-token-prabayar-per-kamar-kost</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/meteran-listrik-token-prabayar.webp</image:loc>
+      <image:title>Efisiensi Listrik Token Kost</image:title>
+    </image:image>
+  </url>
+
 </urlset>

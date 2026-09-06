@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 16,
-  "scheduled_count": 44,
+  "published_count": 17,
+  "scheduled_count": 43,
   "articles": [
     {
       "id": 1,
@@ -205,13 +205,15 @@
     {
       "id": 17,
       "slug": "efisiensi-listrik-token-prabayar-per-kamar-kost",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-06T16:00:00+07:00",
       "title": "Efisiensi Listrik Token Kost — GREN Property",
       "meta_description": "Kelebihan sistem instalasi kWh meter token listrik prabayar independen per kamar dalam mengeliminasi beban tagihan listrik dan menjaga profit pemilik kost.",
       "category": "Fasilitas & Operasional",
       "draft_path": "_scheduled_content/articles/efisiensi-listrik-token-prabayar-per-kamar-kost.html",
-      "destination_path": "artikel/efisiensi-listrik-token-prabayar-per-kamar-kost/index.html"
+      "destination_path": "artikel/efisiensi-listrik-token-prabayar-per-kamar-kost/index.html",
+      "live_url": "/artikel/efisiensi-listrik-token-prabayar-per-kamar-kost",
+      "published_at": "2026-09-06T19:34:55.829314+07:00"
     },
     {
       "id": 18,
