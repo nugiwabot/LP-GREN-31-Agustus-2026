@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 15,
-  "scheduled_count": 45,
+  "published_count": 16,
+  "scheduled_count": 44,
   "articles": [
     {
       "id": 1,
@@ -192,13 +192,15 @@
     {
       "id": 16,
       "slug": "desain-rooftop-komunal-dan-area-laundry-gedung-kost",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-06T08:00:00+07:00",
       "title": "Desain Rooftop & Laundry Kost — GREN Property",
       "meta_description": "Pemanfaatan lantai teratas untuk rooftop garden komunal dan area jemur laundry terlindung hujan yang menaikkan daya tarik visual dan kepuasan mahasiswa.",
       "category": "Fasilitas & Operasional",
       "draft_path": "_scheduled_content/articles/desain-rooftop-komunal-dan-area-laundry-gedung-kost.html",
-      "destination_path": "artikel/desain-rooftop-komunal-dan-area-laundry-gedung-kost/index.html"
+      "destination_path": "artikel/desain-rooftop-komunal-dan-area-laundry-gedung-kost/index.html",
+      "live_url": "/artikel/desain-rooftop-komunal-dan-area-laundry-gedung-kost",
+      "published_at": "2026-09-06T12:43:14.977360+07:00"
     },
     {
       "id": 17,

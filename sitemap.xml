@@ -204,4 +204,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Desain Rooftop &amp; Laundry Kost -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/desain-rooftop-komunal-dan-area-laundry-gedung-kost</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/rooftop-lounge-jatinangor.webp</image:loc>
+      <image:title>Desain Rooftop &amp; Laundry Kost</image:title>
+    </image:image>
+  </url>
+
 </urlset>
