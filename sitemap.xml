@@ -240,4 +240,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Kuliner &amp; Lifestyle Jatinangor -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/fasilitas-pendukung-kuliner-dan-lifestyle-jatinangor</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/kuliner-kafe-lifestyle-mahasiswa.webp</image:loc>
+      <image:title>Kuliner &amp; Lifestyle Jatinangor</image:title>
+    </image:image>
+  </url>
+
 </urlset>

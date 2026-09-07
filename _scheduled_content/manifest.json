@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 18,
-  "scheduled_count": 42,
+  "published_count": 19,
+  "scheduled_count": 41,
   "articles": [
     {
       "id": 1,
@@ -231,13 +231,15 @@
     {
       "id": 19,
       "slug": "fasilitas-pendukung-kuliner-dan-lifestyle-jatinangor",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-07T16:00:00+07:00",
       "title": "Kuliner & Lifestyle Jatinangor — GREN Property",
       "meta_description": "Kajian pengaruh menjamurnya kafe estetik, minimarket 24 jam, dan co-working space di Jatinangor terhadap kenaikan daya tarik sewa rumah kost eksklusif.",
       "category": "Infrastruktur & Kawasan",
       "draft_path": "_scheduled_content/articles/fasilitas-pendukung-kuliner-dan-lifestyle-jatinangor.html",
-      "destination_path": "artikel/fasilitas-pendukung-kuliner-dan-lifestyle-jatinangor/index.html"
+      "destination_path": "artikel/fasilitas-pendukung-kuliner-dan-lifestyle-jatinangor/index.html",
+      "live_url": "/artikel/fasilitas-pendukung-kuliner-dan-lifestyle-jatinangor",
+      "published_at": "2026-09-07T21:44:17.355364+07:00"
     },
     {
       "id": 20,
