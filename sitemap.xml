@@ -228,4 +228,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Fasilitas Kesehatan &amp; RS UNPAD -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/fasilitas-kesehatan-dan-rumah-sakit-pendidikan-unpad</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/rumah-sakit-pendidikan-unpad.webp</image:loc>
+      <image:title>Fasilitas Kesehatan &amp; RS UNPAD</image:title>
+    </image:image>
+  </url>
+
 </urlset>

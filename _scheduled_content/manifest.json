@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 17,
-  "scheduled_count": 43,
+  "published_count": 18,
+  "scheduled_count": 42,
   "articles": [
     {
       "id": 1,
@@ -218,13 +218,15 @@
     {
       "id": 18,
       "slug": "fasilitas-kesehatan-dan-rumah-sakit-pendidikan-unpad",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-07T08:00:00+07:00",
       "title": "Fasilitas Kesehatan & RS UNPAD — GREN Property",
       "meta_description": "Pentingnya keberadaan Rumah Sakit Gigi Mulut & RS Pendidikan UNPAD serta klinik 24 jam dalam menjamin rasa aman kesehatan mahasiswa dan orang tua di Jatinangor.",
       "category": "Infrastruktur & Kawasan",
       "draft_path": "_scheduled_content/articles/fasilitas-kesehatan-dan-rumah-sakit-pendidikan-unpad.html",
-      "destination_path": "artikel/fasilitas-kesehatan-dan-rumah-sakit-pendidikan-unpad/index.html"
+      "destination_path": "artikel/fasilitas-kesehatan-dan-rumah-sakit-pendidikan-unpad/index.html",
+      "live_url": "/artikel/fasilitas-kesehatan-dan-rumah-sakit-pendidikan-unpad",
+      "published_at": "2026-09-07T12:53:11.168429+07:00"
     },
     {
       "id": 19,
