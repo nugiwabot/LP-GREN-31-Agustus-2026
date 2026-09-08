@@ -252,4 +252,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Fitur Smart Door Lock &amp; IoT Kost -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/fitur-smart-door-lock-dan-iot-keamanan-kost</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/smart-door-lock-iot.webp</image:loc>
+      <image:title>Fitur Smart Door Lock &amp; IoT Kost</image:title>
+    </image:image>
+  </url>
+
 </urlset>

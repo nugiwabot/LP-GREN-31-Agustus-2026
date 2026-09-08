@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 19,
-  "scheduled_count": 41,
+  "published_count": 20,
+  "scheduled_count": 40,
   "articles": [
     {
       "id": 1,
@@ -244,13 +244,15 @@
     {
       "id": 20,
       "slug": "fitur-smart-door-lock-dan-iot-keamanan-kost",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-08T08:00:00+07:00",
       "title": "Fitur Smart Door Lock & IoT Kost — GREN Property",
       "meta_description": "Keunggulan implementasi teknologi smart door lock digital RFID dan sistem keamanan IoT dalam meningkatkan rasa aman penghuni dan efisiensi manajemen kos.",
       "category": "Fasilitas & Operasional",
       "draft_path": "_scheduled_content/articles/fitur-smart-door-lock-dan-iot-keamanan-kost.html",
-      "destination_path": "artikel/fitur-smart-door-lock-dan-iot-keamanan-kost/index.html"
+      "destination_path": "artikel/fitur-smart-door-lock-dan-iot-keamanan-kost/index.html",
+      "live_url": "/artikel/fitur-smart-door-lock-dan-iot-keamanan-kost",
+      "published_at": "2026-09-08T12:45:59.057667+07:00"
     },
     {
       "id": 21,
