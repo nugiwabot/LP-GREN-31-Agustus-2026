@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 20,
-  "scheduled_count": 40,
+  "published_count": 21,
+  "scheduled_count": 39,
   "articles": [
     {
       "id": 1,
@@ -257,13 +257,15 @@
     {
       "id": 21,
       "slug": "historis-kenaikan-harga-tanah-jatinangor-10-tahun",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-08T16:00:00+07:00",
       "title": "Historis Kenaikan Tanah Jatinangor — GREN Property",
       "meta_description": "Data kenaikan harga tanah di Jatinangor dari Rp 1,5 Juta/m² pada 2016 menjadi Rp 7–10 Juta/m² pada 2026: bukti nyata apresiasi modal tanah tapak komersial.",
       "category": "Finansial & Arus Kas",
       "draft_path": "_scheduled_content/articles/historis-kenaikan-harga-tanah-jatinangor-10-tahun.html",
-      "destination_path": "artikel/historis-kenaikan-harga-tanah-jatinangor-10-tahun/index.html"
+      "destination_path": "artikel/historis-kenaikan-harga-tanah-jatinangor-10-tahun/index.html",
+      "live_url": "/artikel/historis-kenaikan-harga-tanah-jatinangor-10-tahun",
+      "published_at": "2026-09-08T20:16:23.184555+07:00"
     },
     {
       "id": 22,
