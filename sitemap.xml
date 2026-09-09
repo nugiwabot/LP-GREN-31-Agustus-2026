@@ -288,4 +288,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Investasi Emas vs Rumah Kost Tapak -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/investasi-emas-antam-vs-rumah-kost-tapak-jatinangor</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/investasi-emas-vs-properti.webp</image:loc>
+      <image:title>Investasi Emas vs Rumah Kost Tapak</image:title>
+    </image:image>
+  </url>
+
 </urlset>

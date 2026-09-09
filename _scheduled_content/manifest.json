@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 22,
-  "scheduled_count": 38,
+  "published_count": 23,
+  "scheduled_count": 37,
   "articles": [
     {
       "id": 1,
@@ -283,13 +283,15 @@
     {
       "id": 23,
       "slug": "investasi-emas-antam-vs-rumah-kost-tapak-jatinangor",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-09T16:00:00+07:00",
       "title": "Investasi Emas vs Rumah Kost Tapak — GREN Property",
       "meta_description": "Perbandingan emas batangan Antam vs rumah kost tapak SHM: mengapa emas hanya menjaga nilai tanpa arus kas, sementara kost memberi dividen tunai bulanan.",
       "category": "Finansial & Arus Kas",
       "draft_path": "_scheduled_content/articles/investasi-emas-antam-vs-rumah-kost-tapak-jatinangor.html",
-      "destination_path": "artikel/investasi-emas-antam-vs-rumah-kost-tapak-jatinangor/index.html"
+      "destination_path": "artikel/investasi-emas-antam-vs-rumah-kost-tapak-jatinangor/index.html",
+      "live_url": "/artikel/investasi-emas-antam-vs-rumah-kost-tapak-jatinangor",
+      "published_at": "2026-09-09T20:20:41.035638+07:00"
     },
     {
       "id": 24,
