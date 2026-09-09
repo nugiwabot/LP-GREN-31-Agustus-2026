@@ -276,4 +276,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Trans Metro Pasundan Jatinangor -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/integrasi-bus-trans-metro-pasundan-koridor-5-jatinangor</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/bus-trans-metro-pasundan.webp</image:loc>
+      <image:title>Trans Metro Pasundan Jatinangor</image:title>
+    </image:image>
+  </url>
+
 </urlset>

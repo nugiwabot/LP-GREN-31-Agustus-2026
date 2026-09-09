@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 21,
-  "scheduled_count": 39,
+  "published_count": 22,
+  "scheduled_count": 38,
   "articles": [
     {
       "id": 1,
@@ -270,13 +270,15 @@
     {
       "id": 22,
       "slug": "integrasi-bus-trans-metro-pasundan-koridor-5-jatinangor",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-09T08:00:00+07:00",
       "title": "Trans Metro Pasundan Jatinangor — GREN Property",
       "meta_description": "Konektivitas Bus Trans Metro Pasundan Koridor 5 Dipatiukur–Jatinangor: transportasi publik modern yang memudahkan mobilitas mahasiswa UNPAD dan ITB.",
       "category": "Infrastruktur & Kawasan",
       "draft_path": "_scheduled_content/articles/integrasi-bus-trans-metro-pasundan-koridor-5-jatinangor.html",
-      "destination_path": "artikel/integrasi-bus-trans-metro-pasundan-koridor-5-jatinangor/index.html"
+      "destination_path": "artikel/integrasi-bus-trans-metro-pasundan-koridor-5-jatinangor/index.html",
+      "live_url": "/artikel/integrasi-bus-trans-metro-pasundan-koridor-5-jatinangor",
+      "published_at": "2026-09-09T12:50:20.609702+07:00"
     },
     {
       "id": 23,
