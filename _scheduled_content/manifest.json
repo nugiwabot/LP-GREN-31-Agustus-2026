@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 23,
-  "scheduled_count": 37,
+  "published_count": 24,
+  "scheduled_count": 36,
   "articles": [
     {
       "id": 1,
@@ -296,13 +296,15 @@
     {
       "id": 24,
       "slug": "izin-pbg-slf-rumah-kost-pemda-sumedang",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-10T08:00:00+07:00",
       "title": "Izin PBG & SLF Rumah Kost Pemda Sumedang — GREN Property",
       "meta_description": "Panduan lengkap pengurusan Persetujuan Bangunan Gedung (PBG) dan Sertifikat Laik Fungsi (SLF) gedung rumah kost komersial sesuai regulasi resmi.",
       "category": "Legalitas & Komparasi",
       "draft_path": "_scheduled_content/articles/izin-pbg-slf-rumah-kost-pemda-sumedang.html",
-      "destination_path": "artikel/izin-pbg-slf-rumah-kost-pemda-sumedang/index.html"
+      "destination_path": "artikel/izin-pbg-slf-rumah-kost-pemda-sumedang/index.html",
+      "live_url": "/artikel/izin-pbg-slf-rumah-kost-pemda-sumedang",
+      "published_at": "2026-09-10T12:44:43.701576+07:00"
     },
     {
       "id": 25,

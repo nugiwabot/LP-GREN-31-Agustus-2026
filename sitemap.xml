@@ -300,4 +300,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Izin PBG &amp; SLF Rumah Kost Pemda Sumedang -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/izin-pbg-slf-rumah-kost-pemda-sumedang</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/buku-sertifikat-shm-asli.webp</image:loc>
+      <image:title>Izin PBG &amp; SLF Rumah Kost Pemda Sumedang</image:title>
+    </image:image>
+  </url>
+
 </urlset>
