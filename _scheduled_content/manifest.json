@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 24,
-  "scheduled_count": 36,
+  "published_count": 25,
+  "scheduled_count": 35,
   "articles": [
     {
       "id": 1,
@@ -309,13 +309,15 @@
     {
       "id": 25,
       "slug": "kalkulasi-keuntungan-properti-tapak-vs-reksadana",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-10T16:00:00+07:00",
       "title": "Keuntungan Properti vs Reksadana — GREN Property",
       "meta_description": "Perbandingan imbal hasil investasi reksadana pendapatan tetap vs rumah kost tapak: bedah dividen sewa bulanan dan apresiasi kenaikan harga tanah SHM.",
       "category": "Finansial & Arus Kas",
       "draft_path": "_scheduled_content/articles/kalkulasi-keuntungan-properti-tapak-vs-reksadana.html",
-      "destination_path": "artikel/kalkulasi-keuntungan-properti-tapak-vs-reksadana/index.html"
+      "destination_path": "artikel/kalkulasi-keuntungan-properti-tapak-vs-reksadana/index.html",
+      "live_url": "/artikel/kalkulasi-keuntungan-properti-tapak-vs-reksadana",
+      "published_at": "2026-09-10T20:17:50.274244+07:00"
     },
     {
       "id": 26,

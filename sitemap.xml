@@ -312,4 +312,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Keuntungan Properti vs Reksadana -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/kalkulasi-keuntungan-properti-tapak-vs-reksadana</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/investasi-emas-vs-properti.webp</image:loc>
+      <image:title>Keuntungan Properti vs Reksadana</image:title>
+    </image:image>
+  </url>
+
 </urlset>
