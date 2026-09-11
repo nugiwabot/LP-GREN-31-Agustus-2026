@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 25,
-  "scheduled_count": 35,
+  "published_count": 26,
+  "scheduled_count": 34,
   "articles": [
     {
       "id": 1,
@@ -322,13 +322,15 @@
     {
       "id": 26,
       "slug": "keunggulan-lokasi-bebas-banjir-kontur-tanah-tinggi-jatinangor",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-11T08:00:00+07:00",
       "title": "Lokasi Bebas Banjir Jatinangor — GREN Property",
       "meta_description": "Keunggulan topografi berketinggian 700–800 mdpl di kawasan GKPN Jatinangor: jaminan properti bebas banjir bandang, udara sejuk, dan keamanan investasi.",
       "category": "Infrastruktur & Kawasan",
       "draft_path": "_scheduled_content/articles/keunggulan-lokasi-bebas-banjir-kontur-tanah-tinggi-jatinangor.html",
-      "destination_path": "artikel/keunggulan-lokasi-bebas-banjir-kontur-tanah-tinggi-jatinangor/index.html"
+      "destination_path": "artikel/keunggulan-lokasi-bebas-banjir-kontur-tanah-tinggi-jatinangor/index.html",
+      "live_url": "/artikel/keunggulan-lokasi-bebas-banjir-kontur-tanah-tinggi-jatinangor",
+      "published_at": "2026-09-11T12:44:38.266088+07:00"
     },
     {
       "id": 27,

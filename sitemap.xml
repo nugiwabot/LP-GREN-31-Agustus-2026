@@ -324,4 +324,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Lokasi Bebas Banjir Jatinangor -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/keunggulan-lokasi-bebas-banjir-kontur-tanah-tinggi-jatinangor</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/kawasan-bebas-banjir-tinggi.webp</image:loc>
+      <image:title>Lokasi Bebas Banjir Jatinangor</image:title>
+    </image:image>
+  </url>
+
 </urlset>
