@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 26,
-  "scheduled_count": 34,
+  "published_count": 27,
+  "scheduled_count": 33,
   "articles": [
     {
       "id": 1,
@@ -335,13 +335,15 @@
     {
       "id": 27,
       "slug": "kiat-menghindari-sengketa-tanah-girik-letter-c-jatinangor",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-11T16:00:00+07:00",
       "title": "Cegah Sengketa Tanah Letter C — GREN Property",
       "meta_description": "Bahaya membeli tanah girik / Letter C adat di Jatinangor: risiko tumpang tindih waris, sengketa batas tanah, dan pentingnya membeli tanah SHM murni BPN.",
       "category": "Legalitas & Komparasi",
       "draft_path": "_scheduled_content/articles/kiat-menghindari-sengketa-tanah-girik-letter-c-jatinangor.html",
-      "destination_path": "artikel/kiat-menghindari-sengketa-tanah-girik-letter-c-jatinangor/index.html"
+      "destination_path": "artikel/kiat-menghindari-sengketa-tanah-girik-letter-c-jatinangor/index.html",
+      "live_url": "/artikel/kiat-menghindari-sengketa-tanah-girik-letter-c-jatinangor",
+      "published_at": "2026-09-11T20:11:58.480513+07:00"
     },
     {
       "id": 28,

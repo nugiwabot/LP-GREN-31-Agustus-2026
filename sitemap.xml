@@ -336,4 +336,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Cegah Sengketa Tanah Letter C -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/kiat-menghindari-sengketa-tanah-girik-letter-c-jatinangor</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/buku-sertifikat-shm-asli.webp</image:loc>
+      <image:title>Cegah Sengketa Tanah Letter C</image:title>
+    </image:image>
+  </url>
+
 </urlset>
