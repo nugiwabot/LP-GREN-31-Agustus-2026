@@ -360,4 +360,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Manajemen Risiko Investasi Kost Miliaran -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/manajemen-risiko-investasi-properti-sewa-miliaran</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/cctv-online-cloud-ai.webp</image:loc>
+      <image:title>Manajemen Risiko Investasi Kost Miliaran</image:title>
+    </image:image>
+  </url>
+
 </urlset>
