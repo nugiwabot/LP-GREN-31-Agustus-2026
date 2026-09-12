@@ -348,4 +348,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Legalitas PBG Bangunan Kost Sumedang -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/legalitas-pbg-bangunan-kost-bertingkat-sumedang</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/buku-sertifikat-shm-asli.webp</image:loc>
+      <image:title>Legalitas PBG Bangunan Kost Sumedang</image:title>
+    </image:image>
+  </url>
+
 </urlset>

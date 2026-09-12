@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 27,
-  "scheduled_count": 33,
+  "published_count": 28,
+  "scheduled_count": 32,
   "articles": [
     {
       "id": 1,
@@ -348,13 +348,15 @@
     {
       "id": 28,
       "slug": "legalitas-pbg-bangunan-kost-bertingkat-sumedang",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-12T08:00:00+07:00",
       "title": "Legalitas PBG Bangunan Kost Sumedang — GREN Property",
       "meta_description": "Ketentuan teknis perizinan Persetujuan Bangunan Gedung (PBG) untuk rumah kost bertingkat di Kabupaten Sumedang agar bebas denda dan bebas risiko segel.",
       "category": "Legalitas & Komparasi",
       "draft_path": "_scheduled_content/articles/legalitas-pbg-bangunan-kost-bertingkat-sumedang.html",
-      "destination_path": "artikel/legalitas-pbg-bangunan-kost-bertingkat-sumedang/index.html"
+      "destination_path": "artikel/legalitas-pbg-bangunan-kost-bertingkat-sumedang/index.html",
+      "live_url": "/artikel/legalitas-pbg-bangunan-kost-bertingkat-sumedang",
+      "published_at": "2026-09-12T12:32:21.686474+07:00"
     },
     {
       "id": 29,
