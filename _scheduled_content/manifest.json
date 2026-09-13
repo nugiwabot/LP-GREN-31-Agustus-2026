@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 30,
-  "scheduled_count": 30,
+  "published_count": 31,
+  "scheduled_count": 29,
   "articles": [
     {
       "id": 1,
@@ -387,13 +387,15 @@
     {
       "id": 31,
       "slug": "menghitung-payback-period-bisnis-kost-tapak",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-13T16:00:00+07:00",
       "title": "Menghitung Payback Period Bisnis Kost — GREN Property",
       "meta_description": "Metodologi lengkap menghitung waktu balik modal investasi gedung kost komersial tapak dengan mengkombinasikan arus kas sewa riil dan kenaikan harga tanah.",
       "category": "Finansial & Arus Kas",
       "draft_path": "_scheduled_content/articles/menghitung-payback-period-bisnis-kost-tapak.html",
-      "destination_path": "artikel/menghitung-payback-period-bisnis-kost-tapak/index.html"
+      "destination_path": "artikel/menghitung-payback-period-bisnis-kost-tapak/index.html",
+      "live_url": "/artikel/menghitung-payback-period-bisnis-kost-tapak",
+      "published_at": "2026-09-13T20:36:36.107722+07:00"
     },
     {
       "id": 32,
