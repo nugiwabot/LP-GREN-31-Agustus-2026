@@ -372,4 +372,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Mengapa Deposito Bank Kalah Lawan Inflasi -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/mengapa-deposito-bank-kalah-lawan-inflasi</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/investasi-emas-vs-properti.webp</image:loc>
+      <image:title>Mengapa Deposito Bank Kalah Lawan Inflasi</image:title>
+    </image:image>
+  </url>
+
 </urlset>

@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 29,
-  "scheduled_count": 31,
+  "published_count": 30,
+  "scheduled_count": 30,
   "articles": [
     {
       "id": 1,
@@ -374,13 +374,15 @@
     {
       "id": 30,
       "slug": "mengapa-deposito-bank-kalah-lawan-inflasi",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-13T08:00:00+07:00",
       "title": "Mengapa Deposito Bank Kalah Lawan Inflasi — GREN Property",
       "meta_description": "Perbandingan matematis bunga deposito bank vs capital gain dan rental yield properti kost tapak. Cara cerdas melindungi nilai riil kekayaan keluarga.",
       "category": "Finansial & Arus Kas",
       "draft_path": "_scheduled_content/articles/mengapa-deposito-bank-kalah-lawan-inflasi.html",
-      "destination_path": "artikel/mengapa-deposito-bank-kalah-lawan-inflasi/index.html"
+      "destination_path": "artikel/mengapa-deposito-bank-kalah-lawan-inflasi/index.html",
+      "live_url": "/artikel/mengapa-deposito-bank-kalah-lawan-inflasi",
+      "published_at": "2026-09-13T12:51:16.896653+07:00"
     },
     {
       "id": 31,
