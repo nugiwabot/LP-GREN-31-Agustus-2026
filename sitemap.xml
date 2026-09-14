@@ -396,4 +396,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Pajak Properti Sewa PPh &amp; PBB Kost -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/pajak-properti-sewa-pph-final-dan-pbb-rumah-kost</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/investasi-emas-vs-properti.webp</image:loc>
+      <image:title>Pajak Properti Sewa PPh &amp; PBB Kost</image:title>
+    </image:image>
+  </url>
+
 </urlset>

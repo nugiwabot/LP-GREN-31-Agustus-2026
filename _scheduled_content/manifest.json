@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 31,
-  "scheduled_count": 29,
+  "published_count": 32,
+  "scheduled_count": 28,
   "articles": [
     {
       "id": 1,
@@ -400,13 +400,15 @@
     {
       "id": 32,
       "slug": "pajak-properti-sewa-pph-final-dan-pbb-rumah-kost",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-14T08:00:00+07:00",
       "title": "Pajak Properti Sewa PPh & PBB Kost — GREN Property",
       "meta_description": "Panduan kewajiban pajak sewa rumah kost komersial: kupas tuntas PPh Final Pasal 4 Ayat 2 (10%), Pajak Bumi dan Bangunan (PBB), serta kepatuhan fiskal.",
       "category": "Legalitas & Komparasi",
       "draft_path": "_scheduled_content/articles/pajak-properti-sewa-pph-final-dan-pbb-rumah-kost.html",
-      "destination_path": "artikel/pajak-properti-sewa-pph-final-dan-pbb-rumah-kost/index.html"
+      "destination_path": "artikel/pajak-properti-sewa-pph-final-dan-pbb-rumah-kost/index.html",
+      "live_url": "/artikel/pajak-properti-sewa-pph-final-dan-pbb-rumah-kost",
+      "published_at": "2026-09-14T12:58:21.054197+07:00"
     },
     {
       "id": 33,
