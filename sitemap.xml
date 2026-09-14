@@ -408,4 +408,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: CCTV Cloud &amp; Keamanan Kost -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/panduan-instalasi-cctv-online-cloud-dan-keamanan-24-jam-kost</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/cctv-online-cloud-ai.webp</image:loc>
+      <image:title>CCTV Cloud &amp; Keamanan Kost</image:title>
+    </image:image>
+  </url>
+
 </urlset>

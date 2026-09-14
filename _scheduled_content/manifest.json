@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 32,
-  "scheduled_count": 28,
+  "published_count": 33,
+  "scheduled_count": 27,
   "articles": [
     {
       "id": 1,
@@ -413,13 +413,15 @@
     {
       "id": 33,
       "slug": "panduan-instalasi-cctv-online-cloud-dan-keamanan-24-jam-kost",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-14T16:00:00+07:00",
       "title": "CCTV Cloud & Keamanan Kost — GREN Property",
       "meta_description": "Instalasi CCTV IP Camera Full HD berbasis cloud storage dan aplikasi smartphone: pantau gedung rumah kost dari mana saja 24 jam tanpa takut harddisk rusak.",
       "category": "Fasilitas & Operasional",
       "draft_path": "_scheduled_content/articles/panduan-instalasi-cctv-online-cloud-dan-keamanan-24-jam-kost.html",
-      "destination_path": "artikel/panduan-instalasi-cctv-online-cloud-dan-keamanan-24-jam-kost/index.html"
+      "destination_path": "artikel/panduan-instalasi-cctv-online-cloud-dan-keamanan-24-jam-kost/index.html",
+      "live_url": "/artikel/panduan-instalasi-cctv-online-cloud-dan-keamanan-24-jam-kost",
+      "published_at": "2026-09-14T22:36:51.429501+07:00"
     },
     {
       "id": 34,
