@@ -432,4 +432,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Panduan Investasi Kost Jatinangor 2026 -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/panduan-lengkap-investasi-properti-kost-tapak-jatinangor-2026</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/fasad-kost-modern-scandinavian.webp</image:loc>
+      <image:title>Panduan Investasi Kost Jatinangor 2026</image:title>
+    </image:image>
+  </url>
+
 </urlset>

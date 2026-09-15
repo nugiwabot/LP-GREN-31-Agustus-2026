@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 34,
-  "scheduled_count": 26,
+  "published_count": 35,
+  "scheduled_count": 25,
   "articles": [
     {
       "id": 1,
@@ -439,13 +439,15 @@
     {
       "id": 35,
       "slug": "panduan-lengkap-investasi-properti-kost-tapak-jatinangor-2026",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-15T16:00:00+07:00",
       "title": "Panduan Investasi Kost Jatinangor 2026 — GREN",
       "meta_description": "Buku putih panduan komprehensif investasi rumah kost tapak Jatinangor 2026: riset makro ekonomi, legalitas SHM, yield sewa, hingga strategi autopilot.",
       "category": "Panduan Investasi",
       "draft_path": "_scheduled_content/articles/panduan-lengkap-investasi-properti-kost-tapak-jatinangor-2026.html",
-      "destination_path": "artikel/panduan-lengkap-investasi-properti-kost-tapak-jatinangor-2026/index.html"
+      "destination_path": "artikel/panduan-lengkap-investasi-properti-kost-tapak-jatinangor-2026/index.html",
+      "live_url": "/artikel/panduan-lengkap-investasi-properti-kost-tapak-jatinangor-2026",
+      "published_at": "2026-09-15T21:07:55.613957+07:00"
     },
     {
       "id": 36,
