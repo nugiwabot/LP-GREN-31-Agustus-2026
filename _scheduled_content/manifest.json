@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 33,
-  "scheduled_count": 27,
+  "published_count": 34,
+  "scheduled_count": 26,
   "articles": [
     {
       "id": 1,
@@ -426,13 +426,15 @@
     {
       "id": 34,
       "slug": "panduan-legalitas-shm-vs-hgb-rumah-kost",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-15T08:00:00+07:00",
       "title": "Panduan Legalitas SHM vs HGB Rumah Kost — GREN Property",
       "meta_description": "Kupas tuntas status kepemilikan tanah tapak Sertifikat Hak Milik (SHM) vs Hak Guna Bangunan (HGB) untuk keamanan investasi properti sewa komersial.",
       "category": "Legalitas & Komparasi",
       "draft_path": "_scheduled_content/articles/panduan-legalitas-shm-vs-hgb-rumah-kost.html",
-      "destination_path": "artikel/panduan-legalitas-shm-vs-hgb-rumah-kost/index.html"
+      "destination_path": "artikel/panduan-legalitas-shm-vs-hgb-rumah-kost/index.html",
+      "live_url": "/artikel/panduan-legalitas-shm-vs-hgb-rumah-kost",
+      "published_at": "2026-09-15T12:59:13.810861+07:00"
     },
     {
       "id": 35,

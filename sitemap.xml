@@ -420,4 +420,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Panduan Legalitas SHM vs HGB Rumah Kost -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/panduan-legalitas-shm-vs-hgb-rumah-kost</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/buku-sertifikat-shm-asli.webp</image:loc>
+      <image:title>Panduan Legalitas SHM vs HGB Rumah Kost</image:title>
+    </image:image>
+  </url>
+
 </urlset>
