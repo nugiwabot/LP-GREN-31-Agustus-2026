@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 35,
-  "scheduled_count": 25,
+  "published_count": 36,
+  "scheduled_count": 24,
   "articles": [
     {
       "id": 1,
@@ -452,13 +452,15 @@
     {
       "id": 36,
       "slug": "panduan-pajak-bphtb-dan-npop-kabupaten-sumedang",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-16T08:00:00+07:00",
       "title": "Pajak BPHTB & NPOP Sumedang — GREN Property",
       "meta_description": "Cara menghitung Bea Perolehan Hak atas Tanah dan Bangunan (BPHTB) di Bapenda Sumedang: rumus tarif 5%, nilai NPOPTKP, dan validasi pajak transaksi properti.",
       "category": "Legalitas & Komparasi",
       "draft_path": "_scheduled_content/articles/panduan-pajak-bphtb-dan-npop-kabupaten-sumedang.html",
-      "destination_path": "artikel/panduan-pajak-bphtb-dan-npop-kabupaten-sumedang/index.html"
+      "destination_path": "artikel/panduan-pajak-bphtb-dan-npop-kabupaten-sumedang/index.html",
+      "live_url": "/artikel/panduan-pajak-bphtb-dan-npop-kabupaten-sumedang",
+      "published_at": "2026-09-16T12:49:58.293595+07:00"
     },
     {
       "id": 37,
