@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 36,
-  "scheduled_count": 24,
+  "published_count": 37,
+  "scheduled_count": 23,
   "articles": [
     {
       "id": 1,
@@ -465,13 +465,15 @@
     {
       "id": 37,
       "slug": "panduan-warisan-dan-hibah-properti-shm-keluarga",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-16T16:00:00+07:00",
       "title": "Panduan Warisan & Hibah Properti — GREN Property",
       "meta_description": "Cara cerdas mewariskan aset produktif gedung rumah kost bersertifikat SHM kepada anak tanpa risiko sengketa keluarga dan efisiensi biaya peralihan hak.",
       "category": "Legalitas & Komparasi",
       "draft_path": "_scheduled_content/articles/panduan-warisan-dan-hibah-properti-shm-keluarga.html",
-      "destination_path": "artikel/panduan-warisan-dan-hibah-properti-shm-keluarga/index.html"
+      "destination_path": "artikel/panduan-warisan-dan-hibah-properti-shm-keluarga/index.html",
+      "live_url": "/artikel/panduan-warisan-dan-hibah-properti-shm-keluarga",
+      "published_at": "2026-09-16T20:59:50.079382+07:00"
     },
     {
       "id": 38,
