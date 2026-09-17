@@ -480,4 +480,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Sewa Mahasiswa Internasional UNPAD -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/peluang-sewa-mahasiswa-internasional-unpad-jatinangor</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/mahasiswa-unpad-internasional.webp</image:loc>
+      <image:title>Sewa Mahasiswa Internasional UNPAD</image:title>
+    </image:image>
+  </url>
+
 </urlset>

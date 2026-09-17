@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 38,
-  "scheduled_count": 22,
+  "published_count": 39,
+  "scheduled_count": 21,
   "articles": [
     {
       "id": 1,
@@ -491,13 +491,15 @@
     {
       "id": 39,
       "slug": "peluang-sewa-mahasiswa-internasional-unpad-jatinangor",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-17T16:00:00+07:00",
       "title": "Sewa Mahasiswa Internasional UNPAD — GREN Property",
       "meta_description": "Peluang emas membidik pasar mahasiswa internasional UNPAD dari Malaysia, Jepang, Korea, dan Eropa: profil penyewa tertib dengan daya beli tinggi.",
       "category": "Infrastruktur & Kawasan",
       "draft_path": "_scheduled_content/articles/peluang-sewa-mahasiswa-internasional-unpad-jatinangor.html",
-      "destination_path": "artikel/peluang-sewa-mahasiswa-internasional-unpad-jatinangor/index.html"
+      "destination_path": "artikel/peluang-sewa-mahasiswa-internasional-unpad-jatinangor/index.html",
+      "live_url": "/artikel/peluang-sewa-mahasiswa-internasional-unpad-jatinangor",
+      "published_at": "2026-09-17T21:04:24.355948+07:00"
     },
     {
       "id": 40,
