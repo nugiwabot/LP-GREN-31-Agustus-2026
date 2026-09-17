@@ -468,4 +468,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Bisnis Laundry &amp; Cafe di Kost -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/peluang-bisnis-laundry-koin-dan-cafe-komunal-di-gedung-kost</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/laundry-koin-komersial.webp</image:loc>
+      <image:title>Bisnis Laundry &amp; Cafe di Kost</image:title>
+    </image:image>
+  </url>
+
 </urlset>
