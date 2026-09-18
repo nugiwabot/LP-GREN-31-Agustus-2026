@@ -7,3 +7,6 @@ __pycache__/
 
 # Scratch experiments
 scratch/
+
+# Environment Variables & API Secrets
+.env*

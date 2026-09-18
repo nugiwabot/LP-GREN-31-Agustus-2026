@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--
+    =============================================================================
+    TEMPLATE ARTIKEL SEO AI & CITATION INTELLIGENCE (GREN Propertykost)
+    =============================================================================
+    Format baku artikel yang dihasilkan oleh ai_agent_search.py.
+    Dilengkapi Schema.org JSON-LD (Article, Breadcrumbs, FAQPage), 
+    tag semantik <blockquote> dengan atribut cite, serta anchor komersial Ring-1 UNPAD.
+    =============================================================================
+  -->
+
+  <!-- Primary SEO Meta Tags -->
+  <title>{{ARTICLE_TITLE}} — GREN Property</title>
+  <meta name="title" content="{{ARTICLE_TITLE}} — GREN Property" />
+  <meta name="description" content="{{META_DESCRIPTION_140_TO_155_CHARS}}" />
+  <meta name="keywords" content="{{SEARCH_QUERY}}, investasi kost jatinangor, rumah kost unpad, yield sewa jatinangor, gren propertykost" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="author" content="Tim Riset Kawasan GREN Property" />
+  <meta name="language" content="Indonesian" />
+  <meta name="theme-color" content="#27482F" />
+  <link rel="icon" type="image/png" href="https://www.gren.biz.id/assets/images/logo.webp" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{CANONICAL_URL}}" />
+
+  <!-- Geo & Local SEO Tags -->
+  <meta name="geo.region" content="ID-JB" />
+  <meta name="geo.placename" content="Jatinangor, Kabupaten Sumedang, Jawa Barat" />
+  <meta name="geo.position" content="-6.9328;107.7735" />
+  <meta name="ICBM" content="-6.9328, 107.7735" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:site_name" content="GREN Propertykost Jatinangor" />
+  <meta property="og:title" content="{{ARTICLE_TITLE}} — GREN Property" />
+  <meta property="og:description" content="{{META_DESCRIPTION_140_TO_155_CHARS}}" />
+  <meta property="og:url" content="{{CANONICAL_URL}}" />
+  <meta property="og:image" content="https://www.gren.biz.id/assets/images/rumah-asli.jpg" />
+  <meta property="article:published_time" content="{{ISO_PUBLISHED_TIME}}" />
+  <meta property="article:modified_time" content="{{ISO_MODIFIED_TIME}}" />
+  <meta property="article:author" content="Tim Riset Kawasan GREN Property" />
+  <meta property="article:section" content="Riset &amp; Pasar" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ARTICLE_TITLE}} — GREN Property" />
+  <meta name="twitter:description" content="{{META_DESCRIPTION_140_TO_155_CHARS}}" />
+  <meta name="twitter:image" content="https://www.gren.biz.id/assets/images/rumah-asli.jpg" />
+
+  <!-- Schema.org Multi-Graph JSON-LD (AEO, Citations, & Rich Snippets) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "{{CANONICAL_URL}}#article",
+        "headline": "{{ARTICLE_TITLE}}",
+        "description": "{{META_DESCRIPTION_140_TO_155_CHARS}}",
+        "image": "https://www.gren.biz.id/assets/images/rumah-asli.jpg",
+        "datePublished": "{{ISO_PUBLISHED_TIME}}",
+        "dateModified": "{{ISO_MODIFIED_TIME}}",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://www.gren.biz.id/#org",
+          "name": "Tim Riset Kawasan GREN Property",
+          "url": "https://www.gren.biz.id/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://www.gren.biz.id/#org",
+          "name": "GREN Property",
+          "url": "https://www.gren.biz.id/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.gren.biz.id/assets/images/logo.webp"
+          }
+        },
+        "citation": [
+          "{{SOURCE_1_URL}}",
+          "{{SOURCE_2_URL}}",
+          "{{SOURCE_3_URL}}"
+        ],
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "{{CANONICAL_URL}}"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "{{CANONICAL_URL}}#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Beranda",
+            "item": "https://www.gren.biz.id/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Artikel",
+            "item": "https://www.gren.biz.id/artikel"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "{{BREADCRUMB_TITLE}}",
+            "item": "{{CANONICAL_URL}}"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "{{CANONICAL_URL}}#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "{{FAQ_QUESTION_1}}",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "{{FAQ_ANSWER_1}}"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "{{FAQ_QUESTION_2}}",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "{{FAQ_ANSWER_2}}"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- ⚙ CONFIG -->
+  <script src="../../config.js"></script>
+
+  <!-- Design System Typography & Framework -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../../assets/theme.js"></script>
+  <link rel="stylesheet" href="../../assets/theme.css" />
+  <script src="../../assets/brand.js"></script>
+</head>
+
+<body class="bg-surface text-slate-800 antialiased selection:bg-brand-900 selection:text-white">
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-40 bg-surface/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <img src="../../assets/images/logo.webp" alt="Logo GREN Propertykost" class="h-10 w-auto object-contain" />
+        <span class="font-serif text-lg font-bold text-slate-900">GREN <span class="text-brand-700">Propertykost</span></span>
+      </a>
+      <a href="/artikel" class="text-xs font-bold text-slate-600 hover:text-brand-900 transition-colors uppercase tracking-wider">
+        &larr; Kembali ke Artikel
+      </a>
+    </div>
+  </header>
+
+  <!-- MAIN ARTICLE CONTAINER -->
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 py-12 lg:py-16">
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="flex items-center gap-2 text-xs text-slate-500 mb-8 font-medium">
+      <a href="/" class="hover:text-brand-900">Beranda</a>
+      <span>/</span>
+      <a href="/artikel" class="hover:text-brand-900">Artikel</a>
+      <span>/</span>
+      <span class="text-brand-700 font-semibold truncate">{{BREADCRUMB_TITLE}}</span>
+    </nav>
+
+    <!-- Header Content -->
+    <header class="mb-10">
+      <span class="eyebrow"><span class="rule w-8"></span>Riset Pasar &amp; Edukasi Terverifikasi</span>
+      <h1 class="display text-3xl sm:text-4xl lg:text-[2.65rem] text-slate-950 mt-4 leading-tight">
+        {{ARTICLE_TITLE}}
+      </h1>
+      <div class="mt-5 flex items-center gap-4 text-xs text-slate-500 font-medium">
+        <span>Ditulis oleh: <strong class="text-slate-800">Tim Riset Kawasan GREN Property</strong></span>
+        <span>·</span>
+        <time datetime="{{PUBLISHED_DATE_YMD}}">{{PUBLISHED_DATE_HUMAN}}</time>
+        <span>·</span>
+        <span class="bg-brand-50 text-brand-800 px-2 py-0.5 rounded font-bold uppercase tracking-wider text-[10px]">Data Intelligence</span>
+      </div>
+    </header>
+
+    <!-- Article Body -->
+    <article class="prose prose-slate max-w-none text-slate-700 leading-relaxed text-base sm:text-lg">
+      
+      <!-- Lead Paragraph -->
+      <p class="lead font-serif text-xl sm:text-2xl text-slate-900 leading-snug border-l-4 border-brand-700 pl-4 py-1 italic mb-8">
+        {{LEAD_PARAGRAPH}}
+      </p>
+
+      <!-- Section 1: Konteks & Temuan Fakta Lapangan -->
+      <h2>{{SECTION_1_TITLE}}</h2>
+      <p>
+        {{SECTION_1_BODY}}
+      </p>
+
+      <!-- BLOK KUTIPAN & RUJUKAN SEMANTIK (TAG <blockquote> DENGAN ATRIBUT cite & TAG <cite>) -->
+      <div class="my-8 bg-slate-50 border-l-4 border-brand-700 p-6 shadow-sm">
+        <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brand-700 mb-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          Referensi Pasar Terverifikasi #1
+        </div>
+        <blockquote class="text-slate-800 text-base sm:text-lg italic leading-relaxed" cite="{{CITATION_1_URL}}">
+          "{{CITATION_1_SNIPPET_TEXT}}"
+        </blockquote>
+        <div class="mt-4 pt-3 border-t border-slate-200 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500">
+          <span>Sumber: <cite class="font-bold text-slate-700 not-italic">{{CITATION_1_TITLE}}</cite></span>
+          <a href="{{CITATION_1_URL}}" target="_blank" rel="noopener noreferrer" class="text-brand-700 hover:underline font-semibold inline-flex items-center gap-1">
+            Buka Tautan Rujukan
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Section 2: Analisis Finansial & Implikasi Properti Kost Tapak -->
+      <h2>{{SECTION_2_TITLE}}</h2>
+      <p>
+        {{SECTION_2_BODY}}
+      </p>
+
+      <ul>
+        <li><strong>Stabilitas Arus Kas:</strong> Permintaan sewa dari 100.000+ mahasiswa UNPAD, ITB, IPDN, dan IKOPIN menjamin okupansi tahunan.</li>
+        <li><strong>Bebas Biaya Strata Title:</strong> Kepemilikan tanah tapak SHM murni menghindarkan investor dari beban iuran apartemen (sinking fund) yang menggerus laba bersih.</li>
+        <li><strong>Sistem Pengelolaan Autopilot:</strong> Dikelola penuh oleh tim manajemen profesional dengan Garansi Okupansi 70% selama 2 tahun pertama.</li>
+      </ul>
+
+      <!-- CTA BANNER KOMERSIAL (High-Converting Conversion Block) -->
+      <div class="my-12 bg-slate-950 text-white p-8 sm:p-10 border-t-4 border-accent-400">
+        <span class="text-accent-400 text-xs font-bold uppercase tracking-[0.2em] block mb-2">Peluang Investasi Riil</span>
+        <h3 class="font-serif text-2xl sm:text-3xl text-white mb-4">Miliki Gedung Rukost Utuh di Ring-1 UNPAD Jatinangor</h3>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-8 max-w-2xl">
+          Tersedia pilihan 9, 11, hingga 12 kamar full furnished dengan program Garansi Okupansi 70% selama 2 tahun dan legalitas SHM murni siap balik nama.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="/#konsultasi" class="inline-flex items-center justify-center px-6 py-3.5 bg-accent-500 hover:bg-accent-600 text-slate-950 font-bold text-xs uppercase tracking-wider transition-colors">
+            Jadwalkan Survey Lokasi
+          </a>
+          <a href="/#tipe-unit" class="inline-flex items-center justify-center px-6 py-3.5 border border-slate-700 hover:border-white text-white font-bold text-xs uppercase tracking-wider transition-colors">
+            Lihat Pricelist Unit ALL IN
+          </a>
+        </div>
+      </div>
+
+      <!-- Section 3: Kesimpulan & Rekomendasi Investor -->
+      <h2>{{SECTION_3_TITLE}}</h2>
+      <p>
+        {{SECTION_3_BODY}}
+      </p>
+
+    </article>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-500 py-10 text-xs border-t border-slate-800 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <p>&copy; 2026 GREN Propertykost Jatinangor by GREN Property. Seluruh hak cipta dilindungi.</p>
+      <p class="mt-2 text-slate-600">Investasi Gedung Rukost Tapak Eksklusif Ring-1 Kampus UNPAD &amp; ITB Jatinangor</p>
+    </div>
+  </footer>
+
+</body>
+</html>
