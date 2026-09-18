@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 39,
-  "scheduled_count": 21,
+  "published_count": 40,
+  "scheduled_count": 20,
   "articles": [
     {
       "id": 1,
@@ -504,13 +504,15 @@
     {
       "id": 40,
       "slug": "peluang-sewa-mahasiswa-pascasarjana-dan-dosen-unpad",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-18T08:00:00+07:00",
       "title": "Penyewa Pascasarjana & Dosen UNPAD — GREN Property",
       "meta_description": "Peluang emas segmen penyewa mahasiswa Magister S2, Doktoral S3, dan dosen tamu UNPAD yang mengutamakan ketenangan dan daya beli sewa premium di Jatinangor.",
       "category": "Infrastruktur & Kawasan",
       "draft_path": "_scheduled_content/articles/peluang-sewa-mahasiswa-pascasarjana-dan-dosen-unpad.html",
-      "destination_path": "artikel/peluang-sewa-mahasiswa-pascasarjana-dan-dosen-unpad/index.html"
+      "destination_path": "artikel/peluang-sewa-mahasiswa-pascasarjana-dan-dosen-unpad/index.html",
+      "live_url": "/artikel/peluang-sewa-mahasiswa-pascasarjana-dan-dosen-unpad",
+      "published_at": "2026-09-18T12:43:25.875081+07:00"
     },
     {
       "id": 41,
