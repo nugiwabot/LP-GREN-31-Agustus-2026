@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 40,
-  "scheduled_count": 20,
+  "published_count": 41,
+  "scheduled_count": 19,
   "articles": [
     {
       "id": 1,
@@ -517,13 +517,15 @@
     {
       "id": 41,
       "slug": "pemilihan-material-bangunan-kost-low-maintenance",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-18T16:00:00+07:00",
       "title": "Material Kost Low Maintenance — GREN Property",
       "meta_description": "Rahasia memilih spesifikasi material bangunan rumah kost komersial yang tahan lama, minim biaya renovasi, dan mudah dibersihkan puluhan tahun ke depan.",
       "category": "Fasilitas & Operasional",
       "draft_path": "_scheduled_content/articles/pemilihan-material-bangunan-kost-low-maintenance.html",
-      "destination_path": "artikel/pemilihan-material-bangunan-kost-low-maintenance/index.html"
+      "destination_path": "artikel/pemilihan-material-bangunan-kost-low-maintenance/index.html",
+      "live_url": "/artikel/pemilihan-material-bangunan-kost-low-maintenance",
+      "published_at": "2026-09-18T20:20:43.904895+07:00"
     },
     {
       "id": 42,

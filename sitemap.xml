@@ -528,4 +528,16 @@
       <image:title>Mengapa Manajemen Rukost Pasif Jauh Lebih Menguntungkan di Ring-1 Jatinangor</image:title>
     </image:image>
   </url>
+  <!-- Artikel: Material Kost Low Maintenance -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/pemilihan-material-bangunan-kost-low-maintenance</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/manajemen-maintenance-gedung.webp</image:loc>
+      <image:title>Material Kost Low Maintenance</image:title>
+    </image:image>
+  </url>
+
 </urlset>
