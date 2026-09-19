@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 41,
-  "scheduled_count": 19,
+  "published_count": 42,
+  "scheduled_count": 18,
   "articles": [
     {
       "id": 1,
@@ -530,13 +530,15 @@
     {
       "id": 42,
       "slug": "perjanjian-sewa-dan-tata-tertib-penghuni-kost-eksklusif",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-19T08:00:00+07:00",
       "title": "Tata Tertib Sewa Kost Eksklusif — GREN Property",
       "meta_description": "Klausul penting dalam surat perjanjian sewa dan tata tertib penghuni kost komersial untuk menjaga ketertiban, keamanan moral, dan perlindungan properti.",
       "category": "Legalitas & Komparasi",
       "draft_path": "_scheduled_content/articles/perjanjian-sewa-dan-tata-tertib-penghuni-kost-eksklusif.html",
-      "destination_path": "artikel/perjanjian-sewa-dan-tata-tertib-penghuni-kost-eksklusif/index.html"
+      "destination_path": "artikel/perjanjian-sewa-dan-tata-tertib-penghuni-kost-eksklusif/index.html",
+      "live_url": "/artikel/perjanjian-sewa-dan-tata-tertib-penghuni-kost-eksklusif",
+      "published_at": "2026-09-19T12:38:02.666231+07:00"
     },
     {
       "id": 43,
