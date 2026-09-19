@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 42,
-  "scheduled_count": 18,
+  "published_count": 43,
+  "scheduled_count": 17,
   "articles": [
     {
       "id": 1,
@@ -543,13 +543,15 @@
     {
       "id": 43,
       "slug": "perkembangan-fakultas-kedokteran-dan-farmasi-unpad",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-19T16:00:00+07:00",
       "title": "Fakultas Kedokteran UNPAD Jatinangor — GREN Property",
       "meta_description": "Mengapa ribuan mahasiswa Fakultas Kedokteran dan Farmasi UNPAD menjadi segmen penyewa kamar kost eksklusif paling loyal dengan daya beli sewa tertinggi.",
       "category": "Infrastruktur & Kawasan",
       "draft_path": "_scheduled_content/articles/perkembangan-fakultas-kedokteran-dan-farmasi-unpad.html",
-      "destination_path": "artikel/perkembangan-fakultas-kedokteran-dan-farmasi-unpad/index.html"
+      "destination_path": "artikel/perkembangan-fakultas-kedokteran-dan-farmasi-unpad/index.html",
+      "live_url": "/artikel/perkembangan-fakultas-kedokteran-dan-farmasi-unpad",
+      "published_at": "2026-09-19T19:50:44.516062+07:00"
     },
     {
       "id": 44,

@@ -552,4 +552,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Fakultas Kedokteran UNPAD Jatinangor -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/perkembangan-fakultas-kedokteran-dan-farmasi-unpad</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/rumah-sakit-pendidikan-unpad.webp</image:loc>
+      <image:title>Fakultas Kedokteran UNPAD Jatinangor</image:title>
+    </image:image>
+  </url>
+
 </urlset>
