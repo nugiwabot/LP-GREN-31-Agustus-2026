@@ -564,4 +564,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Pertumbuhan Mahasiswa UNPAD &amp; ITB Jatinangor -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/pertumbuhan-mahasiswa-unpad-itb-permintaan-kost</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/mahasiswa-unpad-internasional.webp</image:loc>
+      <image:title>Pertumbuhan Mahasiswa UNPAD &amp; ITB Jatinangor</image:title>
+    </image:image>
+  </url>
+
 </urlset>

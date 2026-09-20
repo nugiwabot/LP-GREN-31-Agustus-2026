@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 43,
-  "scheduled_count": 17,
+  "published_count": 44,
+  "scheduled_count": 16,
   "articles": [
     {
       "id": 1,
@@ -556,13 +556,15 @@
     {
       "id": 44,
       "slug": "pertumbuhan-mahasiswa-unpad-itb-permintaan-kost",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-20T08:00:00+07:00",
       "title": "Pertumbuhan Mahasiswa UNPAD & ITB Jatinangor — GREN Property",
       "meta_description": "Kajian lonjakan 100.000 mahasiswa aktif di Jatinangor dan mengapa kebutuhan kamar kost eksklusif bertambah lebih dari 5.000 unit setiap tahun ajaran.",
       "category": "Infrastruktur & Kawasan",
       "draft_path": "_scheduled_content/articles/pertumbuhan-mahasiswa-unpad-itb-permintaan-kost.html",
-      "destination_path": "artikel/pertumbuhan-mahasiswa-unpad-itb-permintaan-kost/index.html"
+      "destination_path": "artikel/pertumbuhan-mahasiswa-unpad-itb-permintaan-kost/index.html",
+      "live_url": "/artikel/pertumbuhan-mahasiswa-unpad-itb-permintaan-kost",
+      "published_at": "2026-09-20T12:56:41.066000+07:00"
     },
     {
       "id": 45,
