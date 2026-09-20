@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 44,
-  "scheduled_count": 16,
+  "published_count": 45,
+  "scheduled_count": 15,
   "articles": [
     {
       "id": 1,
@@ -569,13 +569,15 @@
     {
       "id": 45,
       "slug": "peta-zona-ring-1-kampus-unpad-jatinangor",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-20T16:00:00+07:00",
       "title": "Peta Zona Ring-1 Kampus UNPAD Jatinangor — GREN Property",
       "meta_description": "Panduan memilih lokasi properti kost dalam radius 500 meter dari gerbang fakultas UNPAD & ITB demi memastikan okupansi sewa kamar selalu penuh 100%.",
       "category": "Infrastruktur & Kawasan",
       "draft_path": "_scheduled_content/articles/peta-zona-ring-1-kampus-unpad-jatinangor.html",
-      "destination_path": "artikel/peta-zona-ring-1-kampus-unpad-jatinangor/index.html"
+      "destination_path": "artikel/peta-zona-ring-1-kampus-unpad-jatinangor/index.html",
+      "live_url": "/artikel/peta-zona-ring-1-kampus-unpad-jatinangor",
+      "published_at": "2026-09-20T20:25:26.655594+07:00"
     },
     {
       "id": 46,
