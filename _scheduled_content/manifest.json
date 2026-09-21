@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 45,
-  "scheduled_count": 15,
+  "published_count": 46,
+  "scheduled_count": 14,
   "articles": [
     {
       "id": 1,
@@ -582,13 +582,15 @@
     {
       "id": 46,
       "slug": "potensi-penyewa-praja-ipdn-dan-mahasiswa-ikopin-university",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-21T08:00:00+07:00",
       "title": "Penyewa Praja IPDN & IKOPIN — GREN Property",
       "meta_description": "Peluang pasar sewa dari keluarga berkunjung Praja IPDN dan ribuan mahasiswa Ikopin University yang memperkuat ekosistem pasar properti di Jatinangor.",
       "category": "Infrastruktur & Kawasan",
       "draft_path": "_scheduled_content/articles/potensi-penyewa-praja-ipdn-dan-mahasiswa-ikopin-university.html",
-      "destination_path": "artikel/potensi-penyewa-praja-ipdn-dan-mahasiswa-ikopin-university/index.html"
+      "destination_path": "artikel/potensi-penyewa-praja-ipdn-dan-mahasiswa-ikopin-university/index.html",
+      "live_url": "/artikel/potensi-penyewa-praja-ipdn-dan-mahasiswa-ikopin-university",
+      "published_at": "2026-09-21T13:03:02.876711+07:00"
     },
     {
       "id": 47,

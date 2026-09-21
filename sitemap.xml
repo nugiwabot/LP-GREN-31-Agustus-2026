@@ -588,4 +588,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Penyewa Praja IPDN &amp; IKOPIN -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/potensi-penyewa-praja-ipdn-dan-mahasiswa-ikopin-university</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/praja-ipdn-kampus-jatinangor.webp</image:loc>
+      <image:title>Penyewa Praja IPDN &amp; IKOPIN</image:title>
+    </image:image>
+  </url>
+
 </urlset>
