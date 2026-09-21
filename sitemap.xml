@@ -600,4 +600,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Standar Kamar Kost Favorit Mahasiswa Mapan -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/psikologi-mahasiswa-mapan-kamar-mandi-dalam-ac</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/kamar-kost-meja-belajar-ac.webp</image:loc>
+      <image:title>Standar Kamar Kost Favorit Mahasiswa Mapan</image:title>
+    </image:image>
+  </url>
+
 </urlset>

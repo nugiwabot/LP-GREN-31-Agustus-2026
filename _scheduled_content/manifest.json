@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 46,
-  "scheduled_count": 14,
+  "published_count": 47,
+  "scheduled_count": 13,
   "articles": [
     {
       "id": 1,
@@ -595,13 +595,15 @@
     {
       "id": 47,
       "slug": "psikologi-mahasiswa-mapan-kamar-mandi-dalam-ac",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-21T16:00:00+07:00",
       "title": "Standar Kamar Kost Favorit Mahasiswa Mapan — GREN Property",
       "meta_description": "Alasan mengapa mahasiswa dari keluarga berkemampuan memilih kamar berfasilitas AC, kamar mandi dalam, dan water heater dengan tarif premium Rp 2,5M/bulan.",
       "category": "Fasilitas & Operasional",
       "draft_path": "_scheduled_content/articles/psikologi-mahasiswa-mapan-kamar-mandi-dalam-ac.html",
-      "destination_path": "artikel/psikologi-mahasiswa-mapan-kamar-mandi-dalam-ac/index.html"
+      "destination_path": "artikel/psikologi-mahasiswa-mapan-kamar-mandi-dalam-ac/index.html",
+      "live_url": "/artikel/psikologi-mahasiswa-mapan-kamar-mandi-dalam-ac",
+      "published_at": "2026-09-21T22:37:19.166543+07:00"
     },
     {
       "id": 48,
