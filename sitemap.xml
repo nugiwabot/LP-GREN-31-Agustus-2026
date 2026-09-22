@@ -612,4 +612,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Simulasi Investasi Unit Kost 11 Kamar -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/simulasi-investasi-unit-kost-11-kamar-unpad</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/fasad-kost-modern-scandinavian.webp</image:loc>
+      <image:title>Simulasi Investasi Unit Kost 11 Kamar</image:title>
+    </image:image>
+  </url>
+
 </urlset>

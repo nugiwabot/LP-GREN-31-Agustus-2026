@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 47,
-  "scheduled_count": 13,
+  "published_count": 48,
+  "scheduled_count": 12,
   "articles": [
     {
       "id": 1,
@@ -608,13 +608,15 @@
     {
       "id": 48,
       "slug": "simulasi-investasi-unit-kost-11-kamar-unpad",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-22T08:00:00+07:00",
       "title": "Simulasi Investasi Unit Kost 11 Kamar — GREN Property",
       "meta_description": "Hitungan riil pendapatan sewa tahunan Rp 300 Juta dari gedung kost tapak 11 kamar siap huni di kawasan kampus UNPAD Jatinangor dengan garansi okupansi.",
       "category": "Finansial & Arus Kas",
       "draft_path": "_scheduled_content/articles/simulasi-investasi-unit-kost-11-kamar-unpad.html",
-      "destination_path": "artikel/simulasi-investasi-unit-kost-11-kamar-unpad/index.html"
+      "destination_path": "artikel/simulasi-investasi-unit-kost-11-kamar-unpad/index.html",
+      "live_url": "/artikel/simulasi-investasi-unit-kost-11-kamar-unpad",
+      "published_at": "2026-09-22T12:58:25.017839+07:00"
     },
     {
       "id": 49,
