@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 48,
-  "scheduled_count": 12,
+  "published_count": 49,
+  "scheduled_count": 11,
   "articles": [
     {
       "id": 1,
@@ -621,13 +621,15 @@
     {
       "id": 49,
       "slug": "simulasi-investasi-unit-kost-12-kamar-unpad",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-22T16:00:00+07:00",
       "title": "Simulasi Investasi Unit Kost 12 Kamar — GREN Property",
       "meta_description": "Hitungan riil proyeksi sewa unit rumah kost tapak 12 kamar di Jatinangor: omzet kotor Rp 330 Juta/tahun dan arus kas bersih Rp 23,5 Juta per bulan.",
       "category": "Finansial & Arus Kas",
       "draft_path": "_scheduled_content/articles/simulasi-investasi-unit-kost-12-kamar-unpad.html",
-      "destination_path": "artikel/simulasi-investasi-unit-kost-12-kamar-unpad/index.html"
+      "destination_path": "artikel/simulasi-investasi-unit-kost-12-kamar-unpad/index.html",
+      "live_url": "/artikel/simulasi-investasi-unit-kost-12-kamar-unpad",
+      "published_at": "2026-09-22T20:51:51.354757+07:00"
     },
     {
       "id": 50,
