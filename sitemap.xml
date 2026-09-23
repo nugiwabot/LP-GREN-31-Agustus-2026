@@ -636,4 +636,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Simulasi Portofolio Multi -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/simulasi-portofolio-multi-unit-kost-keluarga</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/fasad-kost-modern-scandinavian.webp</image:loc>
+      <image:title>Simulasi Portofolio Multi</image:title>
+    </image:image>
+  </url>
+
 </urlset>

@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 49,
-  "scheduled_count": 11,
+  "published_count": 50,
+  "scheduled_count": 10,
   "articles": [
     {
       "id": 1,
@@ -634,13 +634,15 @@
     {
       "id": 50,
       "slug": "simulasi-portofolio-multi-unit-kost-keluarga",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-23T08:00:00+07:00",
       "title": "Simulasi Portofolio Multi-Unit Kost — GREN Property",
       "meta_description": "Strategi membangun imperium properti sewa dengan memiliki 2 hingga 3 gedung kost tapak untuk menghasilkan arus kas pasif miliaran rupiah per tahun.",
       "category": "Finansial & Arus Kas",
       "draft_path": "_scheduled_content/articles/simulasi-portofolio-multi-unit-kost-keluarga.html",
-      "destination_path": "artikel/simulasi-portofolio-multi-unit-kost-keluarga/index.html"
+      "destination_path": "artikel/simulasi-portofolio-multi-unit-kost-keluarga/index.html",
+      "live_url": "/artikel/simulasi-portofolio-multi-unit-kost-keluarga",
+      "published_at": "2026-09-23T12:44:04.808948+07:00"
     },
     {
       "id": 51,
