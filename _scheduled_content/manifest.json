@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 52,
-  "scheduled_count": 8,
+  "published_count": 53,
+  "scheduled_count": 7,
   "articles": [
     {
       "id": 1,
@@ -673,13 +673,15 @@
     {
       "id": 53,
       "slug": "skema-pembayaran-cash-bertahap-developer-bebas-bunga",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-24T16:00:00+07:00",
       "title": "Skema Cash Bertahap Bebas Bunga — GREN Property",
       "meta_description": "Solusi membeli gedung rumah kost tapak tanpa riba: kemudahan cicilan in-house developer hingga 12–24 bulan tanpa bunga bank dan tanpa proses BI checking.",
       "category": "Finansial & Arus Kas",
       "draft_path": "_scheduled_content/articles/skema-pembayaran-cash-bertahap-developer-bebas-bunga.html",
-      "destination_path": "artikel/skema-pembayaran-cash-bertahap-developer-bebas-bunga/index.html"
+      "destination_path": "artikel/skema-pembayaran-cash-bertahap-developer-bebas-bunga/index.html",
+      "live_url": "/artikel/skema-pembayaran-cash-bertahap-developer-bebas-bunga",
+      "published_at": "2026-09-24T20:59:09.626059+07:00"
     },
     {
       "id": 54,

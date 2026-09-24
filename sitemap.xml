@@ -672,4 +672,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Skema Cash Bertahap Bebas Bunga -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/skema-pembayaran-cash-bertahap-developer-bebas-bunga</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/investasi-emas-vs-properti.webp</image:loc>
+      <image:title>Skema Cash Bertahap Bebas Bunga</image:title>
+    </image:image>
+  </url>
+
 </urlset>
