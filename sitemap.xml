@@ -648,4 +648,28 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Sistem Autopilot Operator Kost Profesional -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/sistem-autopilot-operator-kost-profesional</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/smart-door-lock-iot.webp</image:loc>
+      <image:title>Sistem Autopilot Operator Kost Profesional</image:title>
+    </image:image>
+  </url>
+
+  <!-- Artikel: Sirkulasi Udara Silang Kost -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/sistem-sirkulasi-udara-silang-dan-kesehatan-kost</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/sirkulasi-udara-silang.webp</image:loc>
+      <image:title>Sirkulasi Udara Silang Kost</image:title>
+    </image:image>
+  </url>
+
 </urlset>

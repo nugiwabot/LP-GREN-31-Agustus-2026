@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 50,
-  "scheduled_count": 10,
+  "published_count": 52,
+  "scheduled_count": 8,
   "articles": [
     {
       "id": 1,
@@ -647,24 +647,28 @@
     {
       "id": 51,
       "slug": "sistem-autopilot-operator-kost-profesional",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-23T16:00:00+07:00",
       "title": "Sistem Autopilot Operator Kost Profesional — GREN Property",
       "meta_description": "Cara kerja manajemen pengelola properti modern dalam menangani pemasaran kamar, kebersihan, perawatan gedung, dan penagihan sewa tanpa repot pemilik.",
       "category": "Fasilitas & Operasional",
       "draft_path": "_scheduled_content/articles/sistem-autopilot-operator-kost-profesional.html",
-      "destination_path": "artikel/sistem-autopilot-operator-kost-profesional/index.html"
+      "destination_path": "artikel/sistem-autopilot-operator-kost-profesional/index.html",
+      "live_url": "/artikel/sistem-autopilot-operator-kost-profesional",
+      "published_at": "2026-09-24T12:58:45.130643+07:00"
     },
     {
       "id": 52,
       "slug": "sistem-sirkulasi-udara-silang-dan-kesehatan-kost",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-24T08:00:00+07:00",
       "title": "Sirkulasi Udara Silang Kost — GREN Property",
       "meta_description": "Penerapan rekayasa cross ventilation dan void udara alami pada gedung rumah kost untuk mencegah pengap, jamur, dan menghemat biaya pendinginan ruangan.",
       "category": "Fasilitas & Operasional",
       "draft_path": "_scheduled_content/articles/sistem-sirkulasi-udara-silang-dan-kesehatan-kost.html",
-      "destination_path": "artikel/sistem-sirkulasi-udara-silang-dan-kesehatan-kost/index.html"
+      "destination_path": "artikel/sistem-sirkulasi-udara-silang-dan-kesehatan-kost/index.html",
+      "live_url": "/artikel/sistem-sirkulasi-udara-silang-dan-kesehatan-kost",
+      "published_at": "2026-09-24T12:58:45.130643+07:00"
     },
     {
       "id": 53,
