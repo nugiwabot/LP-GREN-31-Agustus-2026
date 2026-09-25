@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 54,
-  "scheduled_count": 6,
+  "published_count": 55,
+  "scheduled_count": 5,
   "articles": [
     {
       "id": 1,
@@ -699,13 +699,15 @@
     {
       "id": 55,
       "slug": "solusi-cadangan-air-bersih-toren-dan-ground-tank-kost",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-25T16:00:00+07:00",
       "title": "Cadangan Air Bersih Kost — GREN Property",
       "meta_description": "Sistem suplai air bersih dual-storage ground tank dan toren gravitasi untuk menjamin ketersediaan air 24 jam non-stop bagi seluruh penghuni kost Jatinangor.",
       "category": "Fasilitas & Operasional",
       "draft_path": "_scheduled_content/articles/solusi-cadangan-air-bersih-toren-dan-ground-tank-kost.html",
-      "destination_path": "artikel/solusi-cadangan-air-bersih-toren-dan-ground-tank-kost/index.html"
+      "destination_path": "artikel/solusi-cadangan-air-bersih-toren-dan-ground-tank-kost/index.html",
+      "live_url": "/artikel/solusi-cadangan-air-bersih-toren-dan-ground-tank-kost",
+      "published_at": "2026-09-25T21:23:49.044677+07:00"
     },
     {
       "id": 56,
