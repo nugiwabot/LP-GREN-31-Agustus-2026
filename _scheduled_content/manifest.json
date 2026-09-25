@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 53,
-  "scheduled_count": 7,
+  "published_count": 54,
+  "scheduled_count": 6,
   "articles": [
     {
       "id": 1,
@@ -686,13 +686,15 @@
     {
       "id": 54,
       "slug": "skema-revitalisasi-fasad-dan-remodeling-gedung-kost-tua",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-25T08:00:00+07:00",
       "title": "Revitalisasi Fasad Kost Tua — GREN Property",
       "meta_description": "Kiat merombak tampilan fasad kosan jadul menjadi rumah kost modern minimalis: menaikkan tarif sewa dari Rp 800rb menjadi Rp 2,3 Juta per kamar per bulan.",
       "category": "Fasilitas & Operasional",
       "draft_path": "_scheduled_content/articles/skema-revitalisasi-fasad-dan-remodeling-gedung-kost-tua.html",
-      "destination_path": "artikel/skema-revitalisasi-fasad-dan-remodeling-gedung-kost-tua/index.html"
+      "destination_path": "artikel/skema-revitalisasi-fasad-dan-remodeling-gedung-kost-tua/index.html",
+      "live_url": "/artikel/skema-revitalisasi-fasad-dan-remodeling-gedung-kost-tua",
+      "published_at": "2026-09-25T13:00:19.130671+07:00"
     },
     {
       "id": 55,

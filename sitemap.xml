@@ -684,4 +684,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Revitalisasi Fasad Kost Tua -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/skema-revitalisasi-fasad-dan-remodeling-gedung-kost-tua</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/fasad-kost-modern-scandinavian.webp</image:loc>
+      <image:title>Revitalisasi Fasad Kost Tua</image:title>
+    </image:image>
+  </url>
+
 </urlset>
