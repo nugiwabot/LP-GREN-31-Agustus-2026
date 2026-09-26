@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 55,
-  "scheduled_count": 5,
+  "published_count": 56,
+  "scheduled_count": 4,
   "articles": [
     {
       "id": 1,
@@ -712,13 +712,15 @@
     {
       "id": 56,
       "slug": "sop-kebersihan-dan-maintenance-gedung-kost",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-26T08:00:00+07:00",
       "title": "SOP Kebersihan & Maintenance Kost — GREN Property",
       "meta_description": "Standar operasional prosedur pembersihan harian dan pemeliharaan teknis berkala gedung rumah kost komersial demi menjaga kepuasan penyewa dan nilai aset.",
       "category": "Fasilitas & Operasional",
       "draft_path": "_scheduled_content/articles/sop-kebersihan-dan-maintenance-gedung-kost.html",
-      "destination_path": "artikel/sop-kebersihan-dan-maintenance-gedung-kost/index.html"
+      "destination_path": "artikel/sop-kebersihan-dan-maintenance-gedung-kost/index.html",
+      "live_url": "/artikel/sop-kebersihan-dan-maintenance-gedung-kost",
+      "published_at": "2026-09-26T12:59:42.055377+07:00"
     },
     {
       "id": 57,
