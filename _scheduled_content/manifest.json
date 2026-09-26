@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 56,
-  "scheduled_count": 4,
+  "published_count": 57,
+  "scheduled_count": 3,
   "articles": [
     {
       "id": 1,
@@ -725,13 +725,15 @@
     {
       "id": 57,
       "slug": "standar-sanitari-dan-instalasi-pipa-air-anti-bocor",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-26T16:00:00+07:00",
       "title": "Sanitari & Pipa Air Anti Bocor — GREN Property",
       "meta_description": "Pemilihan material perpipaan PPR/PVC AW dan sanitary ware Toto/American Standard untuk membebaskan pemilik dari risiko rembes dan biaya bongkar kamar kost.",
       "category": "Fasilitas & Operasional",
       "draft_path": "_scheduled_content/articles/standar-sanitari-dan-instalasi-pipa-air-anti-bocor.html",
-      "destination_path": "artikel/standar-sanitari-dan-instalasi-pipa-air-anti-bocor/index.html"
+      "destination_path": "artikel/standar-sanitari-dan-instalasi-pipa-air-anti-bocor/index.html",
+      "live_url": "/artikel/standar-sanitari-dan-instalasi-pipa-air-anti-bocor",
+      "published_at": "2026-09-26T20:36:19.448195+07:00"
     },
     {
       "id": 58,
