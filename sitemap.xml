@@ -744,4 +744,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Strategi Sinking Fund Properti Sewa -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/strategi-sinking-fund-perawatan-properti-sewa</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/manajemen-maintenance-gedung.webp</image:loc>
+      <image:title>Strategi Sinking Fund Properti Sewa</image:title>
+    </image:image>
+  </url>
+
 </urlset>

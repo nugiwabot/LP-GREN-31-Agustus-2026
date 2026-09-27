@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 58,
-  "scheduled_count": 2,
+  "published_count": 59,
+  "scheduled_count": 1,
   "articles": [
     {
       "id": 1,
@@ -751,13 +751,15 @@
     {
       "id": 59,
       "slug": "strategi-sinking-fund-perawatan-properti-sewa",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-27T16:00:00+07:00",
       "title": "Strategi Sinking Fund Properti Sewa — GREN Property",
       "meta_description": "Cara mengelola pos dana cadangan perawatan (sinking fund) properti sewa komersial agar kondisi gedung tetap prima tanpa mengorbankan arus kas bersih.",
       "category": "Finansial & Arus Kas",
       "draft_path": "_scheduled_content/articles/strategi-sinking-fund-perawatan-properti-sewa.html",
-      "destination_path": "artikel/strategi-sinking-fund-perawatan-properti-sewa/index.html"
+      "destination_path": "artikel/strategi-sinking-fund-perawatan-properti-sewa/index.html",
+      "live_url": "/artikel/strategi-sinking-fund-perawatan-properti-sewa",
+      "published_at": "2026-09-27T21:32:04.143502+07:00"
     },
     {
       "id": 60,
