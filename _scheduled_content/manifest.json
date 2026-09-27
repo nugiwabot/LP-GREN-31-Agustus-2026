@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 57,
-  "scheduled_count": 3,
+  "published_count": 58,
+  "scheduled_count": 2,
   "articles": [
     {
       "id": 1,
@@ -738,13 +738,15 @@
     {
       "id": 58,
       "slug": "strategi-pemasaran-digital-kost-tiktok-dan-instagram-ads",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-27T08:00:00+07:00",
       "title": "Pemasaran Digital Kost Modern — GREN Property",
       "meta_description": "Cara efektif memasarkan unit rumah kost lewat video TikTok FYP, Instagram Reels, dan Meta Ads geo-targeting untuk menjamin okupansi 100% setiap semester.",
       "category": "Fasilitas & Operasional",
       "draft_path": "_scheduled_content/articles/strategi-pemasaran-digital-kost-tiktok-dan-instagram-ads.html",
-      "destination_path": "artikel/strategi-pemasaran-digital-kost-tiktok-dan-instagram-ads/index.html"
+      "destination_path": "artikel/strategi-pemasaran-digital-kost-tiktok-dan-instagram-ads/index.html",
+      "live_url": "/artikel/strategi-pemasaran-digital-kost-tiktok-dan-instagram-ads",
+      "published_at": "2026-09-27T13:26:50.865325+07:00"
     },
     {
       "id": 59,

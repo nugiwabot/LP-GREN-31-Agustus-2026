@@ -732,4 +732,16 @@
     </image:image>
   </url>
 
+  <!-- Artikel: Pemasaran Digital Kost Modern -->
+  <url>
+    <loc>https://www.gren.biz.id/artikel/strategi-pemasaran-digital-kost-tiktok-dan-instagram-ads</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://www.gren.biz.id/assets/images/artikel/kamar-kost-meja-belajar-ac.webp</image:loc>
+      <image:title>Pemasaran Digital Kost Modern</image:title>
+    </image:image>
+  </url>
+
 </urlset>
