@@ -6,8 +6,8 @@
     "16:00 WIB"
   ],
   "total_articles": 60,
-  "published_count": 59,
-  "scheduled_count": 1,
+  "published_count": 60,
+  "scheduled_count": 0,
   "articles": [
     {
       "id": 1,
@@ -764,13 +764,15 @@
     {
       "id": 60,
       "slug": "tahapan-transaksi-ajb-notaris-rumah-kost",
-      "status": "scheduled",
+      "status": "published",
       "publish_date": "2026-09-28T08:00:00+07:00",
       "title": "Tahapan Transaksi AJB Notaris Kost — GREN Property",
       "meta_description": "Panduan langkah demi langkah proses penandatanganan Akta Jual Beli (AJB) dan balik nama sertifikat SHM rumah kost di hadapan Pejabat Pembuat Akta Tanah.",
       "category": "Legalitas & Komparasi",
       "draft_path": "_scheduled_content/articles/tahapan-transaksi-ajb-notaris-rumah-kost.html",
-      "destination_path": "artikel/tahapan-transaksi-ajb-notaris-rumah-kost/index.html"
+      "destination_path": "artikel/tahapan-transaksi-ajb-notaris-rumah-kost/index.html",
+      "live_url": "/artikel/tahapan-transaksi-ajb-notaris-rumah-kost",
+      "published_at": "2026-09-28T13:34:26.104982+07:00"
     }
   ]
 }
